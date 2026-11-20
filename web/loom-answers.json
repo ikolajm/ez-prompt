@@ -1,0 +1,10 @@
+{
+  "projectName": "ez-prompt",
+  "styleDirection": "editorial",
+  "defaultMode": "dark",
+  "primary": "#59A96A",
+  "heading": "Inter",
+  "body": "Inter",
+  "edges": "soft",
+  "controlHeight": "standard"
+}

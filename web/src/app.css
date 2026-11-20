@@ -1,0 +1,328 @@
+/* The app's own layout, unlayered so it sits above Loom's classes. */
+
+/* Layout */
+
+.app {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 17rem minmax(0, 1fr);
+}
+
+.main {
+  padding: var(--screen-y-padding) var(--screen-x-padding);
+  max-width: var(--content-max-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-gap);
+}
+
+.main__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--component-gap);
+}
+
+.main__header > * {
+  margin: 0;
+}
+
+.status {
+  padding: var(--screen-y-padding) var(--screen-x-padding);
+  color: var(--on-surface-variant);
+}
+
+.chevron {
+  flex: none;
+  width: var(--icon-1);
+  height: var(--icon-1);
+  color: var(--on-surface-variant);
+  transition: rotate var(--transition) var(--easing);
+}
+
+/* Rail */
+
+.rail {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100dvh;
+  overflow-y: auto;
+  padding: var(--screen-y-padding) var(--group-x-padding);
+  border-right: var(--bw-1) solid var(--outline-subtle);
+}
+
+.rail__title {
+  margin: 0 0 var(--section-gap);
+  padding-inline: var(--space-4);
+}
+
+.rail ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--component-compact-gap);
+}
+
+/* One solid rail down the whole list. Every item sits flush against it, rounded on the
+ * right only; depth is the indent, and the current item marks the rail in primary. */
+.rail__list {
+  border-left: var(--bw-1) solid var(--outline-subtle);
+}
+
+.rail__dimension,
+.rail__section {
+  width: 100%;
+  text-align: left;
+  border-radius: 0px var(--radius-component) var(--radius-component) 0px;
+  color: var(--on-surface-variant);
+}
+
+/* Loom's button centres its label; a nav row reads label left, chevron right. */
+.rail__dimension {
+  justify-content: space-between;
+}
+
+/* Holds the current section, open or closed. */
+.rail__dimension[data-active] {
+  color: var(--primary-text);
+  font-weight: 500;
+}
+
+.rail__dimension[data-active] .chevron {
+  color: var(--primary-text);
+}
+
+.rail__dimension[aria-expanded='true'] .chevron {
+  rotate: 180deg;
+}
+
+.rail ul.rail__sections {
+  gap: 0;
+  margin-block: var(--component-compact-gap) var(--space-2);
+}
+
+/* Indented past the parent's label, so a section reads as under it. */
+.rail__section {
+  padding: var(--space-2) var(--space-4) var(--space-2) var(--space-8);
+}
+
+.rail__section:hover {
+  color: var(--on-surface);
+}
+
+.rail__dimension[aria-current],
+.rail__section[aria-current] {
+  background-color: var(--surface-1);
+  color: var(--on-surface);
+  font-weight: 600;
+}
+
+.rail__dimension[aria-current]::before,
+.rail__section[aria-current]::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--bw-1));
+  top: 0;
+  bottom: 0;
+  width: var(--bw-3);
+  background: var(--primary);
+}
+
+/* Table */
+
+.glossary thead th:first-child {
+  width: 14rem;
+}
+
+.glossary__row {
+  cursor: pointer;
+}
+
+.glossary__name {
+  display: flex;
+  align-items: center;
+  gap: var(--component-gap);
+  padding: 0;
+  text-align: left;
+  font-weight: 500;
+}
+
+.glossary__name[aria-expanded='true'] .chevron {
+  rotate: 180deg;
+}
+
+/* An open row and its detail read as one block: one surface, no rule between them. */
+.glossary tbody tr.glossary__row[data-open],
+.glossary tbody tr.glossary__detail {
+  background-color: var(--surface-1);
+}
+
+.glossary__row[data-open] {
+  border-bottom-color: transparent;
+}
+
+.glossary__clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: var(--on-surface-variant);
+}
+
+.glossary .glossary__detail > td {
+  padding-top: 0;
+}
+
+/* Detail: one disclosure per field, the open one a raised panel */
+
+.detail {
+  --icon: var(--icon-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--component-compact-gap);
+  max-width: 46rem;
+}
+
+.detail__field {
+  border-radius: var(--radius-component);
+}
+
+.detail__field[open] {
+  background-color: var(--surface-2);
+}
+
+.detail__field summary {
+  display: flex;
+  align-items: center;
+  gap: var(--component-gap);
+  padding: var(--space-2) var(--space-3);
+  cursor: pointer;
+  list-style: none;
+  color: var(--on-surface-variant);
+}
+
+.detail__field summary::-webkit-details-marker {
+  display: none;
+}
+
+.detail__field summary:hover,
+.detail__field[open] > summary {
+  color: var(--on-surface);
+}
+
+.detail__icon {
+  flex: none;
+  width: var(--icon);
+  height: var(--icon);
+}
+
+.detail__field[open] .detail__icon--closed,
+.detail__field:not([open]) .detail__icon--open {
+  display: none;
+}
+
+/* Indented to start under the title, past the icon. */
+.detail__body {
+  padding: 0 var(--space-3) var(--space-3) calc(var(--space-3) + var(--icon) + var(--component-gap));
+}
+
+.detail p {
+  margin: 0;
+}
+
+.pairs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.pairs li {
+  display: flex;
+  flex-direction: column;
+}
+
+.pairs__term {
+  font-weight: 500;
+}
+
+.pairs__reason {
+  color: var(--on-surface-variant);
+}
+
+/* Narrow screens: the rail becomes a strip over a scrolling row of sections, and the effect column drops. */
+
+@media (max-width: 48rem) {
+  .app {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rail {
+    height: auto;
+    z-index: var(--z-sticky);
+    background: var(--surface);
+    border-right: 0;
+    border-bottom: var(--bw-1) solid var(--outline-subtle);
+    padding-block: var(--group-y-padding);
+  }
+
+  .rail__title {
+    display: none;
+  }
+
+  .rail__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-left: 0;
+  }
+
+  .rail__dimension,
+  .rail__section {
+    border-radius: var(--radius-component);
+  }
+
+  .rail__dimension[aria-current]::before,
+  .rail__section[aria-current]::before {
+    display: none;
+  }
+
+  /* Lifts each section list into the strip, so order can put it on a row of its own. */
+  .rail__list > li {
+    display: contents;
+  }
+
+  .rail__dimension {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .rail__dimension .icon-slot {
+    display: none;
+  }
+
+  .rail ul.rail__sections {
+    order: 1;
+    flex: 0 0 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    margin: 0;
+  }
+
+  .rail__section {
+    width: auto;
+    white-space: nowrap;
+    padding-left: var(--space-4);
+  }
+
+  .glossary__effect {
+    display: none;
+  }
+
+  .glossary thead th:first-child {
+    width: auto;
+  }
+}
