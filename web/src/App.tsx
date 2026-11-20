@@ -4,6 +4,8 @@ import './app.css'
 import { Button } from './components/loom/button.tsx'
 import { type Glossary, loadGlossary, sections } from './glossary.ts'
 import { GlossaryTable } from './GlossaryTable.tsx'
+import { lines, type Sheet, toggle as toggleSheet } from './sheet.ts'
+import { SpecSheet } from './SpecSheet.tsx'
 
 type Load = { state: 'loading' } | { state: 'failed'; error: string } | { state: 'ready'; glossary: Glossary }
 
@@ -17,6 +19,8 @@ export default function App() {
   const [place, setPlace] = useState<Place | null>(null)
   // Null until the first toggle: the dimension being shown starts open.
   const [expanded, setExpanded] = useState<ReadonlySet<string> | null>(null)
+  const [sheet, setSheet] = useState<Sheet>({})
+  const [subject, setSubject] = useState('')
 
   useEffect(() => {
     loadGlossary().then(
@@ -94,8 +98,20 @@ export default function App() {
           <p className="text-label-md text-on-surface-variant">{dimension.label}</p>
           <h1 className="text-title-lg">{section}</h1>
         </header>
-        <GlossaryTable key={`${dimension.id}/${section}`} terms={terms} groups={dimension.groups} />
+        <GlossaryTable
+          key={`${dimension.id}/${section}`}
+          terms={terms}
+          groups={dimension.groups}
+          picked={new Set((sheet[dimension.id] ?? []).map((t) => t.id))}
+          onPick={(term) => setSheet(toggleSheet(sheet, dimension, term))}
+        />
       </main>
+      <SpecSheet
+        subject={subject}
+        onSubject={setSubject}
+        lines={lines(sheet, dimensions)}
+        onRemove={(d, term) => setSheet(toggleSheet(sheet, d, term))}
+      />
     </div>
   )
 }

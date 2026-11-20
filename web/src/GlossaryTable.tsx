@@ -1,8 +1,19 @@
 import { ChevronDown, Minus, Plus } from 'lucide-react'
 import { type ReactNode, useState } from 'react'
+import { Checkbox } from './components/loom/checkbox.tsx'
 import type { Group, Term } from './glossary.ts'
 
-export function GlossaryTable({ terms, groups }: { terms: Term[]; groups: Group[] }) {
+export function GlossaryTable({
+  terms,
+  groups,
+  picked,
+  onPick,
+}: {
+  terms: Term[]
+  groups: Group[]
+  picked: ReadonlySet<string>
+  onPick: (term: Term) => void
+}) {
   const [open, setOpen] = useState<ReadonlySet<string>>(new Set())
   const byId = new Map(groups.map((g) => [g.id, g]))
 
@@ -18,6 +29,9 @@ export function GlossaryTable({ terms, groups }: { terms: Term[]; groups: Group[
     <table className="table glossary" data-size="lg">
       <thead>
         <tr>
+          <th scope="col" className="glossary__pick">
+            <span className="visually-hidden">On the sheet</span>
+          </th>
           <th scope="col">Term</th>
           <th scope="col" className="glossary__effect">
             Effect
@@ -32,6 +46,8 @@ export function GlossaryTable({ terms, groups }: { terms: Term[]; groups: Group[
             group={term.group ? byId.get(term.group) : undefined}
             open={open.has(term.id)}
             onToggle={() => toggle(term.id)}
+            picked={picked.has(term.id)}
+            onPick={() => onPick(term)}
           />
         ))}
       </tbody>
@@ -44,17 +60,29 @@ function TermRows({
   group,
   open,
   onToggle,
+  picked,
+  onPick,
 }: {
   term: Term
   group: Group | undefined
   open: boolean
   onToggle: () => void
+  picked: boolean
+  onPick: () => void
 }) {
   const detailId = `term-${term.id}`
   return (
     <>
       {/* The row takes the click; the button is the keyboard and screen-reader target, and its click bubbles here. */}
       <tr className="glossary__row" data-open={open || undefined} onClick={onToggle}>
+        {/* Stops here, so checking a term never opens its row. */}
+        <td className="glossary__pick" onClick={(e) => e.stopPropagation()}>
+          <Checkbox
+            aria-label={`${term.name} on the sheet`}
+            checked={picked}
+            onChange={onPick}
+          />
+        </td>
         <th scope="row">
           <button type="button" className="glossary__name" aria-expanded={open} aria-controls={detailId}>
             <ChevronDown className="chevron" aria-hidden="true" />
@@ -66,7 +94,7 @@ function TermRows({
         </td>
       </tr>
       <tr id={detailId} className="glossary__detail" hidden={!open}>
-        <td colSpan={2}>
+        <td colSpan={3}>
           <TermDetail term={term} group={group} />
         </td>
       </tr>

@@ -5,7 +5,8 @@
 .app {
   min-height: 100dvh;
   display: grid;
-  grid-template-columns: 17rem minmax(0, 1fr);
+  grid-template-columns: 17rem minmax(0, 1fr) 20rem;
+  align-items: start;
 }
 
 .main {
@@ -132,8 +133,82 @@
 
 /* Table */
 
-.glossary thead th:first-child {
+.glossary thead th:nth-child(2) {
   width: 14rem;
+}
+
+.glossary .glossary__pick {
+  width: 1px;
+  padding-inline-end: 0;
+}
+
+/* Spec sheet */
+
+.sheet {
+  position: sticky;
+  top: 0;
+  max-height: 100dvh;
+  overflow-y: auto;
+  padding: var(--screen-y-padding) var(--section-x-padding);
+  border-left: var(--bw-1) solid var(--outline-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+.sheet h2,
+.sheet__empty {
+  margin: 0;
+}
+
+.sheet__empty {
+  color: var(--on-surface-variant);
+}
+
+.sheet__lines {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--group-gap);
+}
+
+.sheet__line dt {
+  color: var(--on-surface-variant);
+  margin-bottom: var(--component-compact-gap);
+}
+
+.sheet__value {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--component-gap);
+}
+
+.sheet__copy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--group-gap);
+}
+
+/* Below this the sheet leaves the side and follows the glossary. */
+@media (max-width: 72rem) {
+  .app {
+    grid-template-columns: 17rem minmax(0, 1fr);
+  }
+
+  /* Spans both rows, or it stops sticking once the page scrolls down to the sheet. */
+  .rail {
+    grid-row: span 2;
+  }
+
+  .sheet {
+    grid-column: 2;
+    position: static;
+    max-height: none;
+    border-left: 0;
+    border-top: var(--bw-1) solid var(--outline-subtle);
+  }
 }
 
 .glossary__row {
@@ -322,7 +397,15 @@
     display: none;
   }
 
-  .glossary thead th:first-child {
+  .glossary thead th:nth-child(2) {
     width: auto;
+  }
+
+  .rail {
+    grid-row: auto;
+  }
+
+  .sheet {
+    grid-column: 1;
   }
 }
