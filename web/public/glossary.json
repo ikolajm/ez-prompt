@@ -1439,6 +1439,112 @@
           "extras": {}
         },
         {
+          "id": "loop-lighting",
+          "name": "Loop Lighting",
+          "section": "Studio Lighting Setups",
+          "group": null,
+          "what": "Key light placed ~30-45 degrees to the side and slightly above the subject. Named for the small loop-shaped shadow it casts from the nose onto the cheek. The shadow does NOT connect to the cheek shadow (that would be Rembrandt).",
+          "effect": "Gentle dimensionality. More sculpted than flat/butterfly but softer than Rembrandt. Universally flattering — the most commonly used portrait lighting pattern because it works on virtually any face shape.",
+          "pairs": [
+            "Soft light modifiers — softbox, beauty dish",
+            "Fill light at 2:1 ratio — controlled but not dramatic",
+            "Window light — natural loop from a side window",
+            "Headshots/corporate portraiture — the standard safe choice"
+          ],
+          "conflicts": [
+            "Hard light without fill — pushes toward Rembrandt",
+            "Extremely low angles — destroys the loop pattern",
+            "Maximum drama — too gentle"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "broad-lighting",
+          "name": "Broad Lighting",
+          "section": "Studio Lighting Setups",
+          "group": null,
+          "what": "Key light illuminates the side of the face turned TOWARD the camera. The broader (more visible) plane of the face is lit.",
+          "effect": "Face appears wider. More of the face is in light than shadow. Open, approachable feel. Used to add visual weight to narrow faces.",
+          "pairs": [
+            "High key — bright, even, approachable",
+            "Soft light — gentle and flattering",
+            "Subjects with narrow/thin faces — adds visual width",
+            "Commercial/corporate work — open and welcoming"
+          ],
+          "conflicts": [
+            "Subjects with wide/round faces — makes them look wider",
+            "Low key drama — undermines the shadow depth",
+            "Short lighting — the exact opposite approach"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "short-lighting",
+          "name": "Short Lighting",
+          "section": "Studio Lighting Setups",
+          "group": null,
+          "what": "Key light illuminates the side of the face turned AWAY from camera. The narrower (less visible) plane of the face is lit. The shadow side faces the camera.",
+          "effect": "Face appears thinner and more sculpted. More shadow on the camera-facing side creates depth and drama. Slimming effect. More moody than broad.",
+          "pairs": [
+            "Low key — dramatic, shadow-dominant",
+            "Rembrandt lighting — short + Rembrandt is the classic dramatic portrait",
+            "Subjects with round faces — slimming effect",
+            "Moody/artistic portraiture"
+          ],
+          "conflicts": [
+            "High key — the shadow dominance fights even brightness",
+            "Flat commercial looks — too sculpted",
+            "Broad lighting — the exact opposite"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "clamshell-lighting",
+          "name": "Clamshell Lighting",
+          "section": "Studio Lighting Setups",
+          "group": null,
+          "what": "Two lights (or light + reflector) above and below the subject, creating a \"clamshell.\" Key light above angled down, fill below angled up. Camera shoots through the gap.",
+          "effect": "Extremely even, flattering illumination. Minimizes wrinkles and texture. Catchlights appear at 12 and 6 o'clock in the eyes. Glamorous, polished, virtually shadowless on the face.",
+          "pairs": [
+            "Beauty photography — the standard beauty setup",
+            "Makeup campaigns — even light shows color accurately",
+            "Beauty dish (top) + silver reflector (bottom) — the classic combo",
+            "High key — clean, bright, flawless",
+            "Close-up portraits — the even light is most apparent close up"
+          ],
+          "conflicts": [
+            "Dramatic/moody looks — too even and flattering",
+            "Masculine/gritty portraits — too polished",
+            "Environmental portraits — needs controlled distance"
+          ],
+          "example": "Clamshell lighting + beauty dish overhead + silver reflector below chin + macro beauty close-up → virtually shadowless, dewy skin, dual catchlights, glamorous and flawless",
+          "extras": {}
+        },
+        {
+          "id": "hair-light-kicker",
+          "name": "Hair Light / Kicker",
+          "section": "Studio Lighting Setups",
+          "group": null,
+          "what": "Light placed behind and above (hair light) or behind and to the side (kicker) of the subject. Part of the extended three-point family. Specifically targets hair, shoulders, or edge of the subject for separation.",
+          "effect": "Luminous rim on hair and shoulders. Adds a third dimension by separating subject from background. Hair light is overhead/behind; kicker is from the side, adding a slash of light on cheek/jaw.",
+          "pairs": [
+            "Three-point lighting — the third point",
+            "Dark backgrounds — essential for separation when background is dark",
+            "Portrait photography — defines the subject's outline",
+            "Rim light — closely related, hair light is a specific application"
+          ],
+          "conflicts": [
+            "High key with white backgrounds — separation already exists",
+            "Naturalistic/available light — the precision looks artificial",
+            "Flat/front-lit setups — the back light has no role"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
           "id": "hard-light",
           "name": "Hard Light",
           "section": "Light Quality",
@@ -1766,112 +1872,6 @@
             "Cityscapes at twilight, cold/winter scenes, moody portraits, noir."
           ],
           "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "loop-lighting",
-          "name": "Loop Lighting",
-          "section": "Additional Studio Setups",
-          "group": null,
-          "what": "Key light placed ~30-45 degrees to the side and slightly above the subject. Named for the small loop-shaped shadow it casts from the nose onto the cheek. The shadow does NOT connect to the cheek shadow (that would be Rembrandt).",
-          "effect": "Gentle dimensionality. More sculpted than flat/butterfly but softer than Rembrandt. Universally flattering — the most commonly used portrait lighting pattern because it works on virtually any face shape.",
-          "pairs": [
-            "Soft light modifiers — softbox, beauty dish",
-            "Fill light at 2:1 ratio — controlled but not dramatic",
-            "Window light — natural loop from a side window",
-            "Headshots/corporate portraiture — the standard safe choice"
-          ],
-          "conflicts": [
-            "Hard light without fill — pushes toward Rembrandt",
-            "Extremely low angles — destroys the loop pattern",
-            "Maximum drama — too gentle"
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "broad-lighting",
-          "name": "Broad Lighting",
-          "section": "Additional Studio Setups",
-          "group": null,
-          "what": "Key light illuminates the side of the face turned TOWARD the camera. The broader (more visible) plane of the face is lit.",
-          "effect": "Face appears wider. More of the face is in light than shadow. Open, approachable feel. Used to add visual weight to narrow faces.",
-          "pairs": [
-            "High key — bright, even, approachable",
-            "Soft light — gentle and flattering",
-            "Subjects with narrow/thin faces — adds visual width",
-            "Commercial/corporate work — open and welcoming"
-          ],
-          "conflicts": [
-            "Subjects with wide/round faces — makes them look wider",
-            "Low key drama — undermines the shadow depth",
-            "Short lighting — the exact opposite approach"
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "short-lighting",
-          "name": "Short Lighting",
-          "section": "Additional Studio Setups",
-          "group": null,
-          "what": "Key light illuminates the side of the face turned AWAY from camera. The narrower (less visible) plane of the face is lit. The shadow side faces the camera.",
-          "effect": "Face appears thinner and more sculpted. More shadow on the camera-facing side creates depth and drama. Slimming effect. More moody than broad.",
-          "pairs": [
-            "Low key — dramatic, shadow-dominant",
-            "Rembrandt lighting — short + Rembrandt is the classic dramatic portrait",
-            "Subjects with round faces — slimming effect",
-            "Moody/artistic portraiture"
-          ],
-          "conflicts": [
-            "High key — the shadow dominance fights even brightness",
-            "Flat commercial looks — too sculpted",
-            "Broad lighting — the exact opposite"
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "clamshell-lighting",
-          "name": "Clamshell Lighting",
-          "section": "Additional Studio Setups",
-          "group": null,
-          "what": "Two lights (or light + reflector) above and below the subject, creating a \"clamshell.\" Key light above angled down, fill below angled up. Camera shoots through the gap.",
-          "effect": "Extremely even, flattering illumination. Minimizes wrinkles and texture. Catchlights appear at 12 and 6 o'clock in the eyes. Glamorous, polished, virtually shadowless on the face.",
-          "pairs": [
-            "Beauty photography — the standard beauty setup",
-            "Makeup campaigns — even light shows color accurately",
-            "Beauty dish (top) + silver reflector (bottom) — the classic combo",
-            "High key — clean, bright, flawless",
-            "Close-up portraits — the even light is most apparent close up"
-          ],
-          "conflicts": [
-            "Dramatic/moody looks — too even and flattering",
-            "Masculine/gritty portraits — too polished",
-            "Environmental portraits — needs controlled distance"
-          ],
-          "example": "Clamshell lighting + beauty dish overhead + silver reflector below chin + macro beauty close-up → virtually shadowless, dewy skin, dual catchlights, glamorous and flawless",
-          "extras": {}
-        },
-        {
-          "id": "hair-light-kicker",
-          "name": "Hair Light / Kicker",
-          "section": "Additional Studio Setups",
-          "group": null,
-          "what": "Light placed behind and above (hair light) or behind and to the side (kicker) of the subject. Part of the extended three-point family. Specifically targets hair, shoulders, or edge of the subject for separation.",
-          "effect": "Luminous rim on hair and shoulders. Adds a third dimension by separating subject from background. Hair light is overhead/behind; kicker is from the side, adding a slash of light on cheek/jaw.",
-          "pairs": [
-            "Three-point lighting — the third point",
-            "Dark backgrounds — essential for separation when background is dark",
-            "Portrait photography — defines the subject's outline",
-            "Rim light — closely related, hair light is a specific application"
-          ],
-          "conflicts": [
-            "High key with white backgrounds — separation already exists",
-            "Naturalistic/available light — the precision looks artificial",
-            "Flat/front-lit setups — the back light has no role"
-          ],
           "example": null,
           "extras": {}
         },
@@ -2314,6 +2314,54 @@
           "extras": {}
         },
         {
+          "id": "fuji-pro-400h-discontinued",
+          "name": "Fuji Pro 400H (Discontinued)",
+          "section": "Color Negative Film",
+          "group": null,
+          "what": "Professional color negative, ISO 400. Discontinued 2021. Legendary in wedding/portrait work. The most mourned discontinued film stock of the digital era.",
+          "effect": "Soft, pastel color rendering. Skin tones lean slightly cool/pink rather than warm (opposite of Portra's warmth). Greens shift toward mint/sage. Highlights are creamy and smooth. Low contrast. Almost \"watercolor\" quality. Fine grain for 400 speed.",
+          "pairs": [
+            "Soft natural light, overcast conditions, pastel environments, bridal/editorial portraiture, garden settings, cool-toned subjects."
+          ],
+          "conflicts": [
+            "High contrast, punchy saturated color, harsh flash, gritty urban."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "agfa-vista-agfa-color",
+          "name": "Agfa Vista / Agfa Color",
+          "section": "Color Negative Film",
+          "group": null,
+          "what": "Budget-to-mid-range European consumer color films. Agfa Vista 200/400 were staples with a distinctive color palette.",
+          "effect": "Slightly muted, earthy. Less saturated than Kodak consumer films. Greens lean olive/muted. Reds go slightly brick. A distinctly \"European\" color quality. Warmer overall but without Kodak's golden warmth.",
+          "pairs": [
+            "European street photography, documentary, autumn/earth-toned scenes, muted vintage aesthetics."
+          ],
+          "conflicts": [
+            "Vivid tropical color, clean modern looks, high-saturation subjects."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "kodak-vision3-250d-500t-cinema-stocks",
+          "name": "Kodak Vision3 250D / 500T (Cinema Stocks)",
+          "section": "Color Negative Film",
+          "group": null,
+          "what": "Professional motion picture film. 250D = daylight-balanced, clean natural color. 500T = tungsten-balanced, the most widely used cinema stock in the world. The film behind most modern films shot on celluloid.",
+          "effect": "250D — clean, slightly warm, moderate grain, excellent highlight rolloff. The \"this looks like a proper movie\" baseline. 500T — slightly more grain, beautiful under artificial/mixed light, the specific cinema magic. Warm under tungsten; cool/blue in unfiltered daylight.",
+          "pairs": [
+            "Cinematic compositions, narrative scenes, professional lighting, any genre. \"Shot on 500T\" is powerful shorthand for cinematic quality."
+          ],
+          "conflicts": [
+            "Lo-fi (too polished), vintage/retro (modern stocks), heavily stylized grades (the natural rendering fights extreme manipulation)."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
           "id": "kodachrome",
           "name": "Kodachrome",
           "section": "Slide / Reversal Film",
@@ -2462,6 +2510,54 @@
             "Low light — ISO 125 needs bright conditions",
             "Gritty/raw aesthetic — too refined",
             "Action/movement — slow film + needed exposure = motion blur risk"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "kodak-t-max-100-400",
+          "name": "Kodak T-Max 100/400",
+          "section": "Black and White Film",
+          "group": null,
+          "what": "Modern tabular-grain (T-grain) B&W films. Sharper and finer-grained than traditional Tri-X/HP5. The \"clinical\" B&W option.",
+          "effect": "T-Max 100 — extremely fine grain, sharp, slightly cooler/more neutral tone. T-Max 400 — noticeably finer grain than Tri-X at the same speed. More \"modern\" and less \"characterful.\" Sharper but with less romantic grain texture.",
+          "pairs": [
+            "Fashion B&W, architectural photography, clean modern monochrome, technical work."
+          ],
+          "conflicts": [
+            "Vintage/nostalgic (too modern-feeling), gritty photojournalism (too clean), expressionist grain (too refined)."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "ilford-pan-f-plus-50",
+          "name": "Ilford Pan F Plus 50",
+          "section": "Black and White Film",
+          "group": null,
+          "what": "Ultra-fine grain, ultra-slow (ISO 50) B&W film. The sharpest, most detailed traditional B&W available.",
+          "effect": "Almost grainless at normal print sizes. Extremely fine detail. Smooth, long tonal range. Can feel almost too clean — lacks the \"character\" grain of faster films. The large-format look on 35mm.",
+          "pairs": [
+            "Studio portraiture, still life, architecture, any subject where detail and smoothness matter."
+          ],
+          "conflicts": [
+            "Gritty/street aesthetics, heavy grain, low light (needs lots of light), lo-fi."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "fomapan-100-200-400",
+          "name": "Fomapan 100/200/400",
+          "section": "Black and White Film",
+          "group": null,
+          "what": "Czech-made B&W film by Foma Bohemia. Budget-priced with distinctive character. Pronounced, chunky grain especially at 400.",
+          "effect": "Heavy, clumpy grain (especially 400). Lower resolving power than Ilford/Kodak. Compressed tonal range. The grain has a specific \"clumpy\" quality different from Tri-X or HP5. Feels older, more Eastern European.",
+          "pairs": [
+            "Lo-fi photography, Eastern European aesthetic, street photography, moody/atmospheric work, punk/DIY."
+          ],
+          "conflicts": [
+            "Clean precision, fine art smoothness, commercial polish."
           ],
           "example": null,
           "extras": {}
@@ -2704,105 +2800,9 @@
           "extras": {}
         },
         {
-          "id": "fuji-pro-400h-discontinued",
-          "name": "Fuji Pro 400H (Discontinued)",
-          "section": "Additional Film Stocks",
-          "group": null,
-          "what": "Professional color negative, ISO 400. Discontinued 2021. Legendary in wedding/portrait work. The most mourned discontinued film stock of the digital era.",
-          "effect": "Soft, pastel color rendering. Skin tones lean slightly cool/pink rather than warm (opposite of Portra's warmth). Greens shift toward mint/sage. Highlights are creamy and smooth. Low contrast. Almost \"watercolor\" quality. Fine grain for 400 speed.",
-          "pairs": [
-            "Soft natural light, overcast conditions, pastel environments, bridal/editorial portraiture, garden settings, cool-toned subjects."
-          ],
-          "conflicts": [
-            "High contrast, punchy saturated color, harsh flash, gritty urban."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "kodak-vision3-250d-500t-cinema-stocks",
-          "name": "Kodak Vision3 250D / 500T (Cinema Stocks)",
-          "section": "Additional Film Stocks",
-          "group": null,
-          "what": "Professional motion picture film. 250D = daylight-balanced, clean natural color. 500T = tungsten-balanced, the most widely used cinema stock in the world. The film behind most modern films shot on celluloid.",
-          "effect": "250D — clean, slightly warm, moderate grain, excellent highlight rolloff. The \"this looks like a proper movie\" baseline. 500T — slightly more grain, beautiful under artificial/mixed light, the specific cinema magic. Warm under tungsten; cool/blue in unfiltered daylight.",
-          "pairs": [
-            "Cinematic compositions, narrative scenes, professional lighting, any genre. \"Shot on 500T\" is powerful shorthand for cinematic quality."
-          ],
-          "conflicts": [
-            "Lo-fi (too polished), vintage/retro (modern stocks), heavily stylized grades (the natural rendering fights extreme manipulation)."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "kodak-t-max-100-400",
-          "name": "Kodak T-Max 100/400",
-          "section": "Additional Film Stocks",
-          "group": null,
-          "what": "Modern tabular-grain (T-grain) B&W films. Sharper and finer-grained than traditional Tri-X/HP5. The \"clinical\" B&W option.",
-          "effect": "T-Max 100 — extremely fine grain, sharp, slightly cooler/more neutral tone. T-Max 400 — noticeably finer grain than Tri-X at the same speed. More \"modern\" and less \"characterful.\" Sharper but with less romantic grain texture.",
-          "pairs": [
-            "Fashion B&W, architectural photography, clean modern monochrome, technical work."
-          ],
-          "conflicts": [
-            "Vintage/nostalgic (too modern-feeling), gritty photojournalism (too clean), expressionist grain (too refined)."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "ilford-pan-f-plus-50",
-          "name": "Ilford Pan F Plus 50",
-          "section": "Additional Film Stocks",
-          "group": null,
-          "what": "Ultra-fine grain, ultra-slow (ISO 50) B&W film. The sharpest, most detailed traditional B&W available.",
-          "effect": "Almost grainless at normal print sizes. Extremely fine detail. Smooth, long tonal range. Can feel almost too clean — lacks the \"character\" grain of faster films. The large-format look on 35mm.",
-          "pairs": [
-            "Studio portraiture, still life, architecture, any subject where detail and smoothness matter."
-          ],
-          "conflicts": [
-            "Gritty/street aesthetics, heavy grain, low light (needs lots of light), lo-fi."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "agfa-vista-agfa-color",
-          "name": "Agfa Vista / Agfa Color",
-          "section": "Additional Film Stocks",
-          "group": null,
-          "what": "Budget-to-mid-range European consumer color films. Agfa Vista 200/400 were staples with a distinctive color palette.",
-          "effect": "Slightly muted, earthy. Less saturated than Kodak consumer films. Greens lean olive/muted. Reds go slightly brick. A distinctly \"European\" color quality. Warmer overall but without Kodak's golden warmth.",
-          "pairs": [
-            "European street photography, documentary, autumn/earth-toned scenes, muted vintage aesthetics."
-          ],
-          "conflicts": [
-            "Vivid tropical color, clean modern looks, high-saturation subjects."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "fomapan-100-200-400",
-          "name": "Fomapan 100/200/400",
-          "section": "Additional Film Stocks",
-          "group": null,
-          "what": "Czech-made B&W film by Foma Bohemia. Budget-priced with distinctive character. Pronounced, chunky grain especially at 400.",
-          "effect": "Heavy, clumpy grain (especially 400). Lower resolving power than Ilford/Kodak. Compressed tonal range. The grain has a specific \"clumpy\" quality different from Tri-X or HP5. Feels older, more Eastern European.",
-          "pairs": [
-            "Lo-fi photography, Eastern European aesthetic, street photography, moody/atmospheric work, punk/DIY."
-          ],
-          "conflicts": [
-            "Clean precision, fine art smoothness, commercial polish."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
           "id": "expired-film-look",
           "name": "Expired Film Look",
-          "section": "Additional Film Stocks",
+          "section": "Analog Artifacts",
           "group": null,
           "what": "The specific color shifts and degradation from film aging past its expiration date. Different stocks degrade differently depending on storage.",
           "effect": "Color shifts (often toward magenta, green, or amber). Increased grain. Reduced contrast. Base fog (milky shadows). Unpredictable color casts. Reduced sensitivity. The older and worse the storage, the more extreme the effects.",
@@ -2825,7 +2825,7 @@
         {
           "id": "complementary-grade-combos-beyond-teal-orange",
           "name": "Complementary Grade Combos (Beyond Teal & Orange)",
-          "section": "Additional Grading Techniques",
+          "section": "Color Schemes",
           "note": "Named complementary color grade pairings used in cinema: Each pairing creates a distinct emotional register. Specifying the combination in a prompt is more effective than just \"cinematic color grade.\""
         }
       ],
@@ -2932,6 +2932,113 @@
             "Subject separation via color — everything is the same hue"
           ],
           "example": "Blue monochromatic + nighttime + single cool light source + portrait → face in shades of blue, navy shadows, powder highlights, cold and atmospheric",
+          "extras": {}
+        },
+        {
+          "id": "color-blocking",
+          "name": "Color Blocking",
+          "section": "Color Schemes",
+          "group": null,
+          "what": "Large, flat areas of bold, contrasting solid color. Mondrian in photography. The design principle applied to the whole frame.",
+          "effect": "Graphic, bold, modern, fashion-forward. Strong visual impact. Flattens depth — the bold planes read as design rather than space. Reads as editorial, pop, confident.",
+          "pairs": [
+            "Minimalist composition — clean shapes of color",
+            "Fashion photography — bold clothing against bold backgrounds",
+            "Flat lighting — even illumination lets the color speak",
+            "Pop art — shared bold flat color language",
+            "Complementary or triadic color schemes — maximum contrast"
+          ],
+          "conflicts": [
+            "Photorealism — too graphic and designed",
+            "Moody chiaroscuro — needs even light",
+            "Natural environments — nature doesn't color-block",
+            "Muted/desaturated palettes — needs vivid color"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "amber-steel-blue",
+          "name": "Amber + Steel Blue",
+          "section": "Color Schemes",
+          "group": "complementary-grade-combos-beyond-teal-orange",
+          "what": null,
+          "effect": "warmer, less aggressive. Period dramas. The English Patient.",
+          "pairs": [],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "magenta-green",
+          "name": "Magenta + Green",
+          "section": "Color Schemes",
+          "group": "complementary-grade-combos-beyond-teal-orange",
+          "what": null,
+          "effect": "unsettling, surreal. Horror, sci-fi. Spring Breakers, Refn films.",
+          "pairs": [],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "gold-deep-blue",
+          "name": "Gold + Deep Blue",
+          "section": "Color Schemes",
+          "group": "complementary-grade-combos-beyond-teal-orange",
+          "what": null,
+          "effect": "regal, epic. Fantasy, historical. Gladiator, Lord of the Rings.",
+          "pairs": [],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "teal-pink-magenta",
+          "name": "Teal + Pink/Magenta",
+          "section": "Color Schemes",
+          "group": "complementary-grade-combos-beyond-teal-orange",
+          "what": null,
+          "effect": "vaporwave-adjacent. Drive, Miami Vice.",
+          "pairs": [],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "yellow-green-purple",
+          "name": "Yellow-Green + Purple",
+          "section": "Color Schemes",
+          "group": "complementary-grade-combos-beyond-teal-orange",
+          "what": null,
+          "effect": "toxic, alien. Alien franchise, Annihilation.",
+          "pairs": [],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "copper-slate",
+          "name": "Copper + Slate",
+          "section": "Color Schemes",
+          "group": "complementary-grade-combos-beyond-teal-orange",
+          "what": null,
+          "effect": "industrial, restrained. Sicario, Prisoners.",
+          "pairs": [],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "cream-navy",
+          "name": "Cream + Navy",
+          "section": "Color Schemes",
+          "group": "complementary-grade-combos-beyond-teal-orange",
+          "what": null,
+          "effect": "classic, clean, editorial. Fashion, lifestyle.",
+          "pairs": [],
+          "conflicts": [],
+          "example": null,
           "extras": {}
         },
         {
@@ -3056,6 +3163,94 @@
             "Natural color accuracy — the opposite",
             "Subtle/quiet mood — cross-process is loud",
             "Warm/cozy tones — the color shifts are unpredictable"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "technicolor-three-strip",
+          "name": "Technicolor (Three-Strip)",
+          "section": "Grading Approaches",
+          "group": null,
+          "what": "The specific hyper-saturated color process of Golden Age Hollywood (1930s-1960s). Three strips of film captured red, green, blue separately, producing impossibly rich, slightly artificial color. Wizard of Oz, Singin' in the Rain, Gone with the Wind.",
+          "effect": "Extremely saturated reds and greens. Rich skin tones (slightly ruddy). Deep blacks. A \"painted\" quality to color — vivid but not harsh. Everything looks slightly more real than real. The warmth and richness are distinctive and instantly recognizable as \"old Hollywood color.\"",
+          "pairs": [
+            "Period costume — the era of Technicolor was the era of glamour",
+            "Theatrical lighting — bold production design",
+            "Bold production design — saturated sets and costumes",
+            "Glamour portraiture — the Hollywood look"
+          ],
+          "conflicts": [
+            "Natural/documentary — Technicolor is deliberately artificial",
+            "Desaturated/muted — the opposite approach",
+            "Modern muted grading — Technicolor is vivid",
+            "Gritty realism — too beautiful"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "hdr-tone-mapped-look",
+          "name": "HDR / Tone-Mapped Look",
+          "section": "Grading Approaches",
+          "group": null,
+          "what": "The over-processed look from aggressive tone mapping of HDR bracketed exposures. Equalizes all luminance — shadows and highlights both fully visible. The \"real estate listing photo\" aesthetic.",
+          "effect": "Halos around edges, hyper-detailed textures, flat-feeling despite visible contrast. Slightly surreal — the eye sees detail everywhere simultaneously, which feels unnatural. The specific \"Flickr HDR circa 2010\" quality.",
+          "pairs": [
+            "Architecture/real estate — the native format",
+            "Landscapes (intentional) — dramatic sky + detailed foreground",
+            "Surrealist imagery — the unnatural detail is dreamlike",
+            "Tilt-shift — miniature effect + HDR detail is a combination"
+          ],
+          "conflicts": [
+            "Naturalism — HDR tone mapping is obviously processed",
+            "Portraiture — makes skin look terrible",
+            "Cinematic looks — too flat and detailed",
+            "Elegant/refined aesthetics — too crunchy"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "matte-painting-color",
+          "name": "Matte Painting Color",
+          "section": "Grading Approaches",
+          "group": null,
+          "what": "The color quality of traditional hand-painted matte paintings used in classic film VFX. Slightly simplified value range, paint-like blending, subtly artificial but beautiful. Original Star Wars backgrounds, classic Disney mattes.",
+          "effect": "Slightly hazy atmospheric perspective. Simplified palette compared to reality. Soft edges in distant elements. \"Painted reality\" quality — real enough to believe but with the warmth and simplification of painted work.",
+          "pairs": [
+            "Fantasy landscapes — the epic vista",
+            "Golden hour lighting — warm, atmospheric",
+            "Classic cinema aesthetic — the era of physical matte paintings",
+            "Illustrated realism — the bridge between photo and painting"
+          ],
+          "conflicts": [
+            "Photorealism — the painterly simplification gives it away",
+            "Harsh direct lighting — mattes are atmospheric",
+            "Modern CGI look — different visual quality entirely",
+            "Documentary — too polished and idealized"
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "negative-scan-look",
+          "name": "Negative Scan Look",
+          "section": "Grading Approaches",
+          "group": null,
+          "what": "The specific aesthetic of scanning color negative film, including process artifacts. Orange mask warm cast, lifted blacks, and the character of different scanners.",
+          "effect": "**Frontier scan** — punchier contrast, more saturated, slightly cooler. \"Instagram before Instagram.\" **Noritsu scan** — warmer, softer, more muted contrast. Skin tones warmer and more flattering. Both share: slightly lifted blacks (shadows don't reach true black), organic warmth, slight imperfection.",
+          "pairs": [
+            "Lifestyle/portrait photography — the warm organic quality",
+            "Wedding photography — the romantic warmth",
+            "Street photography — authentic analog feel",
+            "Warm natural light — the scan character amplifies warmth"
+          ],
+          "conflicts": [
+            "Clinical precision — the scan adds character/imperfection",
+            "Digital sharpness — analog scans have inherent softness",
+            "Futuristic aesthetics — too analog and warm",
+            "High contrast B&W — different process entirely"
           ],
           "example": null,
           "extras": {}
@@ -3214,7 +3409,7 @@
         {
           "id": "split-toning",
           "name": "Split Toning",
-          "section": "Additional Grading Techniques",
+          "section": "Tonal Treatments",
           "group": null,
           "what": "Assigning different color hues to highlights and shadows independently. Classic: warm amber highlights + cool blue shadows. A precise tool for mood control.",
           "effect": "Sophisticated, stylized mood without flattening contrast. The color split creates visual temperature tension — warm where light falls, cool where shadow lives. Reads as editorial, polished, cinematic.",
@@ -3231,201 +3426,6 @@
           ],
           "example": null,
           "extras": {}
-        },
-        {
-          "id": "color-blocking",
-          "name": "Color Blocking",
-          "section": "Additional Grading Techniques",
-          "group": null,
-          "what": "Large, flat areas of bold, contrasting solid color. Mondrian in photography. The design principle applied to the whole frame.",
-          "effect": "Graphic, bold, modern, fashion-forward. Strong visual impact. Flattens depth — the bold planes read as design rather than space. Reads as editorial, pop, confident.",
-          "pairs": [
-            "Minimalist composition — clean shapes of color",
-            "Fashion photography — bold clothing against bold backgrounds",
-            "Flat lighting — even illumination lets the color speak",
-            "Pop art — shared bold flat color language",
-            "Complementary or triadic color schemes — maximum contrast"
-          ],
-          "conflicts": [
-            "Photorealism — too graphic and designed",
-            "Moody chiaroscuro — needs even light",
-            "Natural environments — nature doesn't color-block",
-            "Muted/desaturated palettes — needs vivid color"
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "technicolor-three-strip",
-          "name": "Technicolor (Three-Strip)",
-          "section": "Additional Grading Techniques",
-          "group": null,
-          "what": "The specific hyper-saturated color process of Golden Age Hollywood (1930s-1960s). Three strips of film captured red, green, blue separately, producing impossibly rich, slightly artificial color. Wizard of Oz, Singin' in the Rain, Gone with the Wind.",
-          "effect": "Extremely saturated reds and greens. Rich skin tones (slightly ruddy). Deep blacks. A \"painted\" quality to color — vivid but not harsh. Everything looks slightly more real than real. The warmth and richness are distinctive and instantly recognizable as \"old Hollywood color.\"",
-          "pairs": [
-            "Period costume — the era of Technicolor was the era of glamour",
-            "Theatrical lighting — bold production design",
-            "Bold production design — saturated sets and costumes",
-            "Glamour portraiture — the Hollywood look"
-          ],
-          "conflicts": [
-            "Natural/documentary — Technicolor is deliberately artificial",
-            "Desaturated/muted — the opposite approach",
-            "Modern muted grading — Technicolor is vivid",
-            "Gritty realism — too beautiful"
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "hdr-tone-mapped-look",
-          "name": "HDR / Tone-Mapped Look",
-          "section": "Additional Grading Techniques",
-          "group": null,
-          "what": "The over-processed look from aggressive tone mapping of HDR bracketed exposures. Equalizes all luminance — shadows and highlights both fully visible. The \"real estate listing photo\" aesthetic.",
-          "effect": "Halos around edges, hyper-detailed textures, flat-feeling despite visible contrast. Slightly surreal — the eye sees detail everywhere simultaneously, which feels unnatural. The specific \"Flickr HDR circa 2010\" quality.",
-          "pairs": [
-            "Architecture/real estate — the native format",
-            "Landscapes (intentional) — dramatic sky + detailed foreground",
-            "Surrealist imagery — the unnatural detail is dreamlike",
-            "Tilt-shift — miniature effect + HDR detail is a combination"
-          ],
-          "conflicts": [
-            "Naturalism — HDR tone mapping is obviously processed",
-            "Portraiture — makes skin look terrible",
-            "Cinematic looks — too flat and detailed",
-            "Elegant/refined aesthetics — too crunchy"
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "matte-painting-color",
-          "name": "Matte Painting Color",
-          "section": "Additional Grading Techniques",
-          "group": null,
-          "what": "The color quality of traditional hand-painted matte paintings used in classic film VFX. Slightly simplified value range, paint-like blending, subtly artificial but beautiful. Original Star Wars backgrounds, classic Disney mattes.",
-          "effect": "Slightly hazy atmospheric perspective. Simplified palette compared to reality. Soft edges in distant elements. \"Painted reality\" quality — real enough to believe but with the warmth and simplification of painted work.",
-          "pairs": [
-            "Fantasy landscapes — the epic vista",
-            "Golden hour lighting — warm, atmospheric",
-            "Classic cinema aesthetic — the era of physical matte paintings",
-            "Illustrated realism — the bridge between photo and painting"
-          ],
-          "conflicts": [
-            "Photorealism — the painterly simplification gives it away",
-            "Harsh direct lighting — mattes are atmospheric",
-            "Modern CGI look — different visual quality entirely",
-            "Documentary — too polished and idealized"
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "negative-scan-look",
-          "name": "Negative Scan Look",
-          "section": "Additional Grading Techniques",
-          "group": null,
-          "what": "The specific aesthetic of scanning color negative film, including process artifacts. Orange mask warm cast, lifted blacks, and the character of different scanners.",
-          "effect": "**Frontier scan** — punchier contrast, more saturated, slightly cooler. \"Instagram before Instagram.\" **Noritsu scan** — warmer, softer, more muted contrast. Skin tones warmer and more flattering. Both share: slightly lifted blacks (shadows don't reach true black), organic warmth, slight imperfection.",
-          "pairs": [
-            "Lifestyle/portrait photography — the warm organic quality",
-            "Wedding photography — the romantic warmth",
-            "Street photography — authentic analog feel",
-            "Warm natural light — the scan character amplifies warmth"
-          ],
-          "conflicts": [
-            "Clinical precision — the scan adds character/imperfection",
-            "Digital sharpness — analog scans have inherent softness",
-            "Futuristic aesthetics — too analog and warm",
-            "High contrast B&W — different process entirely"
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "amber-steel-blue",
-          "name": "Amber + Steel Blue",
-          "section": "Additional Grading Techniques",
-          "group": "complementary-grade-combos-beyond-teal-orange",
-          "what": null,
-          "effect": "warmer, less aggressive. Period dramas. The English Patient.",
-          "pairs": [],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "magenta-green",
-          "name": "Magenta + Green",
-          "section": "Additional Grading Techniques",
-          "group": "complementary-grade-combos-beyond-teal-orange",
-          "what": null,
-          "effect": "unsettling, surreal. Horror, sci-fi. Spring Breakers, Refn films.",
-          "pairs": [],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "gold-deep-blue",
-          "name": "Gold + Deep Blue",
-          "section": "Additional Grading Techniques",
-          "group": "complementary-grade-combos-beyond-teal-orange",
-          "what": null,
-          "effect": "regal, epic. Fantasy, historical. Gladiator, Lord of the Rings.",
-          "pairs": [],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "teal-pink-magenta",
-          "name": "Teal + Pink/Magenta",
-          "section": "Additional Grading Techniques",
-          "group": "complementary-grade-combos-beyond-teal-orange",
-          "what": null,
-          "effect": "vaporwave-adjacent. Drive, Miami Vice.",
-          "pairs": [],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "yellow-green-purple",
-          "name": "Yellow-Green + Purple",
-          "section": "Additional Grading Techniques",
-          "group": "complementary-grade-combos-beyond-teal-orange",
-          "what": null,
-          "effect": "toxic, alien. Alien franchise, Annihilation.",
-          "pairs": [],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "copper-slate",
-          "name": "Copper + Slate",
-          "section": "Additional Grading Techniques",
-          "group": "complementary-grade-combos-beyond-teal-orange",
-          "what": null,
-          "effect": "industrial, restrained. Sicario, Prisoners.",
-          "pairs": [],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "cream-navy",
-          "name": "Cream + Navy",
-          "section": "Additional Grading Techniques",
-          "group": "complementary-grade-combos-beyond-teal-orange",
-          "what": null,
-          "effect": "classic, clean, editorial. Fashion, lifestyle.",
-          "pairs": [],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
         }
       ]
     },
@@ -3437,19 +3437,19 @@
         {
           "id": "leather-specific-types",
           "name": "Leather (Specific Types)",
-          "section": "Additional Materials",
+          "section": "Organic Textures",
           "note": "Each type reads completely differently. Always specify which — \"leather texture\" alone defaults to generic smooth brown."
         },
         {
           "id": "paper-textures",
           "name": "Paper Textures",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "note": "Each paper type completely changes the mood of anything printed on or placed against it."
         },
         {
           "id": "foil-leaf",
           "name": "Foil / Leaf",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "note": "Gold leaf has organic irregularity; foil is uniform. Both are reflective and luxurious."
         }
       ],
@@ -3584,6 +3584,38 @@
           "extras": {}
         },
         {
+          "id": "iridescent-holographic",
+          "name": "Iridescent / Holographic",
+          "section": "Surface Quality",
+          "group": null,
+          "what": "Surfaces that shift color depending on viewing angle (iridescent: soap bubbles, beetle shells, oil slicks) or display rainbow diffraction patterns (holographic: foil, stickers, packaging).",
+          "effect": "Rainbow color shifts, prismatic reflections, dynamic appearance implying movement even in stills. Reads as futuristic, magical, or precious. Iridescent is organic (pearl, shell); holographic is synthetic (foil, packaging).",
+          "pairs": [
+            "Y2K aesthetic, vaporwave, sci-fi, fashion editorial, dark backgrounds, macro photography."
+          ],
+          "conflicts": [
+            "Muted/earthy palettes, matte textures, vintage aesthetics, warm color grading."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "pearlescent",
+          "name": "Pearlescent",
+          "section": "Surface Quality",
+          "group": null,
+          "what": "Soft lustrous sheen with subtle color shift — like the inside of an oyster shell. Less dramatic than iridescent. Shifts mainly between white and one or two soft colors.",
+          "effect": "Soft glow, elegant, subtle color play, luminous without flashy. Reads as luxury, feminine, delicate.",
+          "pairs": [
+            "Soft lighting, beauty photography, luxury branding, pastel palettes, wedding aesthetics, silk."
+          ],
+          "conflicts": [
+            "Harsh contrast, gritty textures, industrial aesthetics, bold saturated color."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
           "id": "skin",
           "name": "Skin",
           "section": "Organic Textures",
@@ -3688,6 +3720,108 @@
             "Controlled studio work — water is unpredictable and messy"
           ],
           "example": "Wet city street + neon signs + night + CineStill 800T → every light source doubled in puddle reflections, halation halos reflected, wet asphalt becomes a mirror of color",
+          "extras": {}
+        },
+        {
+          "id": "marble-specific-veining-types",
+          "name": "Marble (Specific Veining Types)",
+          "section": "Organic Textures",
+          "group": null,
+          "what": "The vein patterns in marble — each type has dramatically different character: **Carrara** — grey veining on white, subtle, classic Italian **Calacatta** — bold gold/grey veining on white, dramatic, expensive-looking **Nero Marquina** — white veining on black, dramatic **Verde Guatemala** — white veining on deep green **Rose marble** — warm pink with grey/white veining",
+          "effect": "Organic flowing lines, luxury, classical. Each type sets a different mood — Calacatta is bold, Carrara is subtle, Nero Marquina is dramatic.",
+          "pairs": [
+            "Luxury branding, classical architecture, flat lay photography, gold accents, minimalist design."
+          ],
+          "conflicts": [
+            "Industrial/tech (usually), rustic/rough textures, busy patterns competing with the veining."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "denim",
+          "name": "Denim",
+          "section": "Organic Textures",
+          "group": null,
+          "what": "Woven cotton twill with characteristic diagonal ribbing. Varies from raw/rigid (dark, uniform indigo) to heavily distressed (faded, torn, whiskers).",
+          "effect": "Raw denim reads as sharp/intentional; distressed reads as lived-in/rebellious. Casual, American, workwear heritage. The texture is universally recognizable.",
+          "pairs": [
+            "Americana, street photography, fashion editorial, warm natural light, leather and copper accents."
+          ],
+          "conflicts": [
+            "Formal/luxury (unless deliberately subverted), high-tech surfaces, very polished textures."
+          ],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "patent-leather",
+          "name": "Patent leather",
+          "section": "Organic Textures",
+          "group": "leather-specific-types",
+          "what": null,
+          "effect": "high-gloss lacquered mirror finish. Formal, fetish, fashion. Catches highlights sharply.",
+          "pairs": [
+            "Warm lighting, earth tones, period settings, close-up detail shots."
+          ],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "suede",
+          "name": "Suede",
+          "section": "Organic Textures",
+          "group": "leather-specific-types",
+          "what": null,
+          "effect": "napped, soft, matte. Warm, tactile, casual luxury. Absorbs light.",
+          "pairs": [
+            "Warm lighting, earth tones, period settings, close-up detail shots."
+          ],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "distressed-leather",
+          "name": "Distressed leather",
+          "section": "Organic Textures",
+          "group": "leather-specific-types",
+          "what": null,
+          "effect": "worn, cracked, faded. Rugged, vintage, authentic. Shows use and history.",
+          "pairs": [
+            "Warm lighting, earth tones, period settings, close-up detail shots."
+          ],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "tooled-embossed",
+          "name": "Tooled/Embossed",
+          "section": "Organic Textures",
+          "group": "leather-specific-types",
+          "what": null,
+          "effect": "stamped decorative patterns. Western, artisan, ornate.",
+          "pairs": [
+            "Warm lighting, earth tones, period settings, close-up detail shots."
+          ],
+          "conflicts": [],
+          "example": null,
+          "extras": {}
+        },
+        {
+          "id": "vegetable-tanned",
+          "name": "Vegetable-tanned",
+          "section": "Organic Textures",
+          "group": "leather-specific-types",
+          "what": null,
+          "effect": "natural tan, ages/patinas over time. Craft, heritage, honest.",
+          "pairs": [
+            "Warm lighting, earth tones, period settings, close-up detail shots."
+          ],
+          "conflicts": [],
+          "example": null,
           "extras": {}
         },
         {
@@ -3799,41 +3933,9 @@
           "extras": {}
         },
         {
-          "id": "iridescent-holographic",
-          "name": "Iridescent / Holographic",
-          "section": "Additional Materials",
-          "group": null,
-          "what": "Surfaces that shift color depending on viewing angle (iridescent: soap bubbles, beetle shells, oil slicks) or display rainbow diffraction patterns (holographic: foil, stickers, packaging).",
-          "effect": "Rainbow color shifts, prismatic reflections, dynamic appearance implying movement even in stills. Reads as futuristic, magical, or precious. Iridescent is organic (pearl, shell); holographic is synthetic (foil, packaging).",
-          "pairs": [
-            "Y2K aesthetic, vaporwave, sci-fi, fashion editorial, dark backgrounds, macro photography."
-          ],
-          "conflicts": [
-            "Muted/earthy palettes, matte textures, vintage aesthetics, warm color grading."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "pearlescent",
-          "name": "Pearlescent",
-          "section": "Additional Materials",
-          "group": null,
-          "what": "Soft lustrous sheen with subtle color shift — like the inside of an oyster shell. Less dramatic than iridescent. Shifts mainly between white and one or two soft colors.",
-          "effect": "Soft glow, elegant, subtle color play, luminous without flashy. Reads as luxury, feminine, delicate.",
-          "pairs": [
-            "Soft lighting, beauty photography, luxury branding, pastel palettes, wedding aesthetics, silk."
-          ],
-          "conflicts": [
-            "Harsh contrast, gritty textures, industrial aesthetics, bold saturated color."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
           "id": "brushed-metal",
           "name": "Brushed Metal",
-          "section": "Additional Materials",
+          "section": "Synthetic / Manufactured Textures",
           "group": null,
           "what": "Metal finished with fine parallel abrasion lines, creating directional reflection rather than mirror reflection. Common on appliances, watches, industrial design.",
           "effect": "Soft directional highlight streaks. Matte-adjacent but clearly metallic. Industrial sophistication. Visible grain and directionality in the surface. Reads as modern, industrial, premium.",
@@ -3849,7 +3951,7 @@
         {
           "id": "carbon-fiber",
           "name": "Carbon Fiber",
-          "section": "Additional Materials",
+          "section": "Synthetic / Manufactured Textures",
           "group": null,
           "what": "Woven carbon filament composite with distinctive visible twill weave pattern. Used in automotive, aerospace, luxury goods.",
           "effect": "Dark, almost black with subtle sheen. Visible geometric weave pattern catches light. Reads as high-tech, performance, expensive. The weave creates a subtle moiré-like texture.",
@@ -3863,111 +3965,9 @@
           "extras": {}
         },
         {
-          "id": "marble-specific-veining-types",
-          "name": "Marble (Specific Veining Types)",
-          "section": "Additional Materials",
-          "group": null,
-          "what": "The vein patterns in marble — each type has dramatically different character: **Carrara** — grey veining on white, subtle, classic Italian **Calacatta** — bold gold/grey veining on white, dramatic, expensive-looking **Nero Marquina** — white veining on black, dramatic **Verde Guatemala** — white veining on deep green **Rose marble** — warm pink with grey/white veining",
-          "effect": "Organic flowing lines, luxury, classical. Each type sets a different mood — Calacatta is bold, Carrara is subtle, Nero Marquina is dramatic.",
-          "pairs": [
-            "Luxury branding, classical architecture, flat lay photography, gold accents, minimalist design."
-          ],
-          "conflicts": [
-            "Industrial/tech (usually), rustic/rough textures, busy patterns competing with the veining."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "patent-leather",
-          "name": "Patent leather",
-          "section": "Additional Materials",
-          "group": "leather-specific-types",
-          "what": null,
-          "effect": "high-gloss lacquered mirror finish. Formal, fetish, fashion. Catches highlights sharply.",
-          "pairs": [
-            "Warm lighting, earth tones, period settings, close-up detail shots."
-          ],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "suede",
-          "name": "Suede",
-          "section": "Additional Materials",
-          "group": "leather-specific-types",
-          "what": null,
-          "effect": "napped, soft, matte. Warm, tactile, casual luxury. Absorbs light.",
-          "pairs": [
-            "Warm lighting, earth tones, period settings, close-up detail shots."
-          ],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "distressed-leather",
-          "name": "Distressed leather",
-          "section": "Additional Materials",
-          "group": "leather-specific-types",
-          "what": null,
-          "effect": "worn, cracked, faded. Rugged, vintage, authentic. Shows use and history.",
-          "pairs": [
-            "Warm lighting, earth tones, period settings, close-up detail shots."
-          ],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "tooled-embossed",
-          "name": "Tooled/Embossed",
-          "section": "Additional Materials",
-          "group": "leather-specific-types",
-          "what": null,
-          "effect": "stamped decorative patterns. Western, artisan, ornate.",
-          "pairs": [
-            "Warm lighting, earth tones, period settings, close-up detail shots."
-          ],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "vegetable-tanned",
-          "name": "Vegetable-tanned",
-          "section": "Additional Materials",
-          "group": "leather-specific-types",
-          "what": null,
-          "effect": "natural tan, ages/patinas over time. Craft, heritage, honest.",
-          "pairs": [
-            "Warm lighting, earth tones, period settings, close-up detail shots."
-          ],
-          "conflicts": [],
-          "example": null,
-          "extras": {}
-        },
-        {
-          "id": "denim",
-          "name": "Denim",
-          "section": "Additional Materials",
-          "group": null,
-          "what": "Woven cotton twill with characteristic diagonal ribbing. Varies from raw/rigid (dark, uniform indigo) to heavily distressed (faded, torn, whiskers).",
-          "effect": "Raw denim reads as sharp/intentional; distressed reads as lived-in/rebellious. Casual, American, workwear heritage. The texture is universally recognizable.",
-          "pairs": [
-            "Americana, street photography, fashion editorial, warm natural light, leather and copper accents."
-          ],
-          "conflicts": [
-            "Formal/luxury (unless deliberately subverted), high-tech surfaces, very polished textures."
-          ],
-          "example": null,
-          "extras": {}
-        },
-        {
           "id": "ceramic-porcelain",
           "name": "Ceramic / Porcelain",
-          "section": "Additional Materials",
+          "section": "Synthetic / Manufactured Textures",
           "group": null,
           "what": "Fired clay materials ranging from rough stoneware to ultra-smooth porcelain. **Ceramic** — handmade, warm, slightly imperfect. **Porcelain** — refined, cool, elegant, sometimes translucent. Glazed adds shine; unglazed (bisque) is matte and chalky.",
           "effect": "Ceramic reads as artisan, wabi-sabi, craft. Porcelain reads as pristine, cool, luxury. The spectrum from rough to refined spans the entire material.",
@@ -3983,7 +3983,7 @@
         {
           "id": "kraft",
           "name": "Kraft",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "paper-textures",
           "what": null,
           "effect": "brown, unbleached, rough. Eco, packaging, rustic, DIY. Visible fiber.",
@@ -3999,7 +3999,7 @@
         {
           "id": "vellum",
           "name": "Vellum",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "paper-textures",
           "what": null,
           "effect": "smooth, translucent, slightly waxy. Classical, archival, precious.",
@@ -4015,7 +4015,7 @@
         {
           "id": "handmade-deckle-edge",
           "name": "Handmade / Deckle edge",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "paper-textures",
           "what": null,
           "effect": "irregular edges, visible fiber, uneven surface. Artisan, letterpress, fine art.",
@@ -4031,7 +4031,7 @@
         {
           "id": "japanese-washi",
           "name": "Japanese washi",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "paper-textures",
           "what": null,
           "effect": "translucent, fibrous, delicate. Long visible fibers. Japanese aesthetic, meditation, light-filtering.",
@@ -4047,7 +4047,7 @@
         {
           "id": "cotton-rag",
           "name": "Cotton rag",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "paper-textures",
           "what": null,
           "effect": "thick, textured, archival. Fine art, printmaking, photography printing.",
@@ -4063,7 +4063,7 @@
         {
           "id": "gold-leaf",
           "name": "Gold leaf",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "foil-leaf",
           "what": null,
           "effect": "ultra-thin hammered gold, slightly irregular with cracks and overlap seams. Warm, rich, classical luxury.",
@@ -4079,7 +4079,7 @@
         {
           "id": "silver-leaf",
           "name": "Silver leaf",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "foil-leaf",
           "what": null,
           "effect": "cooler tone, tarnishes darker over time.",
@@ -4095,7 +4095,7 @@
         {
           "id": "metallic-foil-hot-stamp",
           "name": "Metallic foil (hot stamp)",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "foil-leaf",
           "what": null,
           "effect": "machine-applied, more uniform. Modern luxury, packaging, editorial.",
@@ -4111,7 +4111,7 @@
         {
           "id": "copper-leaf",
           "name": "Copper leaf",
-          "section": "Additional Materials",
+          "section": "Paper & Foil",
           "group": "foil-leaf",
           "what": null,
           "effect": "warm, shifts to verdigris patina. Craft, steampunk, industrial warmth.",
