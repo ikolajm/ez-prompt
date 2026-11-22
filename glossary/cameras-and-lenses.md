@@ -185,6 +185,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: 35mm + f/8 + street scene + hard midday sun → deep focus, everything sharp foreground to background, expanded spatial relationships, documentary immediacy
 
+**Prompt cues**: wide-angle shot; deep expanded space; near objects large, far objects small; stretched distortion at the frame edges
+
 ---
 
 ### Normal (40-60mm)
@@ -224,6 +226,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Ultra-wide establishing shots — opposite intent
 
 **Example combination**: 85mm f/1.4 + Rembrandt lighting + Kodak Portra 400 + wide open → warm, intimate portrait, one eye tack sharp, background dissolved into creamy warm bokeh, dimensional skin tones
+
+**Prompt cues**: telephoto compression; shallow depth of field; background melted into soft blur
 
 ---
 

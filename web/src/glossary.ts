@@ -10,6 +10,8 @@ export interface Term {
   pairs: string[]
   conflicts: string[]
   example: string | null
+  cues: string[]
+  covers: string[]
   extras: Record<string, string>
 }
 
@@ -23,6 +25,7 @@ export interface Group {
 export interface Dimension {
   id: string
   label: string
+  part: string
   source: string
   groups: Group[]
   terms: Term[]

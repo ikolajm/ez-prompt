@@ -223,6 +223,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - Low-poly, toon, or abstract work — opposite intent
 - Speed — photorealism requires computational time
 
+**Prompt cues**: photorealistic 3D render; physically accurate light and reflections; flawless clean surfaces; soft accurate contact shadows
+
 ---
 
 ### Clay Render
@@ -244,6 +246,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - Vivid/colorful palettes — everything is gray
 
 **Example combination**: Clay render + soft directional light + architectural model + ambient occlusion → pure form study, every surface matte gray, shadows defining depth and overlap, clean and sculptural
+
+**Prompt cues**: 3D clay render; uniform matte grey material; untextured sculpted forms; soft shadows in every crevice
 
 ---
 
@@ -288,6 +292,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - High-detail/macro — low poly has no fine detail to zoom into
 
 **Example combination**: Low poly landscape + soft pastel colors + isometric camera + warm lighting → miniature geometric world, faceted trees and mountains, soft gradients across flat surfaces, cozy indie aesthetic
+
+**Prompt cues**: low-poly 3D render; flat-shaded triangular facets; simple geometric forms; soft light gradients across facets
 
 ---
 
@@ -454,6 +460,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - First-person perspective — the overhead view is essential
 
 **Example combination**: Diorama + miniature Japanese garden + slight overhead angle + selective focus + warm lighting → tiny perfect world, model-scale detail, visible edges, precious and contained
+
+**Prompt cues**: miniature diorama; the whole scene at tiny model scale; narrow band of sharp focus; tilt-shift blur at top and bottom
 
 ---
 

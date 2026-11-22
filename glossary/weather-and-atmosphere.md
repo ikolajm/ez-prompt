@@ -236,6 +236,8 @@ Reverse-engineering: start from the emotion, derive the visual recipe.
 ### Melancholic
 **Visual recipe**: Desaturated palette, cool blue/gray tones, overcast or blue hour light, negative space, isolated subject, shallow DOF (subject sharp, world blurred), slight film grain, muted color, long shadows or flat light.
 
+**Prompt cues**: melancholic atmosphere; muted desaturated cool palette; flat overcast light; empty negative space around the subject
+
 ### Energetic
 **Visual recipe**: High saturation, warm or vivid complementary colors, diagonal composition, tight crop, direct flash or hard light, motion blur or speed lines, low angle (power), wide angle (distortion/dynamism).
 

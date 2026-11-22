@@ -101,6 +101,31 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 ---
 
+### Stylized CG Animation
+
+**What it is**: The look of contemporary 3D animated features: characters with caricatured proportions rendered with physically based light and materials. Pixar, DreamWorks, Illumination and Sony Pictures Animation set the conventions.
+
+**Visual effect**: Rounded, appealing characters with oversized heads and eyes, simplified noses and hands. Smooth skin with a soft translucent glow where light passes through ears and fingers. Materials read true — cloth folds, individual hair strands, glossy eyes with sharp catchlights — while the shapes stay exaggerated. Warm soft key light with a bright rim, gentle bounce fill, saturated but harmonized color. Backgrounds slightly softened behind the character. Reads as polished, friendly, family film.
+
+**Pairs well with**:
+- Soft key plus rim light — the feature-animation lighting setup
+- Shallow depth of field — the background softened behind the character
+- Warm saturated palettes — harmonized, never garish
+- Medium close-ups — room for the expressive face
+- Whimsical or heartfelt subjects — the natural territory
+
+**Conflicts with**:
+- Gritty realism and heavy film grain — the CG finish is clean
+- Harsh on-camera flash — flattens the sculpted lighting
+- Realistic proportions — the caricature is the point
+- Flat 2D or cel shading — a different dimension
+
+**Example combination**: Stylized CG animation + small child in a cluttered workshop + medium close-up + warm key with rim light + shallow depth of field → polished family-film charm, oversized eyes with bright catchlights, soft translucent skin, warm glow
+
+**Prompt cues**: stylized 3D animated film still; rounded caricatured shapes with oversized eyes; soft translucent glowing skin; polished clean CG finish
+
+---
+
 ### Spider-Verse / Hybrid
 
 **What it is**: The animation revolution of Spider-Man: Into the Spider-Verse (2018) — combining 3D CG with hand-drawn techniques, comic book elements, and variable frame rates. Each character can have a different art style. Ben-Day dots, ink lines, painted textures layered over 3D models. Continued in TMNT: Mutant Mayhem, Puss in Boots: The Last Wish.
@@ -148,6 +173,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 - Fast/fluid action — the frame rate limits smooth movement
 
 **Example combination**: Stop motion + clay character + miniature set + warm lighting + fabric textures → tangible, handcrafted, slightly uncanny, every surface real and touchable, Laika-quality craft
+
+**Prompt cues**: stop-motion animation still; handcrafted miniature scale; real fabric, wood and clay textures; tiny imperfections on every surface
 
 ---
 
@@ -327,6 +354,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 **Example combination**: Claymation + character with visible fingerprints in clay + bead eyes + miniature kitchen set + warm lighting → Wallace & Gromit charm, handmade, every surface real, slightly lumpy perfection
 
+**Prompt cues**: claymation still; hand-molded plasticine with visible thumbprints; soft rounded lumpy forms; rich saturated clay colors
+
 ---
 
 ### Puppetry (Felt & Foam)
@@ -349,6 +378,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 - Low-key noir lighting — fights the bright TV look, though dark comedy uses it on purpose
 
 **Example combination**: Felt puppet + kitchen counter set + waist-up framing + bright studio lighting + saturated colors → children's-TV warmth, fuzzy fleece, hinged mouth mid-speech, performer hidden below the counter
+
+**Prompt cues**: felt and foam puppet; fuzzy fleece fabric with visible seams; wide hinged puppet mouth; round half-sphere eyes
 
 ---
 

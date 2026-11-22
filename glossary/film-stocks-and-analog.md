@@ -50,6 +50,8 @@ Color negative film produces a negative image that is printed or scanned. The do
 
 **Example combination**: Portra 400 + overexposed +1 stop + golden hour backlight + 35mm → warm, dreamy, grain visible but gentle, blown highlights with golden glow, the definitive "film look"
 
+**Prompt cues**: warm natural color film photograph; soft pastel highlights; fine film grain; true-to-life skin tones
+
 ---
 
 ### Kodak Portra 800
@@ -255,6 +257,8 @@ Slide film (transparency, reversal) produces a positive image directly on the fi
 - Delicate/ethereal mood — Tri-X is gritty and present
 
 **Example combination**: Tri-X 400 pushed to 800 + 28mm + street scene + hard light → chunky grain, deep blacks, bright highlights, photojournalistic urgency, classic documentary energy
+
+**Prompt cues**: black and white film photograph; pronounced gritty film grain; deep blacks and rich midtones; high contrast
 
 ---
 
