@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import './app.css'
 import { Button } from './components/loom/button.tsx'
-import { type Glossary, loadGlossary, sections } from './glossary.ts'
+import { type Dimension, type Glossary, loadGlossary, sections } from './glossary.ts'
 import { GlossaryTable } from './GlossaryTable.tsx'
 import { lines, type Sheet, toggle as toggleSheet } from './sheet.ts'
 import { SpecSheet } from './SpecSheet.tsx'
@@ -44,54 +44,71 @@ export default function App() {
     setExpanded(next)
   }
 
+  const parts: [string, Dimension[]][] = []
+  for (const d of dimensions) {
+    const last = parts.at(-1)
+    if (last && last[0] === d.part) last[1].push(d)
+    else parts.push([d.part, [d]])
+  }
+
   return (
     <div className="app">
       <nav className="rail" aria-label="Glossary">
         <p className="rail__title text-title-sm">ez-prompt</p>
-        <ul className="rail__list">
-          {dimensions.map((d) => {
-            const current = d.id === dimension.id
-            const names = sections(d.terms).map(([name]) => name)
-            const leaf = names.length === 1
-            const isOpen = !leaf && open.has(d.id)
-            const listId = `sections-${d.id}`
-            return (
-              <li key={d.id}>
-                {/* A dimension with one section is that section; one with several only opens and closes. */}
-                <Button
-                  type="button"
-                  variant="ghost"
-                  color="inherit"
-                  className="rail__dimension"
-                  aria-expanded={leaf ? undefined : isOpen}
-                  aria-controls={leaf ? undefined : listId}
-                  aria-current={leaf && current ? 'true' : undefined}
-                  data-active={(!leaf && current) || undefined}
-                  trailingIcon={leaf ? undefined : <ChevronDown className="chevron" aria-hidden="true" />}
-                  onClick={() => (leaf ? setPlace({ dimension: d.id, section: names[0] }) : toggle(d.id))}
-                >
-                  {d.label}
-                </Button>
-                {isOpen && (
-                  <ul id={listId} className="rail__sections">
-                    {names.map((name) => (
-                      <li key={name}>
-                        <button
-                          type="button"
-                          className="rail__section interactive text-body-sm"
-                          aria-current={current && name === section ? 'true' : undefined}
-                          onClick={() => setPlace({ dimension: d.id, section: name })}
-                        >
-                          {name}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            )
-          })}
-        </ul>
+        {parts.map(([part, keys]) => (
+          <div key={part} className="rail__part">
+            {/* A part holding one key is that key, so it takes no heading of its own. */}
+            {keys.length > 1 && (
+              <p className="rail__part-label text-label-md" id={`part-${part}`}>
+                {part.charAt(0).toUpperCase() + part.slice(1)}
+              </p>
+            )}
+            <ul className="rail__list" aria-labelledby={keys.length > 1 ? `part-${part}` : undefined}>
+              {keys.map((d) => {
+                const current = d.id === dimension.id
+                const names = sections(d.terms).map(([name]) => name)
+                const leaf = names.length === 1
+                const isOpen = !leaf && open.has(d.id)
+                const listId = `sections-${d.id}`
+                return (
+                  <li key={d.id}>
+                    {/* A dimension with one section is that section; one with several only opens and closes. */}
+                    <Button
+                      type="button"
+                      variant="ghost"
+                      color="inherit"
+                      className="rail__dimension"
+                      aria-expanded={leaf ? undefined : isOpen}
+                      aria-controls={leaf ? undefined : listId}
+                      aria-current={leaf && current ? 'true' : undefined}
+                      data-active={(!leaf && current) || undefined}
+                      trailingIcon={leaf ? undefined : <ChevronDown className="chevron" aria-hidden="true" />}
+                      onClick={() => (leaf ? setPlace({ dimension: d.id, section: names[0] }) : toggle(d.id))}
+                    >
+                      {d.label}
+                    </Button>
+                    {isOpen && (
+                      <ul id={listId} className="rail__sections">
+                        {names.map((name) => (
+                          <li key={name}>
+                            <button
+                              type="button"
+                              className="rail__section interactive text-body-sm"
+                              aria-current={current && name === section ? 'true' : undefined}
+                              onClick={() => setPlace({ dimension: d.id, section: name })}
+                            >
+                              {name}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        ))}
       </nav>
       <main className="main">
         <header className="main__header">

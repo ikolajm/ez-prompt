@@ -66,7 +66,22 @@
   gap: var(--component-compact-gap);
 }
 
-/* One solid rail down the whole list. Every item sits flush against it, rounded on the
+/* One part per CTLT group, its keys under a label; the rail breaks between parts. */
+.rail__part + .rail__part {
+  margin-top: var(--group-gap);
+}
+
+/* Caps need tracking and Loom ships no token for it, so the spacing is a literal. */
+.rail__part-label {
+  margin: 0 0 var(--component-compact-gap);
+  padding-inline: var(--space-4);
+  color: var(--on-surface-variant);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* One solid rail down each part's list. Every item sits flush against it, rounded on the
  * right only; depth is the indent, and the current item marks the rail in primary. */
 .rail__list {
   border-left: var(--bw-1) solid var(--outline-subtle);
@@ -345,8 +360,13 @@
     padding-block: var(--group-y-padding);
   }
 
-  .rail__title {
+  .rail__title,
+  .rail__part-label {
     display: none;
+  }
+
+  .rail__part + .rail__part {
+    margin-top: var(--component-compact-gap);
   }
 
   .rail__list {
