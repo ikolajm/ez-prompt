@@ -91,7 +91,11 @@
             "Realistic materials — everything is flat color"
           ],
           "example": "Cel-shaded + bold primary colors + black outlines + dynamic pose → comic book/anime aesthetic, flat color bands, hard shadow edges, graphic energy",
-          "cues": [],
+          "cues": [
+            "cel-shaded 3D render",
+            "flat color with hard-edged shadows",
+            "bold black outlines"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -144,7 +148,11 @@
             "Solid/heavy visual weight — wireframe is transparent and skeletal"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "3D wireframe render",
+            "visible polygon mesh lines",
+            "transparent see-through geometry"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -168,7 +176,11 @@
             "Fine detail — the minimum unit is one cube"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "voxel art",
+            "built entirely from small uniform cubes",
+            "blocky stepped surfaces"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -193,7 +205,12 @@
             "Minimalism — glitch adds chaos"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "glitch art",
+            "RGB channel splitting",
+            "corrupted pixel smears and displaced blocks",
+            "datamoshed distortion"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -219,7 +236,12 @@
             "Modern PBR materials — wrong era entirely"
           ],
           "example": "PS1 aesthetic + empty school hallway + warping textures + vertex jitter + fog + low resolution → unsettling retro horror, textures swimming, geometry unstable, liminal and nostalgic",
-          "cues": [],
+          "cues": [
+            "1990s video game 3D graphics",
+            "low-resolution pixelated textures",
+            "jagged low-poly geometry",
+            "distance fog"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -244,7 +266,11 @@
             "Organic softness — the grid is rigid and mechanical"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "ASCII art",
+            "image built from typed text characters",
+            "monospaced character grid"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -270,7 +296,11 @@
             "Minimal/static compositions — animation implies movement"
           ],
           "example": "Cel animation style + painted watercolor background + flat-colored character + warm palette + soft lighting → Disney-esque quality, character pops against detailed painted environment, organic and alive",
-          "cues": [],
+          "cues": [
+            "hand-drawn cel animation still",
+            "clean inked outlines with flat colors",
+            "painted watercolor background"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -297,7 +327,12 @@
             "Muted/desaturated palettes — anime tends vivid (though exceptions exist in seinen)"
           ],
           "example": "Anime style + dramatic lighting + wind-blown hair + speed lines + vivid color → dynamic, emotionally intense, sharp highlights on hair, large eyes catching light, cinematic action energy",
-          "cues": [],
+          "cues": [
+            "anime style",
+            "large expressive eyes",
+            "hair in sharp color blocks with highlights",
+            "clean cel shading"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -385,7 +420,11 @@
             "Traditional animation principles (squash/stretch) — rotoscope follows real physics"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "rotoscoped animation",
+            "illustrated outlines traced over realistic motion",
+            "flat colors over lifelike proportions"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -411,7 +450,12 @@
             "Modern CG polish — the opposite aesthetic"
           ],
           "example": "Pixel art + 16-color palette + isometric perspective + dithered shadows + game environment → retro 16-bit aesthetic, every pixel placed, constrained palette, charming and nostalgic",
-          "cues": [],
+          "cues": [
+            "pixel art",
+            "visible square pixel grid",
+            "limited color palette",
+            "dithered shading"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -437,7 +481,12 @@
             "Naturalistic movement — rubber hose defies physics joyfully"
           ],
           "example": "Rubber hose style + 1930s character + pie-cut eyes + bouncing to music + black and white + film grain → Fleischer Studios energy, everything dancing, surreal backgrounds, vintage cartoon charm",
-          "cues": [],
+          "cues": [
+            "1930s rubber hose cartoon",
+            "bendy noodle-like limbs",
+            "pie-cut eyes",
+            "black and white with film scratches"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -463,7 +512,12 @@
             "Fluid full animation — UPA is economical by design"
           ],
           "example": "UPA style + angular character + flat bold colors + abstract mid-century background + limited detail → Saul Bass energy, geometric figures, strong negative space, 1950s graphic design as animation",
-          "cues": [],
+          "cues": [
+            "1950s limited animation style",
+            "flat geometric shapes",
+            "bold flat color fields",
+            "abstract minimal backgrounds"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -481,7 +535,12 @@
             "Gritty/dark styles, military, industrial, muted palettes."
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "shoujo manga style",
+            "huge sparkling eyes",
+            "flowing hair",
+            "pastel colors with floating sparkles"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -499,7 +558,13 @@
             "Cute/pastel aesthetics, shoujo sparkles, bright cheerful palettes."
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "seinen manga style",
+            "realistic proportions",
+            "heavy crosshatched shading",
+            "gritty detailed linework",
+            "dark moody palette"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -584,7 +649,12 @@
             "Smooth motion — the jerkiness is inherent"
           ],
           "example": "Paper cutout + construction paper texture + flat characters with jointed limbs + layered backgrounds → South Park simplicity, handmade charm, geometric shapes, deliberately limited",
-          "cues": [],
+          "cues": [
+            "paper cutout animation",
+            "flat construction paper pieces",
+            "visible joints at the limbs",
+            "layered flat planes with drop shadows"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -609,7 +679,11 @@
             "Shoujo anime — needs visible faces and eyes for emotion"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "silhouette animation",
+            "pure black cut-paper shapes",
+            "richly colored backdrop"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -634,7 +708,11 @@
             "Heavy shadow/contrast — the style minimizes tonal variation"
           ],
           "example": "Ligne claire + urban street scene + flat color + uniform outlines + detailed architecture → Tintin-esque clarity, buildings precisely rendered, characters simplified, clean and readable",
-          "cues": [],
+          "cues": [
+            "ligne claire comic style",
+            "clean uniform black outlines",
+            "flat color with no shading"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -660,7 +738,11 @@
             "Digital cleanness — woodcut is inherently textured and handmade"
           ],
           "example": "Woodcut style + bold black and white + landscape + visible wood grain texture + simple composition → dramatic contrast, handmade feel, graphic simplicity, folk art character",
-          "cues": [],
+          "cues": [
+            "woodcut print",
+            "bold black and white carved lines",
+            "visible gouge marks and grain texture"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -783,7 +865,12 @@
             "Muted/desaturated color — the prints are vivid"
           ],
           "example": "Ukiyo-e style + crashing wave + bold outlines + flat blue and white + asymmetric composition → Hokusai's Great Wave energy, flat color bounded by bold lines, decorative pattern, graphic power",
-          "cues": [],
+          "cues": [
+            "traditional woodblock print",
+            "flat color inside bold black outlines",
+            "decorative patterned surfaces",
+            "asymmetric cropped composition"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -809,7 +896,12 @@
             "Emotional complexity — the simplification limits expression"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "flat vector illustration",
+            "clean geometric shapes",
+            "solid flat colors",
+            "smooth perfect lines"
+          ],
           "covers": [
             "Flash / Web Animation"
           ],
@@ -866,7 +958,11 @@
             "Hand-crafted authenticity — the medium is inherently digital"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "digital painting",
+            "smooth blended brushwork",
+            "polished cinematic rendering"
+          ],
           "covers": [
             "Concept Art"
           ],
@@ -894,7 +990,12 @@
             "Large editions — risograph is small-batch by nature"
           ],
           "example": "Risograph + two colors (fluorescent pink + dark blue) + slight misregistration + flat graphic illustration → layered spot colors overlapping to create purple where they meet, grainy ink texture, indie zine energy",
-          "cues": [],
+          "cues": [
+            "risograph print",
+            "limited overlapping ink colors",
+            "misregistered color layers",
+            "grainy speckled ink texture"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -920,7 +1021,11 @@
             "Minimal compositions — collage tends busy"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "mixed media collage",
+            "cut and torn paper pieces",
+            "clashing textures and scales layered together"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1005,7 +1110,12 @@
             "Digital cleanness — the medium is maximally physical"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "soft pastel drawing",
+            "powdery chalky strokes",
+            "velvety saturated color",
+            "toned paper showing through"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1030,7 +1140,12 @@
             "Loose/gestural marks — the medium is precise"
           ],
           "example": "Etching + architectural interior + fine crosshatching + warm sepia paper → Piranesi energy, obsessive line detail, tonal depth from hatching density",
-          "cues": [],
+          "cues": [
+            "etching",
+            "fine precise engraved lines",
+            "tone built from hatching and crosshatching",
+            "warm plate tone"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1055,7 +1170,11 @@
             "Loose/gestural work — scratchboard rewards patience"
           ],
           "example": "Scratchboard + owl portrait + fine white lines on black + detailed feather texture → individual feathers scratched in, dramatic, editorial wildlife quality",
-          "cues": [],
+          "cues": [
+            "scratchboard illustration",
+            "fine white lines scratched from black",
+            "stark black and white"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1080,7 +1199,11 @@
             "Speed — both techniques are painstaking"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "stippled illustration",
+            "tone built entirely from dots",
+            "dense dot shading"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1103,7 +1226,11 @@
             "Photorealism — too graphic and constructed"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "pen and ink crosshatching",
+            "tone from dense intersecting lines",
+            "fine linework"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1129,7 +1256,12 @@
             "Loose/spontaneous marks — the leading is structural"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "stained glass style",
+            "glowing jewel-toned color cells",
+            "thick black dividing lines",
+            "backlit luminous color"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1153,7 +1285,11 @@
             "Texture within shapes — paper is uniform"
           ],
           "example": "Paper cut + layered birds and flowers + subtle shadows between layers + limited palette → Matisse cutout energy, bold silhouettes, visible depth, handmade craft",
-          "cues": [],
+          "cues": [
+            "layered paper cut art",
+            "flat cut-paper shapes with crisp edges",
+            "soft shadows between paper layers"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1179,7 +1315,12 @@
             "Photorealism — exaggerated by design"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "comic book art",
+            "heavy black inks with bold outlines",
+            "saturated flat color",
+            "dynamic action lines"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1204,7 +1345,11 @@
             "Realistic proportions (usually) — deliberately stylized"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "black and white manga illustration",
+            "clean thin linework",
+            "screentone dot shading"
+          ],
           "covers": [],
           "extras": {
             "Production specifics": "Professional mangakas use **B4 manuscript paper** (~257x364mm) with printed safe/trim/bleed guides; doujinshi (self-published) artists use A4. Resolution: **600 DPI** standard for B&W with screen tone. Two primary pen nibs: **G-pen** (open slit, variable line thickness with pressure — used for character outlines and bold lines) and **maru-pen** (fine, thin lines — used for eyes, hair, and detailed backgrounds). **Screen tone**: adhesive sheets of dot patterns at various densities (typically 10-60% black), cut with X-acto and burnished onto the page. Demands firm, smooth paper — thin paper creates bubbles and uneven adhesion."
@@ -1231,7 +1376,12 @@
             "Organic subjects — suits manufactured objects"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "patent drawing",
+            "clean uniform black lines on white",
+            "numbered callout labels",
+            "dashed hidden lines"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1255,7 +1405,11 @@
             "Muted/pastel palettes — too bold and saturated"
           ],
           "example": "Graffiti wildstyle + dimensional letters + spray paint on brick + neon colors + drips → NYC subway energy, interlocking letters, saturated color on gritty brick",
-          "cues": [],
+          "cues": [
+            "graffiti street art",
+            "spray paint with soft overspray and drips",
+            "bold saturated colors with thick outlines"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -1285,7 +1439,11 @@
             "Medium format tonal smoothness — 35mm is grittier by nature"
           ],
           "example": "35mm film + 28mm wide angle + Kodak Tri-X 400 + available light → high-contrast black and white street photography, visible grain, deep shadows, documentary realism",
-          "cues": [],
+          "cues": [
+            "35mm film photograph",
+            "natural perspective",
+            "visible fine grain"
+          ],
           "covers": [],
           "extras": {
             "Aspect ratio": "3:2",
@@ -1311,7 +1469,12 @@
             "Heavy grain — counteracts the format's smoothness advantage"
           ],
           "example": "Hasselblad 500C + 80mm f/2.8 + Kodak Portra 160 + soft window light → rich, warm portrait with square crop, smooth skin tones, gentle highlight rolloff, fine grain, fashion editorial quality",
-          "cues": [],
+          "cues": [
+            "medium format photograph",
+            "smooth tonal gradations",
+            "very fine grain",
+            "smooth highlight rolloff"
+          ],
           "covers": [],
           "extras": {
             "Common aspect ratios": "1:1 (6x6), 4:3 (6x4.5), 7:6 (6x7)",
@@ -1337,7 +1500,11 @@
             "Lo-fi or casual aesthetics — everything about large format reads as deliberate and premium"
           ],
           "example": "4x5 large format + 210mm lens + Fuji Velvia 50 + golden hour side light → hyper-detailed landscape with saturated but natural color, no visible grain, extreme depth of field via tilt, luminous quality",
-          "cues": [],
+          "cues": [
+            "large format photograph",
+            "extreme fine detail throughout",
+            "grainless continuous tones"
+          ],
           "covers": [],
           "extras": {
             "Associated cameras": "Speed Graphic, Sinar, Toyo, Linhof, Intrepid."
@@ -1362,7 +1529,12 @@
             "Dark/moody tones — the warm cast and low contrast fight heavy shadows"
           ],
           "example": "Polaroid SX-70 + soft afternoon light + slightly overexposed + white border → intimate, warm, nostalgic snapshot with muted pastels and dreamy softness",
-          "cues": [],
+          "cues": [
+            "instant film photo",
+            "thick white border",
+            "soft focus with muted warm colors",
+            "milky blown highlights"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1385,7 +1557,12 @@
             "Muted/desaturated tones — disposable film is punchy and oversaturated"
           ],
           "example": "Disposable camera + direct flash + nighttime party + motion blur → blown-out faces against dark background, hard shadows, oversaturated skin tones, 90s nostalgia energy",
-          "cues": [],
+          "cues": [
+            "disposable camera snapshot",
+            "harsh direct flash with hard shadows",
+            "oversaturated colors and soft focus",
+            "dark vignetted corners"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1407,7 +1584,12 @@
             "Cinematic or editorial quality — the flat HDR look is the opposite of cinematic dynamic range"
           ],
           "example": "iPhone + HDR + direct front flash + selfie angle → flat, sharp, social media snapshot with even exposure, deep focus, slight wide-angle distortion on close faces",
-          "cues": [],
+          "cues": [
+            "smartphone photo",
+            "ultra-sharp from front to back",
+            "flat even HDR light",
+            "saturated punchy colors"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1432,7 +1614,12 @@
             "Modern aesthetics — too antique"
           ],
           "example": "Daguerreotype + formal portrait + dark background + silver-plate surface + visible plate edges → ghostly, precious, mirror-like tones, 1850s formal intensity",
-          "cues": [],
+          "cues": [
+            "daguerreotype",
+            "mirror-like silver plate",
+            "silver-grey monochrome tones",
+            "tarnished plate edges"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1457,7 +1644,12 @@
             "Polished/digital aesthetics — too raw and handmade"
           ],
           "example": "Wet plate collodion + intense portrait + blue-sensitive rendering + visible pour lines at edges + chemical artifacts → haunting, sharp center with organic edge decay, Civil War-era intensity",
-          "cues": [],
+          "cues": [
+            "wet plate collodion photograph",
+            "visible pour lines and chemical streaks",
+            "dark uneven plate edges",
+            "sharp center falling off softly"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1480,7 +1672,12 @@
             "Modern polish — too antique and rough"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "tintype photograph",
+            "dark compressed tones on a metal plate",
+            "low contrast",
+            "scratched metal surface"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1505,7 +1702,12 @@
             "Crisp modern photography — everything is soft"
           ],
           "example": "Pinhole camera + long exposure + architectural interior + infinite depth of field + natural vignetting → soft, ethereal, everything equally in focus, dreamy lo-fi",
-          "cues": [],
+          "cues": [
+            "pinhole camera photograph",
+            "soft focus everywhere, nothing sharp",
+            "heavy natural vignette",
+            "long-exposure motion blur"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1530,7 +1732,12 @@
             "Naturalistic color — IR is the opposite of natural"
           ],
           "example": "Infrared + Kodak Aerochrome + forest landscape + summer + clear sky → magenta trees, deep black sky, surreal false-color, dreamlike and alien",
-          "cues": [],
+          "cues": [
+            "infrared photograph",
+            "foliage glowing white",
+            "near-black sky",
+            "dreamlike false color"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -1562,7 +1769,12 @@
             "Subtle compositions — the lens imposes itself on every image"
           ],
           "example": "14mm ultra-wide + low angle + interior architecture + natural light from windows → dramatic room perspective, converging lines, exaggerated depth, light spilling across expansive space",
-          "cues": [],
+          "cues": [
+            "ultra-wide-angle shot",
+            "exaggerated perspective",
+            "near objects huge, far objects tiny",
+            "lines curving at the frame edges"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1640,7 +1852,12 @@
             "Spatial depth/dimension — telephoto flattens everything"
           ],
           "example": "300mm + f/4 + heat haze + crowded street → flattened perspective, people stacked in layers, shimmering atmospheric distortion, voyeuristic distance",
-          "cues": [],
+          "cues": [
+            "telephoto shot",
+            "extreme perspective compression",
+            "background flattened like a wall",
+            "very shallow depth of field"
+          ],
           "covers": [
             "Medium Telephoto (105-200mm)",
             "Super Telephoto (400mm+)"
@@ -1666,7 +1883,12 @@
             "Architectural accuracy — curves everything"
           ],
           "example": "Fisheye + low angle + skatepark + harsh daylight → curved concrete forms, skater looming overhead, extreme spatial distortion, action sports energy",
-          "cues": [],
+          "cues": [
+            "fisheye lens shot",
+            "spherical distortion",
+            "center bulging toward the viewer",
+            "straight lines bent into curves"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1690,7 +1912,12 @@
             "Movement — the thin focus plane means any shake loses the shot"
           ],
           "example": "100mm macro + f/4 + ring flash + water droplets on leaf → extreme detail, droplets sharp against soft green bokeh, light refracting through water, each vein of the leaf visible",
-          "cues": [],
+          "cues": [
+            "macro photograph",
+            "tiny details at huge scale",
+            "razor-thin focus",
+            "everything else dissolved in blur"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1712,7 +1939,12 @@
             "Low light/moody scenes — the miniature effect needs clear visibility to read"
           ],
           "example": "Tilt-shift + overhead cityscape + midday sun + saturated color → city looks like a detailed architectural model, thin band of focus across buildings, everything above and below softly blurred",
-          "cues": [],
+          "cues": [
+            "tilt-shift photograph",
+            "thin band of sharp focus",
+            "top and bottom blurred",
+            "real scene looking like a toy model"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1738,7 +1970,12 @@
             "Symmetrical/circular bokeh — anamorphic bokeh is oval"
           ],
           "example": "Anamorphic lens + neon-lit rainy street + horizontal blue flares + oval bokeh + 2.39:1 aspect ratio → cinematic width, blue streaks across frame from every light source, unmistakably filmic",
-          "cues": [],
+          "cues": [
+            "anamorphic widescreen shot",
+            "horizontal blue lens flare streaks",
+            "oval bokeh",
+            "cinematic wide frame"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1761,7 +1998,11 @@
             "Documentary — too stylized"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "selective focus",
+            "one small sharp spot",
+            "swirling blur all around"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1784,7 +2025,12 @@
             "Controlled studio work — unpredictable effect"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "prism photography",
+            "rainbow light refractions",
+            "kaleidoscopic duplicated fragments",
+            "prismatic flares at the frame edges"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1806,7 +2052,12 @@
             "Clean modern aesthetic — too chaotic"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "freelensing",
+            "tilted razor-thin focus plane",
+            "warm light leaks",
+            "soft ethereal haze"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -1838,7 +2089,12 @@
             "Sharp background detail — physically impossible"
           ],
           "example": "f/1.4 + 85mm + backlit golden hour + single subject → razor-thin focus on eyes, warm golden bokeh circles from backlighting, everything else dissolved",
-          "cues": [],
+          "cues": [
+            "shallow depth of field",
+            "thin slice of sharp focus",
+            "foreground and background dissolved into blur",
+            "large soft bokeh circles"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1859,7 +2115,11 @@
             "Low light — small aperture needs more light or longer exposure"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "deep depth of field",
+            "sharp from foreground to background",
+            "crisp detail everywhere"
+          ],
           "covers": [
             "Small Aperture (f/16 - f/22)"
           ],
@@ -1884,7 +2144,11 @@
             "Ultra-wide lenses — deep depth of field minimizes blur"
           ],
           "example": "f/1.4 + 85mm + city lights at night behind subject → face sharp, background transforms into a field of large, soft, warm circles of light",
-          "cues": [],
+          "cues": [
+            "creamy bokeh",
+            "soft round highlight circles",
+            "smooth blurred background"
+          ],
           "covers": [],
           "extras": {
             "Aperture blade count": "More blades (and curved blades) = rounder bokeh circles. Fewer blades = polygonal shapes (pentagons, hexagons). Some lenses are prized for unique bokeh: vintage Trioplan \"soap bubble\" bokeh, mirror/catadioptric \"doughnut\" bokeh."
@@ -1947,7 +2211,11 @@
             "Wide-angle lenses — unflattering distortion at close range"
           ],
           "example": "Close-up + 85mm f/1.4 + Rembrandt lighting + direct gaze → face fills frame, one side in shadow with triangle, eyes sharp against melted background, emotional intensity",
-          "cues": [],
+          "cues": [
+            "close-up shot",
+            "subject fills the frame",
+            "minimal background"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -1997,7 +2265,11 @@
             "Wide landscapes — too much subject, not enough environment"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "medium shot",
+            "framed from the waist up",
+            "background visible for context"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2021,7 +2293,11 @@
             "Shallow depth of field isolation — harder to separate subject from environment at this distance"
           ],
           "example": "Full shot + 35mm + architectural interior + natural window light → full body visible, outfit and posture clear, room geometry provides context, person within the space",
-          "cues": [],
+          "cues": [
+            "full shot",
+            "whole subject head to toe",
+            "subject within its surroundings"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2045,7 +2321,11 @@
             "Product/detail work — too far away for specifics"
           ],
           "example": "Extreme long shot + ultra-wide + lone figure on beach + overcast sky → vast empty beach, tiny silhouette, muted color, overwhelming sense of space and solitude",
-          "cues": [],
+          "cues": [
+            "wide shot",
+            "tiny subject in a vast setting",
+            "setting dominates the frame"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -2077,7 +2357,10 @@
             "Stylized or surreal aesthetics — too grounded in reality"
           ],
           "example": "Eye level + 50mm + natural light + direct gaze → honest, intimate portrait with no optical manipulation, subject and viewer on equal footing",
-          "cues": [],
+          "cues": [
+            "eye-level shot",
+            "camera straight on at eye height"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2129,7 +2412,11 @@
             "Horizontal landscapes — looking down compresses the horizon"
           ],
           "example": "High angle + medium shot + subject sitting on floor + soft light → vulnerable, intimate, viewer looking down protectively, subject surrounded by the space around them",
-          "cues": [],
+          "cues": [
+            "high angle shot looking down",
+            "subject small below the camera",
+            "ground filling the background"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2154,7 +2441,11 @@
             "Intimate portraiture — too distant and abstract"
           ],
           "example": "Bird's eye + food spread on table + warm natural light from side + saturated color → organized flat lay of dishes, graphic arrangement, textures visible, no depth compression",
-          "cues": [],
+          "cues": [
+            "bird's-eye view",
+            "directly overhead, looking straight down",
+            "flat map-like layout"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2178,7 +2469,12 @@
             "Calm compositions — the angle is inherently dynamic"
           ],
           "example": "Worm's eye + fisheye + forest canopy + golden hour light filtering through → trees radiating outward from center, curved distortion, light rays between leaves, immersive vertigo",
-          "cues": [],
+          "cues": [
+            "worm's-eye view",
+            "camera on the ground looking up",
+            "everything towering overhead",
+            "lines converging toward the sky"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2203,7 +2499,11 @@
             "Overuse — loses impact quickly if every shot is tilted"
           ],
           "example": "Dutch angle + wide angle + neon lighting + nighttime urban → tilted buildings, diagonal lines of light, disorienting perspective, thriller energy",
-          "cues": [],
+          "cues": [
+            "dutch angle",
+            "tilted horizon",
+            "leaning vertical lines"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2227,7 +2527,11 @@
             "Detached/observational mood — POV is the opposite of detached"
           ],
           "example": "POV + wide angle + handheld shake + running through corridor → first-person urgency, hallway walls streaking past, motion blur, immersive panic",
-          "cues": [],
+          "cues": [
+            "first-person point of view",
+            "seen through the viewer's own eyes",
+            "handheld framing"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2251,7 +2555,12 @@
             "Photorealistic rendering — the camera projection is non-physical"
           ],
           "example": "Isometric + miniature room interior + warm lighting + detailed objects → dollhouse-like cutaway, every object readable, no perspective distortion, charming miniature world",
-          "cues": [],
+          "cues": [
+            "isometric view",
+            "no vanishing points",
+            "parallel lines staying parallel",
+            "elevated diagonal angle"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -2284,7 +2593,10 @@
             "Formal/geometric compositions — symmetry has its own power"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "rule of thirds composition",
+            "subject placed off-center"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2308,7 +2620,11 @@
             "Candid/naturalistic work — centering feels posed"
           ],
           "example": "Center composition + symmetrical hallway + single figure walking toward camera + normal lens → formal geometry, figure centered in converging lines, Wes Anderson order",
-          "cues": [],
+          "cues": [
+            "centered symmetrical composition",
+            "subject dead center",
+            "mirrored balance on both sides"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2332,7 +2648,10 @@
             "Centered/static compositions — leading lines imply movement"
           ],
           "example": "Leading lines (road vanishing to horizon) + wide angle + deep depth of field + lone figure at vanishing point → road converges toward distant figure, strong sense of depth and journey",
-          "cues": [],
+          "cues": [
+            "leading lines",
+            "lines converging toward the subject"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2356,7 +2675,11 @@
             "Action/energy — negative space is calm and still"
           ],
           "example": "Negative space + single subject in lower-right third + open sky filling 2/3 of frame + muted blue → vast emptiness above, subject small but emphasized, sense of solitude and space",
-          "cues": [],
+          "cues": [
+            "negative space",
+            "small subject in a large empty area",
+            "minimal clean background"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2380,7 +2703,10 @@
             "Full negative space — the frame fills it"
           ],
           "example": "Subject framed through doorway + 85mm + shallow depth of field + door frame slightly blurred in foreground → layers of depth, subject sharp in the middle distance, voyeuristic intimacy",
-          "cues": [],
+          "cues": [
+            "frame within a frame",
+            "subject seen through a foreground opening"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2404,7 +2730,10 @@
             "Static/contemplative mood — too energetic"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "diagonal composition",
+            "strong diagonal lines across a level frame"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2427,7 +2756,10 @@
             "Minimal compositions — foreground adds complexity"
           ],
           "example": "Wide angle + f/11 + wildflowers in foreground + mountains in background + golden hour → foreground flowers large and detailed, mountains sharp in distance, extreme depth, golden light raking across both layers",
-          "cues": [],
+          "cues": [
+            "strong foreground element",
+            "layered foreground, middle ground and background"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2451,7 +2783,11 @@
             "Corporate/commercial — reads as too edgy"
           ],
           "example": "Tight crop through forehead + 35mm at close range + direct flash + high contrast → top of head cut off, face fills frame with slight wide-angle distortion, raw flash, editorial aggression",
-          "cues": [],
+          "cues": [
+            "tight unconventional crop",
+            "subject cut off at the frame edges",
+            "uncomfortably close framing"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -2513,7 +2849,11 @@
             "Organic/natural subjects (usually) — better for manufactured things"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "cross-section cutaway view",
+            "one side sliced open",
+            "interior structure exposed"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2537,7 +2877,11 @@
             "Atmospheric rendering — the clinical quality fights mood"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "exploded view",
+            "components floating apart, aligned",
+            "every part visible at once"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -2577,7 +2921,11 @@
             "Subtle/understated color — complementary is inherently loud"
           ],
           "example": "Teal and orange grade + cinematic lighting + portrait + shallow depth of field → warm skin tones against cool teal shadows, Hollywood blockbuster color science",
-          "cues": [],
+          "cues": [
+            "complementary color palette",
+            "two opposing hues side by side",
+            "vivid color contrast"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2600,7 +2948,11 @@
             "Bold graphic statements — not enough contrast"
           ],
           "example": "Blue-green analogous palette + overcast seascape + muted tones → ocean, sky, and rocks all in the same cool color family, meditative, unified",
-          "cues": [],
+          "cues": [
+            "analogous color palette",
+            "neighboring hues from one color family",
+            "harmonious unified color"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2621,7 +2973,11 @@
             "Natural/ungraded imagery — split complementary is a conscious choice"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "split complementary palette",
+            "one base hue with two contrasting accents",
+            "balanced color contrast"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2644,7 +3000,11 @@
             "Realism — nature rarely arranges itself in perfect triads"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "triadic color palette",
+            "three evenly spaced bold hues",
+            "bright balanced pop-art color"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2667,7 +3027,11 @@
             "Subject separation via color — everything is the same hue"
           ],
           "example": "Blue monochromatic + nighttime + single cool light source + portrait → face in shades of blue, navy shadows, powder highlights, cold and atmospheric",
-          "cues": [],
+          "cues": [
+            "monochromatic palette",
+            "every tone a shade of one hue",
+            "image bathed in a single color"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2692,7 +3056,11 @@
             "Muted/desaturated palettes — needs vivid color"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "color blocking",
+            "large flat planes of bold solid color",
+            "graphic hard-edged color areas"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2813,7 +3181,11 @@
             "Warm-overall or cool-overall palettes — T&O requires both temperatures"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "teal and orange color grade",
+            "warm orange skin tones",
+            "teal-shifted shadows and backgrounds"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2837,7 +3209,11 @@
             "Fashion/beauty — too muted for most commercial use"
           ],
           "example": "Desaturated + slight green tint + overcast + urban environment → Fincher-esque clinical mood, colors present but suppressed, everything feels slightly wrong",
-          "cues": [],
+          "cues": [
+            "desaturated muted color grade",
+            "drained low-saturation color",
+            "cold green-grey tint"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2860,7 +3236,12 @@
             "Cool/clinical tones — too warm"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "warm faded vintage color grade",
+            "lifted milky shadows",
+            "amber tint",
+            "low contrast"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2883,7 +3264,12 @@
             "Beauty/fashion — too desaturated and gritty"
           ],
           "example": "Bleach bypass + hard side light + war scene + desaturated → deep blacks, muted colors, metallic sheen on skin, high contrast, Saving Private Ryan intensity",
-          "cues": [],
+          "cues": [
+            "bleach bypass look",
+            "desaturated color with harsh contrast",
+            "deep blacks and bright highlights",
+            "gritty metallic sheen"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2905,7 +3291,12 @@
             "Interior scenes — the technique is designed for exteriors"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "day for night grade",
+            "deep blue tint over the scene",
+            "exaggerated dark shadows",
+            "stylized moonlit look"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2914,24 +3305,29 @@
           "name": "Cross-Processed Look",
           "section": "Grading Approaches",
           "group": null,
-          "what": "Digital emulation of chemical cross-processing (see Film Stocks & Analog). Shifted hues, boosted saturation, unnatural color casts — typically greens shift yellow, shadows go teal, highlights go warm.",
-          "effect": "Punchy, contrasty, color-shifted. The colors feel \"wrong\" in an energetic way. Greens go sickly, skin tones shift toward yellow or magenta. The 1990s fashion photography look.",
+          "what": "Developing film in the wrong chemistry on purpose — typically slide film (E-6) in C-41 negative chemistry, or negative film in E-6 — or its digital emulation. The mismatch shifts hues, boosts saturation and casts unnatural color: typically greens shift yellow, shadows go teal, highlights go warm.",
+          "effect": "Punchy, contrasty, color-shifted. The colors feel \"wrong\" in an energetic way. Greens go sickly, blues go cyan, skin tones shift toward yellow or magenta; the exact shift depends on the stock. The 1990s fashion photography look (Nick Knight, Anton Corbijn).",
           "pairs": [
             "Fashion editorial — the shifted colors are deliberately stylized",
             "1990s aesthetic — the era's defining look",
             "High saturation scenes — amplifies the weirdness",
-            "Punchy/editorial energy — reads as confident and stylish"
+            "Punchy/editorial energy — reads as confident and stylish",
+            "Experimental/art — the unpredictability is creative"
           ],
           "conflicts": [
             "Natural color accuracy — the opposite",
             "Subtle/quiet mood — cross-process is loud",
-            "Warm/cozy tones — the color shifts are unpredictable"
+            "Warm/cozy tones — the color shifts are unpredictable",
+            "Predictable results — each stock and chemistry pairing shifts differently"
           ],
           "example": null,
-          "cues": [],
-          "covers": [
-            "Cross Processing"
+          "cues": [
+            "cross-processed color",
+            "shifted hues, yellow greens and cyan blues",
+            "punchy contrast",
+            "magenta and yellow color casts"
           ],
+          "covers": [],
           "extras": {}
         },
         {
@@ -2954,7 +3350,12 @@
             "Gritty realism — too beautiful"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "three-strip vintage film color",
+            "extremely saturated reds and greens",
+            "deep rich blacks",
+            "painted-looking vivid color"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -2978,7 +3379,12 @@
             "Elegant/refined aesthetics — too crunchy"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "HDR tone-mapped look",
+            "halos around edges",
+            "hyper-detailed textures everywhere",
+            "flat surreal contrast"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3002,7 +3408,12 @@
             "Documentary — too polished and idealized"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "matte painting look",
+            "hazy atmospheric depth",
+            "simplified painted color",
+            "soft distant edges"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3026,7 +3437,12 @@
             "High contrast B&W — different process entirely"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "scanned film negative look",
+            "lifted blacks that never reach true black",
+            "warm organic tones",
+            "soft film imperfection"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3050,7 +3466,11 @@
             "Subtle color grading — there's no color to grade"
           ],
           "example": "Black and white + high contrast + hard side light + portrait + visible grain → dramatic, timeless, textural, form and light doing all the work",
-          "cues": [],
+          "cues": [
+            "black and white image",
+            "rich greyscale tones",
+            "strong light and shadow contrast"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3073,7 +3493,11 @@
             "Vivid/energetic feeling — sepia is quiet and reflective"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "sepia toned photograph",
+            "warm brown monochrome",
+            "aged antique print look"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3096,7 +3520,11 @@
             "Subtle/understated treatment — the blue is strong"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "cyanotype print",
+            "deep Prussian blue and white",
+            "blueprint-like monochrome"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3119,7 +3547,11 @@
             "Casual/snapshot aesthetic — too refined"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "selenium toned black and white",
+            "cool blue-black shadows",
+            "rich deep neutral tones"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3143,7 +3575,12 @@
             "Complex multi-color scenes — the restriction eliminates variety"
           ],
           "example": "Duotone (black + electric blue) + high contrast portrait + hard light → graphic, modern, bold, face rendered in deep black shadows and vivid blue highlights",
-          "cues": [],
+          "cues": [
+            "duotone image",
+            "two-color print",
+            "shadows in one ink, highlights in another",
+            "bold graphic color"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3167,7 +3604,11 @@
             "Skin tone accuracy — pushing saturation makes skin look unnatural"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "highly saturated colors",
+            "vivid intense hues",
+            "color at full strength"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3191,7 +3632,11 @@
             "Gritty/raw aesthetic — the opposite energy"
           ],
           "example": "Pastel palette + soft diffused light + fashion subject + minimal background + slight overexposure → airy, dreamy, soft pink and lavender tones, blown white highlights, editorial calm",
-          "cues": [],
+          "cues": [
+            "soft pastel palette",
+            "pale light colors",
+            "airy bright image with no deep blacks"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3214,7 +3659,11 @@
             "Monochrome — split toning needs a color-capable image"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "split toning",
+            "warm tinted highlights",
+            "cool tinted shadows"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3237,7 +3686,12 @@
             "Color accuracy — the process distorts everything"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "solarized photograph",
+            "partial tone reversal",
+            "glowing bright outlines around edges",
+            "surreal metallic tones"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -3761,7 +4215,13 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "energetic mood",
+            "vivid saturated color",
+            "diagonal dynamic framing",
+            "hard direct light",
+            "motion blur"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3775,7 +4235,13 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "intimate mood",
+            "close framing",
+            "warm low practical light",
+            "shallow depth of field",
+            "quiet soft shadows"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3789,7 +4255,12 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "ominous mood",
+            "low-key light from below or above",
+            "cold desaturated color with one warm accent",
+            "haze and crushed blacks"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3803,7 +4274,13 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "nostalgic mood",
+            "warm faded colors",
+            "soft film grain",
+            "glowing overexposed highlights",
+            "dark vignette"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3817,7 +4294,13 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "serene mood",
+            "soft diffused light",
+            "harmonious calm palette",
+            "open negative space",
+            "balanced level framing"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3831,7 +4314,13 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "chaotic mood",
+            "tilted frame",
+            "clashing mixed-color lights",
+            "elements spilling out of frame",
+            "motion blur and grain"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3845,7 +4334,13 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "luxurious mood",
+            "soft directional light with glossy highlights",
+            "warm gold accents",
+            "dark background",
+            "precise composition"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3859,7 +4354,13 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "eerie mood",
+            "flat fluorescent light",
+            "desaturated color with one oversaturated element",
+            "empty liminal space",
+            "everything in sharp focus"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3873,7 +4374,13 @@
           "pairs": [],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "joyful mood",
+            "bright warm sunlight",
+            "vivid saturated color accents",
+            "bright airy exposure",
+            "candid lively framing"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -3905,7 +4412,11 @@
             "Outdoor/expansive scenes — window light is an interior phenomenon"
           ],
           "example": "Large north-facing window + portrait + white walls as fill + 50mm → soft directional light, gentle shadow on far side of face, eyes catching window reflection, painterly quality",
-          "cues": [],
+          "cues": [
+            "soft window light",
+            "light falling from one side",
+            "gradual falloff into shadow"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3927,7 +4438,11 @@
             "Lo-fi/amateur aesthetic — too polished"
           ],
           "example": "Three-point lighting + 4:1 key/fill ratio + white background + 85mm → dimensional portrait, clean separation from background, moderate shadow depth, professional editorial",
-          "cues": [],
+          "cues": [
+            "clear key light from one side",
+            "soft fill on the shadow side",
+            "bright backlight separating subject from background"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -3984,7 +4499,12 @@
             "Rugged/textured looks — butterfly smooths rather than sculpts"
           ],
           "example": "Butterfly lighting + silver reflector below chin (clamshell) + 85mm + beauty dish → even, glamorous illumination, defined cheekbones, clean catchlights, smooth skin, classic beauty editorial",
-          "cues": [],
+          "cues": [
+            "butterfly lighting",
+            "light from high in front",
+            "small shadow under the nose and chin",
+            "even glamorous light"
+          ],
           "covers": [
             "Clamshell Lighting"
           ],
@@ -4009,7 +4529,11 @@
             "Group shots — one side of every face disappears"
           ],
           "example": "Split lighting + black and white + high contrast + tight crop → half the face glowing, half in total darkness, strong bone structure, graphic intensity",
-          "cues": [],
+          "cues": [
+            "split lighting",
+            "half the subject lit, half in darkness",
+            "hard light from the side"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4033,7 +4557,11 @@
             "Product photography where full detail is needed"
           ],
           "example": "Strong rim light + fog + dark background + silhouetted figure → glowing outline around subject, volumetric light rays through haze, cinematic drama, face in shadow",
-          "cues": [],
+          "cues": [
+            "rim lighting",
+            "glowing outline around the subject",
+            "bright edges against a darker background"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4056,7 +4584,11 @@
             "Natural/organic feeling — the ring catchlight is obviously artificial"
           ],
           "example": "Ring light + macro close-up of eye + saturated color → circular catchlight reflected in iris, even illumination, no shadows, graphic beauty detail",
-          "cues": [],
+          "cues": [
+            "flat even frontal light",
+            "almost no shadows",
+            "ring-shaped catchlights in the eyes"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4079,7 +4611,11 @@
             "Flat/front-lit setups — the back light has no role"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "bright hair light from behind",
+            "glowing highlight on hair and shoulders",
+            "slash of light along the jaw"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4103,7 +4639,12 @@
             "Even illumination — hard light creates extremes"
           ],
           "example": "Hard light from single spotlight + high contrast + black and white + tight crop → sculptural shadows carving across face, every texture visible, graphic intensity",
-          "cues": [],
+          "cues": [
+            "hard light",
+            "sharp-edged shadows",
+            "high contrast",
+            "crisp surface texture"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4127,7 +4668,12 @@
             "Texture emphasis — soft light minimizes texture"
           ],
           "example": "Large softbox close to subject + 85mm f/2 + warm tones + clean background → smooth, even gradations across face, gentle shadows under cheekbones, flattering and luminous",
-          "cues": [],
+          "cues": [
+            "soft light",
+            "smooth shadow gradients",
+            "low contrast",
+            "light wrapping around the subject"
+          ],
           "covers": [
             "Diffused Light",
             "Softbox",
@@ -4156,7 +4702,12 @@
             "Soft/dreamy quality — flash is hard and clinical"
           ],
           "example": "Direct flash + nighttime + party scene + tight framing → blown-out faces against black background, hard shadow on wall behind subject, red-eye, raw snapshot energy",
-          "cues": [],
+          "cues": [
+            "harsh direct on-camera flash",
+            "flat frontal light",
+            "hard shadow right behind the subject",
+            "background falling into darkness"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4178,7 +4729,11 @@
             "Intentionally harsh flash aesthetic — bouncing removes the harshness"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "soft bounced flash",
+            "even light from above",
+            "soft natural-looking shadows"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4187,25 +4742,30 @@
           "name": "Neon / Colored Gel Lighting",
           "section": "Flash and Artificial",
           "group": null,
-          "what": "Artificial light in specific colors — neon signs, colored LED panels, gelled strobes. Multiple colored sources can interact and mix on the subject.",
-          "effect": "Strong color cast on skin and surfaces. Multiple colors create complementary or clashing zones — a face lit cyan on one side and magenta on the other. The colored light defines zones and mood. Reads as urban, nightlife, futuristic, or stylized.",
+          "what": "Artificial light in specific colors — neon signs, colored LED panels and strips, backlit signs, screen glow, gelled strobes. Multiple colored sources can interact and mix on the subject.",
+          "effect": "Strong color cast on skin and surfaces. Multiple colors create complementary or clashing zones — a face lit cyan on one side and magenta on the other. A visible source glows and the glow bleeds outward, especially in fog, rain or on reflective surfaces. The colored light defines zones and mood. Reads as urban, nightlife, futuristic, or stylized.",
           "pairs": [
             "Cyberpunk/sci-fi aesthetic — neon color is the genre's visual language",
             "Nighttime urban scenes — neon signs as practical light sources",
             "Complementary color pairs — cyan/magenta, blue/orange, green/red",
             "Wet surfaces — neon reflections on rain-slicked streets multiply the color",
+            "Fog/haze — volumetric glow around the source",
             "Portraiture with attitude — colored light is inherently stylized"
           ],
           "conflicts": [
             "Natural/realistic lighting — neon is obviously artificial",
             "Warm/cozy moods — neon reads as cold, urban, electric",
-            "Accurate skin tones — the color cast changes everything"
+            "Accurate skin tones — the color cast changes everything",
+            "Daytime — neon disappears in bright ambient light",
+            "Natural/organic environments — neon is urban and synthetic"
           ],
           "example": "Cyan neon from left + magenta neon from right + wet street + close-up portrait → split color lighting on face, reflections in wet pavement, urban cyberpunk energy",
-          "cues": [],
-          "covers": [
-            "Neon / LED Glow"
+          "cues": [
+            "neon colored light",
+            "strong cyan and magenta color casts",
+            "glowing light sources bleeding into the air"
           ],
+          "covers": [],
           "extras": {}
         },
         {
@@ -4220,7 +4780,11 @@
           ],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "candlelight",
+            "warm flickering orange glow",
+            "deep warm shadows"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4236,7 +4800,11 @@
           ],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "warm tungsten light",
+            "amber cast over everything",
+            "steady indoor glow"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4261,7 +4829,11 @@
             "Even illumination — practicals fall off quickly"
           ],
           "example": "Practical lighting + tungsten desk lamp in frame + warm glow + shallow depth of field + dark moody interior → naturalistic, cinematic, warm pool of light, face lit by the lamp in the scene",
-          "cues": [],
+          "cues": [
+            "visible light sources in the frame",
+            "pools of warm localized light",
+            "natural falloff into darkness"
+          ],
           "covers": [],
           "extras": {
             "Landmark use": "**Barry Lyndon** (1975) — Kubrick's candlelight scenes lit by actual candles only (NASA f/0.7 lens, 3 candela average illumination). The definitive example of practical lighting in cinema."
@@ -4286,7 +4858,11 @@
             "Beauty/commercial demanding consistency — too variable"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "available light",
+            "uneven mixed-color ambient light",
+            "documentary realism"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4310,7 +4886,12 @@
             "Large groups — the falloff is significant"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "crisp beauty lighting",
+            "defined soft-edged shadows",
+            "round catchlights",
+            "glossy specular highlights"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4334,7 +4915,11 @@
             "Broad, even wash — Fresnels are directional"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "focused cinematic spotlight",
+            "clean defined shadows",
+            "controlled beam of light"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4358,7 +4943,10 @@
             "Beauty close-ups — patterns across the face can be unflattering (unless intentional editorial)"
           ],
           "example": "Gobo through venetian blinds + hard key + low key + subject at desk → noir shadow stripes across face and wall, implied window source, dramatic tension",
-          "cues": [],
+          "cues": [
+            "dappled light",
+            "patterned shadows across surfaces"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4381,7 +4969,11 @@
             "Bright/airy aesthetics — too dark on one side"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "deep shadow side",
+            "sculpted one-sided light",
+            "high contrast with no fill"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4403,7 +4995,11 @@
             "Natural/ambient approaches — too controlled"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "tightly controlled pools of light",
+            "light only on the subject",
+            "dark surroundings"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4426,7 +5022,11 @@
             "Even illumination — the opposite approach"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "top light from directly overhead",
+            "deep shadows in the eye sockets",
+            "lit crown and shoulders"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4450,7 +5050,11 @@
             "Daytime/outdoor — no natural source from below"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "light from below",
+            "shadows cast upward",
+            "eerie unnatural under-lighting"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4473,7 +5077,11 @@
             "Soft glamour — too dramatic"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "cross lighting from both sides",
+            "central shadow line down the middle",
+            "sculpted dramatic form"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -4505,7 +5113,11 @@
             "Gritty realism — too clean and controlled"
           ],
           "example": "High-key lighting + white background + fashion + bright colors → airy, clean, cheerful, clothing pops against white, no shadows",
-          "cues": [],
+          "cues": [
+            "bright airy exposure",
+            "minimal shadows",
+            "light tones throughout"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4529,7 +5141,11 @@
             "Commercial/product work — clients want to see the product"
           ],
           "example": "Low-key + single key light from side + black background + black and white → face emerging from darkness, deep shadows, dramatic contrast, film noir intensity",
-          "cues": [],
+          "cues": [
+            "low-key lighting",
+            "mostly deep shadow",
+            "light revealing only key areas"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4553,7 +5169,11 @@
             "High-key brightness — the opposite approach"
           ],
           "example": "Chiaroscuro + single warm key light from above-left + dark background + still life with fruit and metal → objects glowing against deep darkness, rich warm highlights, cool shadow tones, painterly dimensionality",
-          "cues": [],
+          "cues": [
+            "chiaroscuro",
+            "subject emerging from darkness",
+            "strong light and dark modeling"
+          ],
           "covers": [],
           "extras": {
             "Landmark uses": "Caravaggio's paintings (The Calling of St. Matthew — shaft of light as divine finger). Gregg Toland's cinematography in **Citizen Kane** (1941). Gordon Willis in **The Godfather**. Stanley Kubrick's **Barry Lyndon** candlelight scenes. Roger Deakins in nearly every film — the master of motivated chiaroscuro."
@@ -4579,7 +5199,11 @@
             "Subtle lighting nuance — silhouette is binary: lit or not"
           ],
           "example": "Silhouette + sunset + figure standing on cliff edge + wide angle → black shape against orange/purple gradient sky, dramatic outline, epic scale, anonymous but emotional",
-          "cues": [],
+          "cues": [
+            "silhouette",
+            "subject as a solid dark shape",
+            "bright background behind"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4603,7 +5227,11 @@
             "Precise, controlled rendering — overexposure is inherently loose"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "overexposed glowing highlights",
+            "blown-out bright areas",
+            "soft luminous bloom"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4626,7 +5254,11 @@
             "Even/balanced exposure — crushed blacks are a deliberate imbalance"
           ],
           "example": "Crushed blacks + single hard key from side + tight crop on face + black and white → half the face illuminated, other half pure black void, extreme contrast, graphic weight",
-          "cues": [],
+          "cues": [
+            "crushed blacks",
+            "shadows falling to pure black",
+            "heavy dark contrast"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -4651,7 +5283,11 @@
           ],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "dawn light",
+            "deep blue sky warming at the horizon",
+            "soft cool light with long shadows"
+          ],
           "covers": [],
           "extras": {
             "Color temperature": "~4000-5000K, shifting warm as sun nears horizon."
@@ -4669,7 +5305,12 @@
           ],
           "conflicts": [],
           "example": null,
-          "cues": [],
+          "cues": [
+            "sunset",
+            "sun on the horizon",
+            "vivid orange, red and purple sky",
+            "long warm light"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -4687,7 +5328,12 @@
             "Natural light, golden hour, high-key, bright/airy."
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "night",
+            "lit only by artificial light",
+            "pools of light in deep darkness",
+            "high contrast"
+          ],
           "covers": [
             "Deep Night / 3am"
           ],
@@ -4719,9 +5365,7 @@
             "long soft shadows",
             "warm golden glow on every surface"
           ],
-          "covers": [
-            "Golden Hour (last hour before sunset)"
-          ],
+          "covers": [],
           "extras": {}
         },
         {
@@ -4730,12 +5374,13 @@
           "section": "Time of Day",
           "group": null,
           "what": "The period of twilight after sunset (or before sunrise) when the sun is 4-8 degrees below the horizon. The sky turns a deep, saturated blue due to ozone absorption of remaining sunlight. Lasts roughly 20-40 minutes.",
-          "effect": "Cool, calm, atmospheric. The ambient light is blue and even — no hard shadows. Artificial lights (street lamps, windows, neon) appear warm against the blue sky, creating natural warm/cool contrast. The light level is low, requiring longer exposures or higher ISO.",
+          "effect": "Cool, calm, atmospheric. The ambient light is blue and even — no hard shadows. Artificial lights (street lamps, windows, neon) appear warm against the blue sky, creating natural warm/cool contrast. The light level is low, requiring longer exposures or higher ISO. Deep open shade on a clear day takes the same strong blue cast.",
           "pairs": [
             "Cityscapes — warm building lights against blue sky is the classic blue hour shot",
             "Neon signs and artificial light — the color contrast is automatic",
             "Long exposure — smooth water, light trails, ghosted movement",
-            "Moody/melancholic mood — the blue cast evokes quiet, solitude"
+            "Moody/melancholic mood — the blue cast evokes quiet, solitude",
+            "Cold/winter scenes and noir — the blue reads as cold and quiet"
           ],
           "conflicts": [
             "Warm, energetic moods — blue hour is inherently cool and contemplative",
@@ -4743,11 +5388,13 @@
             "Bright, punchy color — the overall tone is muted and cool"
           ],
           "example": "Blue hour + cityscape + neon signs + long exposure → deep blue sky, warm amber street lights, neon reflections on wet pavement, smooth streaks from passing cars",
-          "cues": [],
-          "covers": [
-            "Blue Hour (20-40 min after sunset)",
-            "Blue Hour / Deep Shade (~8,000-10,000K+)"
+          "cues": [
+            "blue hour",
+            "deep saturated blue sky",
+            "warm artificial lights against cool blue",
+            "even shadowless twilight"
           ],
+          "covers": [],
           "extras": {}
         },
         {
@@ -4756,25 +5403,31 @@
           "section": "Time of Day",
           "group": null,
           "what": "Direct overhead sunlight between roughly 10am and 2pm. The sun is high, light travels through less atmosphere, and shadows are short, dark, and sharply defined. Color temperature is neutral (5,500K+).",
-          "effect": "Harsh, high-contrast. Deep shadows under brows, nose, and chin. Squinting subjects. Hot highlights on foreheads and shoulders. Strong texture definition — every surface imperfection is visible. The light is unforgiving and clinical.",
+          "effect": "Harsh, high-contrast. Deep shadows under brows, nose, and chin. Squinting subjects. Hot highlights on foreheads and shoulders. Strong texture definition — every surface imperfection is visible. The open blue sky puts a cool fill in the shadows. The light is unforgiving and clinical.",
           "pairs": [
             "Gritty/editorial fashion — the harshness is intentional, sculptural",
             "Texture emphasis — hard light reveals every surface detail",
             "Strong graphic shadows — patterns from architecture, blinds, fences become design elements",
             "Saturated color — direct sunlight punches up color intensity",
-            "Disposable camera aesthetic — harsh + direct = snapshot energy"
+            "Disposable camera aesthetic — harsh + direct = snapshot energy",
+            "Street and documentary photography — high contrast, unflinching",
+            "Landscape and architecture — clear visibility to the horizon, strong shadow patterns"
           ],
           "conflicts": [
             "Flattering beauty lighting — hard overhead shadows are unflattering on faces",
             "Soft/dreamy moods — the light is the opposite of soft",
-            "Low-contrast, muted palettes — midday sun is high contrast by nature"
+            "Low-contrast, muted palettes — midday sun is high contrast by nature",
+            "Moody/atmospheric scenes — a clear sky leaves too much visibility"
           ],
           "example": "Hard midday sun + graphic shadows from window blinds + saturated color + wide angle → striped shadow patterns across subject's face and body, strong color, editorial tension",
-          "cues": [],
-          "covers": [
-            "Midday (11am-1pm)",
-            "Clear Sky / Direct Sun"
+          "cues": [
+            "hard midday sun",
+            "harsh overhead light",
+            "short dark shadows",
+            "bright high contrast",
+            "cool shadow fill from blue sky"
           ],
+          "covers": [],
           "extras": {}
         },
         {
@@ -4788,7 +5441,10 @@
             "Product photography — even illumination, accurate color",
             "Portraits where skin quality matters — no unflattering shadows",
             "Saturated color work — the even light lets color speak without competition from shadows",
-            "Melancholy/muted mood — overcast reads as somber without being dramatic"
+            "Melancholy/muted mood — overcast reads as somber without being dramatic",
+            "Muted, desaturated palettes — the cool cast suits them",
+            "Green landscapes — overcast makes foliage vivid",
+            "Street photography — even light, no squinting"
           ],
           "conflicts": [
             "Dramatic dimension — the light is flat, no sculpting",
@@ -4796,11 +5452,13 @@
             "Strong shadow play — there are no shadows to play with"
           ],
           "example": "Overcast sky + close-up portrait + saturated clothing + muted background → even skin tones, smooth light, punchy fabric color, quiet mood",
-          "cues": [],
-          "covers": [
-            "Overcast / Cloudy",
-            "Overcast / Shade (~6,500-7,500K)"
+          "cues": [
+            "overcast daylight",
+            "soft flat even light",
+            "no strong shadows",
+            "rich but flat color"
           ],
+          "covers": [],
           "extras": {}
         }
       ]
@@ -4997,7 +5655,11 @@
             "Vector/flat illustration styles — grain is photographic, not graphic"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "visible film grain",
+            "organic analog texture",
+            "uneven grain in flat areas"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5020,7 +5682,11 @@
             "Professional/commercial — reads as accidental (unless deliberately stylized)"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "light leaks",
+            "warm amber and red streaks across the frame",
+            "washed-out fogged edges"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5044,7 +5710,11 @@
             "Precise control — flare is somewhat unpredictable"
           ],
           "example": "Lens flare + backlit golden hour + vintage lens + portrait → warm haze washing across the frame, circular ghosts, reduced contrast, dreamy romantic quality",
-          "cues": [],
+          "cues": [
+            "lens flare",
+            "light streaks and ghost shapes",
+            "hazy glow lowering contrast"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5068,7 +5738,11 @@
             "Sharp detail in highlight areas — halation obscures it"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "halation",
+            "red-orange glow around bright lights",
+            "highlights bleeding into their surroundings"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5091,7 +5765,11 @@
             "Modern/clean aesthetic — vignetting reads as vintage"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "dark vignette",
+            "darkened edges and corners",
+            "brighter center"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5114,7 +5792,10 @@
             "Heavy amounts — a little adds character, a lot is distracting"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "chromatic aberration",
+            "red and blue color fringing on high-contrast edges"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5138,7 +5819,10 @@
             "Short shutter speeds — insufficient time for blur to register"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "motion blur",
+            "streaks and smears along the direction of movement"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5161,7 +5845,11 @@
             "Precise control — the blend is partially unpredictable"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "double exposure",
+            "two overlapping images blended together",
+            "ghostly translucent layers"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5179,7 +5867,12 @@
             "Color accuracy, commercial work, clean modern aesthetics, predictable results."
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "expired film look",
+            "unpredictable magenta and green color casts",
+            "milky fogged shadows",
+            "heavy grain and low contrast"
+          ],
           "covers": [],
           "extras": {}
         }
@@ -5212,7 +5905,11 @@
             "Wet/reflective aesthetics — the opposite surface quality"
           ],
           "example": "Matte ceramic + matte linen + soft diffused light + desaturated palette → quiet, tactile, understated, every surface absorbs light evenly",
-          "cues": [],
+          "cues": [
+            "matte finish",
+            "no shine or reflections",
+            "soft even surface color"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5236,7 +5933,11 @@
             "Rustic/natural mood — too polished"
           ],
           "example": "Glossy black lacquer surface + hard key light + product on top + dark background → sharp specular highlight streaking across the surface, product reflected, luxury and precision",
-          "cues": [],
+          "cues": [
+            "glossy polished finish",
+            "bright specular highlights",
+            "clear reflections on the surface"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5259,7 +5960,11 @@
             "Gritty/rough textures — satin is smooth"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "satin finish",
+            "soft broad sheen",
+            "no mirror reflections"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5310,7 +6015,11 @@
             "Hard/gritty aesthetic — too delicate"
           ],
           "example": "Backlit translucent leaves + macro + warm light + shallow depth of field → leaves glowing green-gold from within, veins visible as dark networks, soft bokeh behind, ethereal",
-          "cues": [],
+          "cues": [
+            "translucent frosted surface",
+            "soft inner glow",
+            "light diffusing through"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5333,7 +6042,11 @@
             "Subjects that need to be clearly visible — glass distorts what's behind it"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "transparent glass-like surface",
+            "refracted distortion of what lies behind",
+            "caustic light patterns"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5351,7 +6064,11 @@
             "Muted/earthy palettes, matte textures, vintage aesthetics, warm color grading."
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "iridescent finish",
+            "rainbow color shifts across the surface",
+            "prismatic reflections"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5369,7 +6086,11 @@
             "Harsh contrast, gritty textures, industrial aesthetics, bold saturated color."
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "pearlescent finish",
+            "soft luminous sheen",
+            "pale shifting pastel tones"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5392,7 +6113,11 @@
             "Flat lighting — chrome needs something interesting to reflect"
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "mirror chrome finish",
+            "surface showing only reflections",
+            "sharp warped reflections of the surroundings"
+          ],
           "covers": [],
           "extras": {}
         },
@@ -5438,7 +6163,11 @@
             "Organic/natural aesthetics, warm rustic looks, highly polished mirror surfaces."
           ],
           "example": null,
-          "cues": [],
+          "cues": [
+            "brushed metal finish",
+            "fine directional grain lines",
+            "soft streaked highlights"
+          ],
           "covers": [],
           "extras": {}
         }

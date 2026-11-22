@@ -4,32 +4,6 @@ Environmental conditions that affect every other visual dimension — light qual
 
 ---
 
-## Clear Conditions
-
-### Clear Sky / Direct Sun
-
-**What it is**: Cloudless sky, direct unobstructed sunlight. The quality and mood shifts dramatically by time of day (see Time of Day section below).
-
-**Visual effect**: Hard, defined shadows. High contrast. Strong color saturation in direct light. Blue sky provides cool fill in shadows. The harshest conditions at midday, the most beautiful at golden hour.
-
-**Pairs well with**: Hard midday sun (high contrast editorial), golden hour (warm romantic), landscape (clear visibility to horizon), architecture (strong shadow patterns).
-
-**Conflicts with**: Soft/diffused light (clear sky IS hard light at midday), moody/atmospheric (too much visibility), overcast-dependent aesthetics.
-
----
-
-### Overcast / Cloudy
-
-**What it is**: Cloud cover acting as a giant diffuser. The sky becomes one enormous soft light source.
-
-**Visual effect**: Soft, even, shadowless or near-shadowless illumination. Slightly cool color temperature (~6500K+). Colors appear saturated but without contrast — vivid but flat. Skin looks smooth and even. Reads as contemplative, muted, melancholic, or quietly beautiful.
-
-**Pairs well with**: Portrait photography (flattering, even), product photography outdoors (accurate color), melancholic mood, muted/desaturated palette, green landscapes (overcast makes foliage vivid), street photography.
-
-**Conflicts with**: Dramatic shadow play, warm/golden mood, high-contrast compositions, sun-dependent lighting setups.
-
----
-
 ## Precipitation
 
 ### Rain
@@ -163,6 +137,8 @@ The single most impactful prompt dimension after subject. Each time period defin
 
 **Pairs with**: Landscape, solitude, new beginnings, running/exercise, mist on water, birds.
 
+**Prompt cues**: dawn light; deep blue sky warming at the horizon; soft cool light with long shadows
+
 ---
 
 ### Early Morning (7-9am)
@@ -170,16 +146,6 @@ The single most impactful prompt dimension after subject. Each time period defin
 **Visual**: Low warm sun, long golden shadows, clean air (no midday haze). Similar to golden hour but the world is waking up, not winding down — the mood is fresh and forward-looking rather than nostalgic.
 
 **Pairs with**: Lifestyle photography, jogging/health, coffee, commute, dewy surfaces, fresh light.
-
----
-
-### Midday (11am-1pm)
-
-**Visual**: Sun directly overhead. Short, hard shadows directly below subjects. Harsh, unflattering on faces (deep eye socket shadows). Maximum contrast. Maximum color saturation in direct sun. Blue fill in shadows from open sky. The "worst" light for conventional portraits but powerful for graphic/editorial work.
-
-**Pairs with**: Hard editorial fashion, graphic shadow patterns, saturated color, harsh texture reveal, street photography (high contrast urban), documentary (unflinching).
-
-**Conflicts with**: Flattering portraiture, soft/romantic, golden hour warmth.
 
 ---
 
@@ -191,23 +157,13 @@ The single most impactful prompt dimension after subject. Each time period defin
 
 ---
 
-### Golden Hour (last hour before sunset)
-
-**Visual**: See lighting.md for full entry. Warm (~3500K), soft, directional, long shadows, gentle contrast, everything glows. The most universally flattering natural light.
-
----
-
 ### Sunset
 
 **Visual**: The dramatic moment. Vivid orange/red/purple sky. Sun at horizon — subjects can be backlit (silhouette) or front-lit (last warm light on face). The sky becomes the subject. Maximum color in the atmosphere.
 
 **Pairs with**: Silhouettes, vivid sky, romantic, dramatic, wide angle (maximize sky), epic landscape.
 
----
-
-### Blue Hour (20-40 min after sunset)
-
-**Visual**: See lighting.md for full entry. Deep saturated blue sky. Artificial lights (warm) against blue sky (cool) — natural complementary contrast. The color of twilight.
+**Prompt cues**: sunset; sun on the horizon; vivid orange, red and purple sky; long warm light
 
 ---
 
@@ -218,6 +174,8 @@ The single most impactful prompt dimension after subject. Each time period defin
 **Pairs with**: Neon, cyberpunk, film noir, CineStill 800T, long exposure (light trails), urban, mystery, horror, nightlife.
 
 **Conflicts with**: Natural light, golden hour, high-key, bright/airy.
+
+**Prompt cues**: night; lit only by artificial light; pools of light in deep darkness; high contrast
 
 ---
 
@@ -241,29 +199,47 @@ Reverse-engineering: start from the emotion, derive the visual recipe.
 ### Energetic
 **Visual recipe**: High saturation, warm or vivid complementary colors, diagonal composition, tight crop, direct flash or hard light, motion blur or speed lines, low angle (power), wide angle (distortion/dynamism).
 
+**Prompt cues**: energetic mood; vivid saturated color; diagonal dynamic framing; hard direct light; motion blur
+
 ### Intimate
 **Visual recipe**: Shallow DOF (f/1.4-f/2), warm color (tungsten/candlelight), close framing (MCU or CU), soft directional light (window), visible grain, practical lighting, quiet negative space around the subject.
+
+**Prompt cues**: intimate mood; close framing; warm low practical light; shallow depth of field; quiet soft shadows
 
 ### Ominous / Dread
 **Visual recipe**: Low-key lighting, under-lighting or top-lighting (unnatural shadow direction), cool desaturated with one warm accent, fog or haze, wide angle for distortion, low angle looking up, crushed blacks, liminal space, deep night.
 
+**Prompt cues**: ominous mood; low-key light from below or above; cold desaturated color with one warm accent; haze and crushed blacks
+
 ### Nostalgic
 **Visual recipe**: Warm vintage grade (lifted blacks, amber tint), film grain (Portra 400 or Kodak Gold), soft overexposed highlights, golden hour, slightly faded saturation, vignetting, medium format (rich tonality), subjects looking away from camera.
+
+**Prompt cues**: nostalgic mood; warm faded colors; soft film grain; glowing overexposed highlights; dark vignette
 
 ### Serene / Peaceful
 **Visual recipe**: Soft diffused light (overcast or open shade), analogous cool or warm palette, wide shot with negative space, deep DOF (everything sharp and equal), horizontal composition, symmetry or balanced framing, gentle natural environment.
 
+**Prompt cues**: serene mood; soft diffused light; harmonious calm palette; open negative space; balanced level framing
+
 ### Chaotic
 **Visual recipe**: Dutch angle, multiple competing light sources (mixed color temperature), tight crop with elements exiting frame, high saturation clashing colors, motion blur, grain, direct flash, wide angle distortion, busy composition, no negative space.
+
+**Prompt cues**: chaotic mood; tilted frame; clashing mixed-color lights; elements spilling out of frame; motion blur and grain
 
 ### Luxurious
 **Visual recipe**: Medium format or large format (rich tonality), soft directional light with specular highlights, warm gold/amber, shallow DOF, glossy/reflective surfaces, dark background, negative space, precise composition, beauty dish or clamshell lighting.
 
+**Prompt cues**: luxurious mood; soft directional light with glossy highlights; warm gold accents; dark background; precise composition
+
 ### Eerie / Uncanny
 **Visual recipe**: Slightly wrong lighting (motivated from an unusual source), desaturated with one oversaturated element, liminal space, deep focus (everything sharp — nothing escapes attention), slight dutch angle, overcast or fluorescent, subjects slightly off-center, empty architecture.
 
+**Prompt cues**: eerie mood; flat fluorescent light; desaturated color with one oversaturated element; empty liminal space; everything in sharp focus
+
 ### Joyful
 **Visual recipe**: High-key, bright warm light (golden hour or overcast + warm grade), high saturation, wide smile/expression, wide angle for expansive feeling, vivid color accents, motion/action, slightly overexposed, candid/unposed framing.
+
+**Prompt cues**: joyful mood; bright warm sunlight; vivid saturated color accents; bright airy exposure; candid lively framing
 
 ---
 

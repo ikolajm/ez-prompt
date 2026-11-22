@@ -36,13 +36,14 @@ Light from the sun, sky, and environment — uncontrolled, time-dependent, and e
 
 **What it is**: The period of twilight after sunset (or before sunrise) when the sun is 4-8 degrees below the horizon. The sky turns a deep, saturated blue due to ozone absorption of remaining sunlight. Lasts roughly 20-40 minutes.
 
-**Visual effect**: Cool, calm, atmospheric. The ambient light is blue and even — no hard shadows. Artificial lights (street lamps, windows, neon) appear warm against the blue sky, creating natural warm/cool contrast. The light level is low, requiring longer exposures or higher ISO.
+**Visual effect**: Cool, calm, atmospheric. The ambient light is blue and even — no hard shadows. Artificial lights (street lamps, windows, neon) appear warm against the blue sky, creating natural warm/cool contrast. The light level is low, requiring longer exposures or higher ISO. Deep open shade on a clear day takes the same strong blue cast.
 
 **Pairs well with**:
 - Cityscapes — warm building lights against blue sky is the classic blue hour shot
 - Neon signs and artificial light — the color contrast is automatic
 - Long exposure — smooth water, light trails, ghosted movement
 - Moody/melancholic mood — the blue cast evokes quiet, solitude
+- Cold/winter scenes and noir — the blue reads as cold and quiet
 
 **Conflicts with**:
 - Warm, energetic moods — blue hour is inherently cool and contemplative
@@ -51,13 +52,15 @@ Light from the sun, sky, and environment — uncontrolled, time-dependent, and e
 
 **Example combination**: Blue hour + cityscape + neon signs + long exposure → deep blue sky, warm amber street lights, neon reflections on wet pavement, smooth streaks from passing cars
 
+**Prompt cues**: blue hour; deep saturated blue sky; warm artificial lights against cool blue; even shadowless twilight
+
 ---
 
 ### Hard Midday Sun
 
 **What it is**: Direct overhead sunlight between roughly 10am and 2pm. The sun is high, light travels through less atmosphere, and shadows are short, dark, and sharply defined. Color temperature is neutral (5,500K+).
 
-**Visual effect**: Harsh, high-contrast. Deep shadows under brows, nose, and chin. Squinting subjects. Hot highlights on foreheads and shoulders. Strong texture definition — every surface imperfection is visible. The light is unforgiving and clinical.
+**Visual effect**: Harsh, high-contrast. Deep shadows under brows, nose, and chin. Squinting subjects. Hot highlights on foreheads and shoulders. Strong texture definition — every surface imperfection is visible. The open blue sky puts a cool fill in the shadows. The light is unforgiving and clinical.
 
 **Pairs well with**:
 - Gritty/editorial fashion — the harshness is intentional, sculptural
@@ -65,13 +68,18 @@ Light from the sun, sky, and environment — uncontrolled, time-dependent, and e
 - Strong graphic shadows — patterns from architecture, blinds, fences become design elements
 - Saturated color — direct sunlight punches up color intensity
 - Disposable camera aesthetic — harsh + direct = snapshot energy
+- Street and documentary photography — high contrast, unflinching
+- Landscape and architecture — clear visibility to the horizon, strong shadow patterns
 
 **Conflicts with**:
 - Flattering beauty lighting — hard overhead shadows are unflattering on faces
 - Soft/dreamy moods — the light is the opposite of soft
 - Low-contrast, muted palettes — midday sun is high contrast by nature
+- Moody/atmospheric scenes — a clear sky leaves too much visibility
 
 **Example combination**: Hard midday sun + graphic shadows from window blinds + saturated color + wide angle → striped shadow patterns across subject's face and body, strong color, editorial tension
+
+**Prompt cues**: hard midday sun; harsh overhead light; short dark shadows; bright high contrast; cool shadow fill from blue sky
 
 ---
 
@@ -86,6 +94,9 @@ Light from the sun, sky, and environment — uncontrolled, time-dependent, and e
 - Portraits where skin quality matters — no unflattering shadows
 - Saturated color work — the even light lets color speak without competition from shadows
 - Melancholy/muted mood — overcast reads as somber without being dramatic
+- Muted, desaturated palettes — the cool cast suits them
+- Green landscapes — overcast makes foliage vivid
+- Street photography — even light, no squinting
 
 **Conflicts with**:
 - Dramatic dimension — the light is flat, no sculpting
@@ -93,6 +104,8 @@ Light from the sun, sky, and environment — uncontrolled, time-dependent, and e
 - Strong shadow play — there are no shadows to play with
 
 **Example combination**: Overcast sky + close-up portrait + saturated clothing + muted background → even skin tones, smooth light, punchy fabric color, quiet mood
+
+**Prompt cues**: overcast daylight; soft flat even light; no strong shadows; rich but flat color
 
 ---
 
@@ -114,6 +127,8 @@ Light from the sun, sky, and environment — uncontrolled, time-dependent, and e
 - Outdoor/expansive scenes — window light is an interior phenomenon
 
 **Example combination**: Large north-facing window + portrait + white walls as fill + 50mm → soft directional light, gentle shadow on far side of face, eyes catching window reflection, painterly quality
+
+**Prompt cues**: soft window light; light falling from one side; gradual falloff into shadow
 
 ---
 
@@ -138,6 +153,8 @@ Named configurations that produce specific, repeatable results. These are the vo
 - Lo-fi/amateur aesthetic — too polished
 
 **Example combination**: Three-point lighting + 4:1 key/fill ratio + white background + 85mm → dimensional portrait, clean separation from background, moderate shadow depth, professional editorial
+
+**Prompt cues**: clear key light from one side; soft fill on the shadow side; bright backlight separating subject from background
 
 ---
 
@@ -187,6 +204,8 @@ Named configurations that produce specific, repeatable results. These are the vo
 
 **Example combination**: Butterfly lighting + silver reflector below chin (clamshell) + 85mm + beauty dish → even, glamorous illumination, defined cheekbones, clean catchlights, smooth skin, classic beauty editorial
 
+**Prompt cues**: butterfly lighting; light from high in front; small shadow under the nose and chin; even glamorous light
+
 ---
 
 ### Split Lighting
@@ -207,6 +226,8 @@ Named configurations that produce specific, repeatable results. These are the vo
 - Group shots — one side of every face disappears
 
 **Example combination**: Split lighting + black and white + high contrast + tight crop → half the face glowing, half in total darkness, strong bone structure, graphic intensity
+
+**Prompt cues**: split lighting; half the subject lit, half in darkness; hard light from the side
 
 ---
 
@@ -230,6 +251,8 @@ Named configurations that produce specific, repeatable results. These are the vo
 
 **Example combination**: Strong rim light + fog + dark background + silhouetted figure → glowing outline around subject, volumetric light rays through haze, cinematic drama, face in shadow
 
+**Prompt cues**: rim lighting; glowing outline around the subject; bright edges against a darker background
+
 ---
 
 ### Ring Light
@@ -250,6 +273,8 @@ Named configurations that produce specific, repeatable results. These are the vo
 - Natural/organic feeling — the ring catchlight is obviously artificial
 
 **Example combination**: Ring light + macro close-up of eye + saturated color → circular catchlight reflected in iris, even illumination, no shadows, graphic beauty detail
+
+**Prompt cues**: flat even frontal light; almost no shadows; ring-shaped catchlights in the eyes
 
 ---
 
@@ -349,6 +374,8 @@ Named configurations that produce specific, repeatable results. These are the vo
 - Naturalistic/available light — the precision looks artificial
 - Flat/front-lit setups — the back light has no role
 
+**Prompt cues**: bright hair light from behind; glowing highlight on hair and shoulders; slash of light along the jaw
+
 ---
 
 ## Light Quality
@@ -375,6 +402,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 
 **Example combination**: Hard light from single spotlight + high contrast + black and white + tight crop → sculptural shadows carving across face, every texture visible, graphic intensity
 
+**Prompt cues**: hard light; sharp-edged shadows; high contrast; crisp surface texture
+
 ---
 
 ### Soft Light
@@ -396,6 +425,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 - Texture emphasis — soft light minimizes texture
 
 **Example combination**: Large softbox close to subject + 85mm f/2 + warm tones + clean background → smooth, even gradations across face, gentle shadows under cheekbones, flattering and luminous
+
+**Prompt cues**: soft light; smooth shadow gradients; low contrast; light wrapping around the subject
 
 ---
 
@@ -440,6 +471,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 
 **Example combination**: Direct flash + nighttime + party scene + tight framing → blown-out faces against black background, hard shadow on wall behind subject, red-eye, raw snapshot energy
 
+**Prompt cues**: harsh direct on-camera flash; flat frontal light; hard shadow right behind the subject; background falling into darkness
+
 ---
 
 ### Bounced Flash
@@ -458,27 +491,34 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 - Colored walls — the bounce picks up the wall color
 - Intentionally harsh flash aesthetic — bouncing removes the harshness
 
+**Prompt cues**: soft bounced flash; even light from above; soft natural-looking shadows
+
 ---
 
 ### Neon / Colored Gel Lighting
 
-**What it is**: Artificial light in specific colors — neon signs, colored LED panels, gelled strobes. Multiple colored sources can interact and mix on the subject.
+**What it is**: Artificial light in specific colors — neon signs, colored LED panels and strips, backlit signs, screen glow, gelled strobes. Multiple colored sources can interact and mix on the subject.
 
-**Visual effect**: Strong color cast on skin and surfaces. Multiple colors create complementary or clashing zones — a face lit cyan on one side and magenta on the other. The colored light defines zones and mood. Reads as urban, nightlife, futuristic, or stylized.
+**Visual effect**: Strong color cast on skin and surfaces. Multiple colors create complementary or clashing zones — a face lit cyan on one side and magenta on the other. A visible source glows and the glow bleeds outward, especially in fog, rain or on reflective surfaces. The colored light defines zones and mood. Reads as urban, nightlife, futuristic, or stylized.
 
 **Pairs well with**:
 - Cyberpunk/sci-fi aesthetic — neon color is the genre's visual language
 - Nighttime urban scenes — neon signs as practical light sources
 - Complementary color pairs — cyan/magenta, blue/orange, green/red
 - Wet surfaces — neon reflections on rain-slicked streets multiply the color
+- Fog/haze — volumetric glow around the source
 - Portraiture with attitude — colored light is inherently stylized
 
 **Conflicts with**:
 - Natural/realistic lighting — neon is obviously artificial
 - Warm/cozy moods — neon reads as cold, urban, electric
 - Accurate skin tones — the color cast changes everything
+- Daytime — neon disappears in bright ambient light
+- Natural/organic environments — neon is urban and synthetic
 
 **Example combination**: Cyan neon from left + magenta neon from right + wet street + close-up portrait → split color lighting on face, reflections in wet pavement, urban cyberpunk energy
+
+**Prompt cues**: neon colored light; strong cyan and magenta color casts; glowing light sources bleeding into the air
 
 ---
 
@@ -503,6 +543,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 
 **Example combination**: High-key lighting + white background + fashion + bright colors → airy, clean, cheerful, clothing pops against white, no shadows
 
+**Prompt cues**: bright airy exposure; minimal shadows; light tones throughout
+
 ---
 
 ### Low Key
@@ -524,6 +566,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 - Commercial/product work — clients want to see the product
 
 **Example combination**: Low-key + single key light from side + black background + black and white → face emerging from darkness, deep shadows, dramatic contrast, film noir intensity
+
+**Prompt cues**: low-key lighting; mostly deep shadow; light revealing only key areas
 
 ---
 
@@ -549,6 +593,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 
 **Example combination**: Chiaroscuro + single warm key light from above-left + dark background + still life with fruit and metal → objects glowing against deep darkness, rich warm highlights, cool shadow tones, painterly dimensionality
 
+**Prompt cues**: chiaroscuro; subject emerging from darkness; strong light and dark modeling
+
 ---
 
 ### Silhouette
@@ -571,6 +617,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 
 **Example combination**: Silhouette + sunset + figure standing on cliff edge + wide angle → black shape against orange/purple gradient sky, dramatic outline, epic scale, anonymous but emotional
 
+**Prompt cues**: silhouette; subject as a solid dark shape; bright background behind
+
 ---
 
 ### Overexposed / Blown Highlights
@@ -590,6 +638,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 - Detail recovery — the information is gone in blown areas
 - Dark/moody work — the brightness fights it
 - Precise, controlled rendering — overexposure is inherently loose
+
+**Prompt cues**: overexposed glowing highlights; blown-out bright areas; soft luminous bloom
 
 ---
 
@@ -612,6 +662,8 @@ The character of the light itself — hard vs soft, and how it shapes the subjec
 
 **Example combination**: Crushed blacks + single hard key from side + tight crop on face + black and white → half the face illuminated, other half pure black void, extreme contrast, graphic weight
 
+**Prompt cues**: crushed blacks; shadows falling to pure black; heavy dark contrast
+
 ---
 
 ## Color Temperature
@@ -624,6 +676,8 @@ The warmth or coolness of light, measured in Kelvin. Lower K = warmer (amber/ora
 
 **Pairs well with**: Intimate scenes, period/historical settings, romantic mood, warm skin tones.
 
+**Prompt cues**: candlelight; warm flickering orange glow; deep warm shadows
+
 ---
 
 ### Tungsten / Incandescent (~2,400-3,200K)
@@ -632,6 +686,8 @@ The warmth or coolness of light, measured in Kelvin. Lower K = warmer (amber/ora
 
 **Pairs well with**: Interior scenes, cozy/homey mood, nostalgic/vintage, warm portraits.
 
+**Prompt cues**: warm tungsten light; amber cast over everything; steady indoor glow
+
 ---
 
 ### Daylight (~5,500K)
@@ -639,22 +695,6 @@ The warmth or coolness of light, measured in Kelvin. Lower K = warmer (amber/ora
 **Visual effect**: Neutral, balanced. No strong warm or cool bias. The "standard" that everything else is compared against. Clean and natural.
 
 **Pairs well with**: Product photography (accurate color), documentary, outdoor scenes at midday.
-
----
-
-### Overcast / Shade (~6,500-7,500K)
-
-**Visual effect**: Slightly cool, blue-ish. Somber, muted, contemplative. The cool cast can make images feel melancholy or clinical.
-
-**Pairs well with**: Melancholy mood, muted palettes, overcast landscapes, cool skin tones.
-
----
-
-### Blue Hour / Deep Shade (~8,000-10,000K+)
-
-**Visual effect**: Strongly cool, blue. The color of twilight and deep shadow. Ethereal, cold, quiet. 
-
-**Pairs well with**: Cityscapes at twilight, cold/winter scenes, moody portraits, noir.
 
 ---
 
@@ -682,6 +722,8 @@ The warmth or coolness of light, measured in Kelvin. Lower K = warmer (amber/ora
 - Even illumination — practicals fall off quickly
 
 **Example combination**: Practical lighting + tungsten desk lamp in frame + warm glow + shallow depth of field + dark moody interior → naturalistic, cinematic, warm pool of light, face lit by the lamp in the scene
+
+**Prompt cues**: visible light sources in the frame; pools of warm localized light; natural falloff into darkness
 
 ---
 
@@ -722,6 +764,8 @@ The warmth or coolness of light, measured in Kelvin. Lower K = warmer (amber/ora
 - Precise exposure requirements — available light is unpredictable
 - Beauty/commercial demanding consistency — too variable
 
+**Prompt cues**: available light; uneven mixed-color ambient light; documentary realism
+
 ---
 
 ## Light Modifiers
@@ -745,6 +789,8 @@ The tools that shape light. Each produces a distinct quality even with the same 
 - Ultra-soft glamour — too much contrast
 - Documentary/naturalistic — too precise and artificial
 - Large groups — the falloff is significant
+
+**Prompt cues**: crisp beauty lighting; defined soft-edged shadows; round catchlights; glossy specular highlights
 
 ---
 
@@ -785,6 +831,8 @@ The tools that shape light. Each produces a distinct quality even with the same 
 - Ring light aesthetics — completely different quality
 - Broad, even wash — Fresnels are directional
 
+**Prompt cues**: focused cinematic spotlight; clean defined shadows; controlled beam of light
+
 ---
 
 ## Light Control
@@ -809,6 +857,8 @@ The tools that shape light. Each produces a distinct quality even with the same 
 
 **Example combination**: Gobo through venetian blinds + hard key + low key + subject at desk → noir shadow stripes across face and wall, implied window source, dramatic tension
 
+**Prompt cues**: dappled light; patterned shadows across surfaces
+
 ---
 
 ### Negative Fill
@@ -828,6 +878,8 @@ The tools that shape light. Each produces a distinct quality even with the same 
 - Flat/even illumination — the goal is the opposite
 - Bright/airy aesthetics — too dark on one side
 
+**Prompt cues**: deep shadow side; sculpted one-sided light; high contrast with no fill
+
 ---
 
 ### Barn Doors / Flags / Snoots
@@ -845,6 +897,8 @@ The tools that shape light. Each produces a distinct quality even with the same 
 **Conflicts with**:
 - Broad, even wash — these tools restrict light
 - Natural/ambient approaches — too controlled
+
+**Prompt cues**: tightly controlled pools of light; light only on the subject; dark surroundings
 
 ---
 
@@ -867,6 +921,8 @@ The tools that shape light. Each produces a distinct quality even with the same 
 - Commercial/beauty — the eye shadows are too deep
 - Even illumination — the opposite approach
 
+**Prompt cues**: top light from directly overhead; deep shadows in the eye sockets; lit crown and shoulders
+
 ---
 
 ### Under Lighting / Uplighting
@@ -886,6 +942,8 @@ The tools that shape light. Each produces a distinct quality even with the same 
 - Naturalistic portraiture — the shadows are wrong
 - Beauty/flattering light — deeply unflattering
 - Daytime/outdoor — no natural source from below
+
+**Prompt cues**: light from below; shadows cast upward; eerie unnatural under-lighting
 
 ---
 
@@ -924,6 +982,8 @@ The tools that shape light. Each produces a distinct quality even with the same 
 - Beauty/flat lighting — too sculptural
 - Single-source naturalism — two visible sources fight naturalism
 - Soft glamour — too dramatic
+
+**Prompt cues**: cross lighting from both sides; central shadow line down the middle; sculpted dramatic form
 
 ---
 

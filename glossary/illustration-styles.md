@@ -25,6 +25,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 
 **Example combination**: Ligne claire + urban street scene + flat color + uniform outlines + detailed architecture → Tintin-esque clarity, buildings precisely rendered, characters simplified, clean and readable
 
+**Prompt cues**: ligne claire comic style; clean uniform black outlines; flat color with no shading
+
 ---
 
 ### Woodcut / Linocut
@@ -48,6 +50,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Digital cleanness — woodcut is inherently textured and handmade
 
 **Example combination**: Woodcut style + bold black and white + landscape + visible wood grain texture + simple composition → dramatic contrast, handmade feel, graphic simplicity, folk art character
+
+**Prompt cues**: woodcut print; bold black and white carved lines; visible gouge marks and grain texture
 
 ---
 
@@ -155,6 +159,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 
 **Example combination**: Ukiyo-e style + crashing wave + bold outlines + flat blue and white + asymmetric composition → Hokusai's Great Wave energy, flat color bounded by bold lines, decorative pattern, graphic power
 
+**Prompt cues**: traditional woodblock print; flat color inside bold black outlines; decorative patterned surfaces; asymmetric cropped composition
+
 ---
 
 ### Vector / Flat Illustration
@@ -176,6 +182,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Photographic reference — too abstract and simplified
 - Atmospheric depth — flat color prevents depth
 - Emotional complexity — the simplification limits expression
+
+**Prompt cues**: flat vector illustration; clean geometric shapes; solid flat colors; smooth perfect lines
 
 ---
 
@@ -221,6 +229,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Imperfection as character — digital tools trend toward polish
 - Hand-crafted authenticity — the medium is inherently digital
 
+**Prompt cues**: digital painting; smooth blended brushwork; polished cinematic rendering
+
 ---
 
 ### Risograph / Screen Print
@@ -245,6 +255,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 
 **Example combination**: Risograph + two colors (fluorescent pink + dark blue) + slight misregistration + flat graphic illustration → layered spot colors overlapping to create purple where they meet, grainy ink texture, indie zine energy
 
+**Prompt cues**: risograph print; limited overlapping ink colors; misregistered color layers; grainy speckled ink texture
+
 ---
 
 ### Collage
@@ -266,6 +278,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Clean/smooth surfaces — the edges and layers are visible
 - Single-medium consistency — collage mixes everything
 - Minimal compositions — collage tends busy
+
+**Prompt cues**: mixed media collage; cut and torn paper pieces; clashing textures and scales layered together
 
 ---
 
@@ -338,6 +352,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Photorealism — too textured
 - Digital cleanness — the medium is maximally physical
 
+**Prompt cues**: soft pastel drawing; powdery chalky strokes; velvety saturated color; toned paper showing through
+
 ---
 
 ### Etching / Engraving (Intaglio)
@@ -360,6 +376,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Loose/gestural marks — the medium is precise
 
 **Example combination**: Etching + architectural interior + fine crosshatching + warm sepia paper → Piranesi energy, obsessive line detail, tonal depth from hatching density
+
+**Prompt cues**: etching; fine precise engraved lines; tone built from hatching and crosshatching; warm plate tone
 
 ---
 
@@ -384,6 +402,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 
 **Example combination**: Scratchboard + owl portrait + fine white lines on black + detailed feather texture → individual feathers scratched in, dramatic, editorial wildlife quality
 
+**Prompt cues**: scratchboard illustration; fine white lines scratched from black; stark black and white
+
 ---
 
 ### Stipple / Pointillism Technique
@@ -405,6 +425,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Smooth blending — surface is granular at close range
 - Speed — both techniques are painstaking
 
+**Prompt cues**: stippled illustration; tone built entirely from dots; dense dot shading
+
 ---
 
 ### Cross-Hatching (as Style)
@@ -423,6 +445,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Smooth tonal gradation — lines are always visible
 - Painterly softness — inherently linear and crisp
 - Photorealism — too graphic and constructed
+
+**Prompt cues**: pen and ink crosshatching; tone from dense intersecting lines; fine linework
 
 ---
 
@@ -446,6 +470,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Subtle gradation — each cell is separate
 - Loose/spontaneous marks — the leading is structural
 
+**Prompt cues**: stained glass style; glowing jewel-toned color cells; thick black dividing lines; backlit luminous color
+
 ---
 
 ### Paper Cut / Kirigami Style
@@ -467,6 +493,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Texture within shapes — paper is uniform
 
 **Example combination**: Paper cut + layered birds and flowers + subtle shadows between layers + limited palette → Matisse cutout energy, bold silhouettes, visible depth, handmade craft
+
+**Prompt cues**: layered paper cut art; flat cut-paper shapes with crisp edges; soft shadows between paper layers
 
 ---
 
@@ -531,6 +559,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Minimalism — the style is maximal
 - Photorealism — exaggerated by design
 
+**Prompt cues**: comic book art; heavy black inks with bold outlines; saturated flat color; dynamic action lines
+
 ---
 
 ### Manga (as illustration)
@@ -553,6 +583,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Western color palettes — manga is primarily monochrome
 - Loose/sketchy linework — manga lines are controlled
 - Realistic proportions (usually) — deliberately stylized
+
+**Prompt cues**: black and white manga illustration; clean thin linework; screentone dot shading
 
 ---
 
@@ -597,6 +629,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Atmospheric effects — information only
 - Organic subjects — suits manufactured objects
 
+**Prompt cues**: patent drawing; clean uniform black lines on white; numbered callout labels; dashed hidden lines
+
 ---
 
 ### Graffiti / Street Art
@@ -618,6 +652,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Muted/pastel palettes — too bold and saturated
 
 **Example combination**: Graffiti wildstyle + dimensional letters + spray paint on brick + neon colors + drips → NYC subway energy, interlocking letters, saturated color on gritty brick
+
+**Prompt cues**: graffiti street art; spray paint with soft overspray and drips; bold saturated colors with thick outlines
 
 ---
 
