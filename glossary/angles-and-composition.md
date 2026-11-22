@@ -25,6 +25,8 @@ Camera angle controls the power dynamic between viewer and subject. Composition 
 
 **Example combination**: Eye level + 50mm + natural light + direct gaze → honest, intimate portrait with no optical manipulation, subject and viewer on equal footing
 
+**Prompt cues**: eye-level shot; camera straight on at eye height
+
 ---
 
 ### Low Angle (Looking Up)
@@ -71,6 +73,8 @@ Camera angle controls the power dynamic between viewer and subject. Composition 
 
 **Example combination**: High angle + medium shot + subject sitting on floor + soft light → vulnerable, intimate, viewer looking down protectively, subject surrounded by the space around them
 
+**Prompt cues**: high angle shot looking down; subject small below the camera; ground filling the background
+
 ---
 
 ### Bird's Eye View (Directly Overhead)
@@ -94,6 +98,8 @@ Camera angle controls the power dynamic between viewer and subject. Composition 
 
 **Example combination**: Bird's eye + food spread on table + warm natural light from side + saturated color → organized flat lay of dishes, graphic arrangement, textures visible, no depth compression
 
+**Prompt cues**: bird's-eye view; directly overhead, looking straight down; flat map-like layout
+
 ---
 
 ### Worm's Eye View (From the Ground)
@@ -115,6 +121,8 @@ Camera angle controls the power dynamic between viewer and subject. Composition 
 - Calm compositions — the angle is inherently dynamic
 
 **Example combination**: Worm's eye + fisheye + forest canopy + golden hour light filtering through → trees radiating outward from center, curved distortion, light rays between leaves, immersive vertigo
+
+**Prompt cues**: worm's-eye view; camera on the ground looking up; everything towering overhead; lines converging toward the sky
 
 ---
 
@@ -138,6 +146,8 @@ Camera angle controls the power dynamic between viewer and subject. Composition 
 - Overuse — loses impact quickly if every shot is tilted
 
 **Example combination**: Dutch angle + wide angle + neon lighting + nighttime urban → tilted buildings, diagonal lines of light, disorienting perspective, thriller energy
+
+**Prompt cues**: dutch angle; tilted horizon; leaning vertical lines
 
 ---
 
@@ -179,6 +189,8 @@ Camera angle controls the power dynamic between viewer and subject. Composition 
 - Detached/observational mood — POV is the opposite of detached
 
 **Example combination**: POV + wide angle + handheld shake + running through corridor → first-person urgency, hallway walls streaking past, motion blur, immersive panic
+
+**Prompt cues**: first-person point of view; seen through the viewer's own eyes; handheld framing
 
 ---
 
@@ -230,6 +242,8 @@ How much of the subject fills the frame. Each size shifts the balance between su
 
 **Example combination**: Close-up + 85mm f/1.4 + Rembrandt lighting + direct gaze → face fills frame, one side in shadow with triangle, eyes sharp against melted background, emotional intensity
 
+**Prompt cues**: close-up shot; subject fills the frame; minimal background
+
 ---
 
 ### Medium Close-Up (MCU)
@@ -271,6 +285,8 @@ How much of the subject fills the frame. Each size shifts the balance between su
 - Full outfit/fashion — can't see below the waist
 - Wide landscapes — too much subject, not enough environment
 
+**Prompt cues**: medium shot; framed from the waist up; background visible for context
+
 ---
 
 ### Full Shot / Long Shot (LS)
@@ -293,6 +309,8 @@ How much of the subject fills the frame. Each size shifts the balance between su
 
 **Example combination**: Full shot + 35mm + architectural interior + natural window light → full body visible, outfit and posture clear, room geometry provides context, person within the space
 
+**Prompt cues**: full shot; whole subject head to toe; subject within its surroundings
+
 ---
 
 ### Wide Shot / Extreme Long Shot (ELS)
@@ -314,6 +332,8 @@ How much of the subject fills the frame. Each size shifts the balance between su
 - Product/detail work — too far away for specifics
 
 **Example combination**: Extreme long shot + ultra-wide + lone figure on beach + overcast sky → vast empty beach, tiny silhouette, muted color, overwhelming sense of space and solitude
+
+**Prompt cues**: wide shot; tiny subject in a vast setting; setting dominates the frame
 
 ---
 
@@ -339,6 +359,8 @@ Rules and techniques for arranging elements within the frame. These are about *w
 - Extreme minimalism — sometimes dead center is the right choice
 - Formal/geometric compositions — symmetry has its own power
 
+**Prompt cues**: rule of thirds composition; subject placed off-center
+
 ---
 
 ### Center Composition / Symmetry
@@ -360,6 +382,8 @@ Rules and techniques for arranging elements within the frame. These are about *w
 - Candid/naturalistic work — centering feels posed
 
 **Example combination**: Center composition + symmetrical hallway + single figure walking toward camera + normal lens → formal geometry, figure centered in converging lines, Wes Anderson order
+
+**Prompt cues**: centered symmetrical composition; subject dead center; mirrored balance on both sides
 
 ---
 
@@ -383,6 +407,8 @@ Rules and techniques for arranging elements within the frame. These are about *w
 
 **Example combination**: Leading lines (road vanishing to horizon) + wide angle + deep depth of field + lone figure at vanishing point → road converges toward distant figure, strong sense of depth and journey
 
+**Prompt cues**: leading lines; lines converging toward the subject
+
 ---
 
 ### Negative Space
@@ -404,6 +430,8 @@ Rules and techniques for arranging elements within the frame. These are about *w
 - Action/energy — negative space is calm and still
 
 **Example combination**: Negative space + single subject in lower-right third + open sky filling 2/3 of frame + muted blue → vast emptiness above, subject small but emphasized, sense of solitude and space
+
+**Prompt cues**: negative space; small subject in a large empty area; minimal clean background
 
 ---
 
@@ -427,6 +455,8 @@ Rules and techniques for arranging elements within the frame. These are about *w
 
 **Example combination**: Subject framed through doorway + 85mm + shallow depth of field + door frame slightly blurred in foreground → layers of depth, subject sharp in the middle distance, voyeuristic intimacy
 
+**Prompt cues**: frame within a frame; subject seen through a foreground opening
+
 ---
 
 ### Diagonal Composition
@@ -446,6 +476,8 @@ Rules and techniques for arranging elements within the frame. These are about *w
 - Calm/serene compositions — diagonals introduce tension
 - Formal symmetry — diagonals break symmetry
 - Static/contemplative mood — too energetic
+
+**Prompt cues**: diagonal composition; strong diagonal lines across a level frame
 
 ---
 
@@ -486,6 +518,8 @@ Rules and techniques for arranging elements within the frame. These are about *w
 
 **Example combination**: Wide angle + f/11 + wildflowers in foreground + mountains in background + golden hour → foreground flowers large and detailed, mountains sharp in distance, extreme depth, golden light raking across both layers
 
+**Prompt cues**: strong foreground element; layered foreground, middle ground and background
+
 ---
 
 ### Tight Crop / Unconventional Framing
@@ -507,6 +541,8 @@ Rules and techniques for arranging elements within the frame. These are about *w
 - Corporate/commercial — reads as too edgy
 
 **Example combination**: Tight crop through forehead + 35mm at close range + direct flash + high contrast → top of head cut off, face fills frame with slight wide-angle distortion, raw flash, editorial aggression
+
+**Prompt cues**: tight unconventional crop; subject cut off at the frame edges; uncomfortably close framing
 
 ---
 

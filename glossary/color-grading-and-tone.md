@@ -28,6 +28,8 @@ How colors relate to each other within the frame. These are compositional decisi
 
 **Example combination**: Teal and orange grade + cinematic lighting + portrait + shallow depth of field → warm skin tones against cool teal shadows, Hollywood blockbuster color science
 
+**Prompt cues**: complementary color palette; two opposing hues side by side; vivid color contrast
+
 ---
 
 ### Analogous Colors
@@ -49,6 +51,8 @@ How colors relate to each other within the frame. These are compositional decisi
 
 **Example combination**: Blue-green analogous palette + overcast seascape + muted tones → ocean, sky, and rocks all in the same cool color family, meditative, unified
 
+**Prompt cues**: analogous color palette; neighboring hues from one color family; harmonious unified color
+
 ---
 
 ### Split Complementary
@@ -65,6 +69,8 @@ How colors relate to each other within the frame. These are compositional decisi
 **Conflicts with**:
 - Simplicity — three deliberate colors is more complex than two
 - Natural/ungraded imagery — split complementary is a conscious choice
+
+**Prompt cues**: split complementary palette; one base hue with two contrasting accents; balanced color contrast
 
 ---
 
@@ -84,6 +90,8 @@ How colors relate to each other within the frame. These are compositional decisi
 - Muted/desaturated palettes — triadic needs vibrancy
 - Single-mood imagery — three colors pull in three directions
 - Realism — nature rarely arranges itself in perfect triads
+
+**Prompt cues**: triadic color palette; three evenly spaced bold hues; bright balanced pop-art color
 
 ---
 
@@ -106,6 +114,8 @@ How colors relate to each other within the frame. These are compositional decisi
 
 **Example combination**: Blue monochromatic + nighttime + single cool light source + portrait → face in shades of blue, navy shadows, powder highlights, cold and atmospheric
 
+**Prompt cues**: monochromatic palette; every tone a shade of one hue; image bathed in a single color
+
 ---
 
 ### Color Blocking
@@ -126,6 +136,8 @@ How colors relate to each other within the frame. These are compositional decisi
 - Moody chiaroscuro — needs even light
 - Natural environments — nature doesn't color-block
 - Muted/desaturated palettes — needs vivid color
+
+**Prompt cues**: color blocking; large flat planes of bold solid color; graphic hard-edged color areas
 
 ---
 
@@ -166,6 +178,8 @@ Specific color grading styles and their visual character.
 - Vintage/film stock looks — too modern and digital
 - Warm-overall or cool-overall palettes — T&O requires both temperatures
 
+**Prompt cues**: teal and orange color grade; warm orange skin tones; teal-shifted shadows and backgrounds
+
 ---
 
 ### Desaturated / Muted
@@ -188,6 +202,8 @@ Specific color grading styles and their visual character.
 
 **Example combination**: Desaturated + slight green tint + overcast + urban environment → Fincher-esque clinical mood, colors present but suppressed, everything feels slightly wrong
 
+**Prompt cues**: desaturated muted color grade; drained low-saturation color; cold green-grey tint
+
 ---
 
 ### Warm Vintage / Faded
@@ -206,6 +222,8 @@ Specific color grading styles and their visual character.
 - Crisp/modern rendering — too soft and warm
 - High contrast drama — the lifted shadows remove it
 - Cool/clinical tones — too warm
+
+**Prompt cues**: warm faded vintage color grade; lifted milky shadows; amber tint; low contrast
 
 ---
 
@@ -228,6 +246,8 @@ Specific color grading styles and their visual character.
 
 **Example combination**: Bleach bypass + hard side light + war scene + desaturated → deep blacks, muted colors, metallic sheen on skin, high contrast, Saving Private Ryan intensity
 
+**Prompt cues**: bleach bypass look; desaturated color with harsh contrast; deep blacks and bright highlights; gritty metallic sheen
+
 ---
 
 ### Day for Night
@@ -246,24 +266,30 @@ Specific color grading styles and their visual character.
 - Warm tones — day for night is exclusively cool/blue
 - Interior scenes — the technique is designed for exteriors
 
+**Prompt cues**: day for night grade; deep blue tint over the scene; exaggerated dark shadows; stylized moonlit look
+
 ---
 
 ### Cross-Processed Look
 
-**What it is**: Digital emulation of chemical cross-processing (see Film Stocks & Analog). Shifted hues, boosted saturation, unnatural color casts — typically greens shift yellow, shadows go teal, highlights go warm.
+**What it is**: Developing film in the wrong chemistry on purpose — typically slide film (E-6) in C-41 negative chemistry, or negative film in E-6 — or its digital emulation. The mismatch shifts hues, boosts saturation and casts unnatural color: typically greens shift yellow, shadows go teal, highlights go warm.
 
-**Visual effect**: Punchy, contrasty, color-shifted. The colors feel "wrong" in an energetic way. Greens go sickly, skin tones shift toward yellow or magenta. The 1990s fashion photography look.
+**Visual effect**: Punchy, contrasty, color-shifted. The colors feel "wrong" in an energetic way. Greens go sickly, blues go cyan, skin tones shift toward yellow or magenta; the exact shift depends on the stock. The 1990s fashion photography look (Nick Knight, Anton Corbijn).
 
 **Pairs well with**:
 - Fashion editorial — the shifted colors are deliberately stylized
 - 1990s aesthetic — the era's defining look
 - High saturation scenes — amplifies the weirdness
 - Punchy/editorial energy — reads as confident and stylish
+- Experimental/art — the unpredictability is creative
 
 **Conflicts with**:
 - Natural color accuracy — the opposite
 - Subtle/quiet mood — cross-process is loud
 - Warm/cozy tones — the color shifts are unpredictable
+- Predictable results — each stock and chemistry pairing shifts differently
+
+**Prompt cues**: cross-processed color; shifted hues, yellow greens and cyan blues; punchy contrast; magenta and yellow color casts
 
 ---
 
@@ -285,6 +311,8 @@ Specific color grading styles and their visual character.
 - Modern muted grading — Technicolor is vivid
 - Gritty realism — too beautiful
 
+**Prompt cues**: three-strip vintage film color; extremely saturated reds and greens; deep rich blacks; painted-looking vivid color
+
 ---
 
 ### HDR / Tone-Mapped Look
@@ -304,6 +332,8 @@ Specific color grading styles and their visual character.
 - Portraiture — makes skin look terrible
 - Cinematic looks — too flat and detailed
 - Elegant/refined aesthetics — too crunchy
+
+**Prompt cues**: HDR tone-mapped look; halos around edges; hyper-detailed textures everywhere; flat surreal contrast
 
 ---
 
@@ -325,6 +355,8 @@ Specific color grading styles and their visual character.
 - Modern CGI look — different visual quality entirely
 - Documentary — too polished and idealized
 
+**Prompt cues**: matte painting look; hazy atmospheric depth; simplified painted color; soft distant edges
+
 ---
 
 ### Negative Scan Look
@@ -344,6 +376,8 @@ Specific color grading styles and their visual character.
 - Digital sharpness — analog scans have inherent softness
 - Futuristic aesthetics — too analog and warm
 - High contrast B&W — different process entirely
+
+**Prompt cues**: scanned film negative look; lifted blacks that never reach true black; warm organic tones; soft film imperfection
 
 ---
 
@@ -369,6 +403,8 @@ Specific color grading styles and their visual character.
 
 **Example combination**: Black and white + high contrast + hard side light + portrait + visible grain → dramatic, timeless, textural, form and light doing all the work
 
+**Prompt cues**: black and white image; rich greyscale tones; strong light and shadow contrast
+
 ---
 
 ### Sepia Tone
@@ -387,6 +423,8 @@ Specific color grading styles and their visual character.
 - Modern/contemporary subjects — sepia looks backward, not forward
 - Cool mood — sepia is inherently warm
 - Vivid/energetic feeling — sepia is quiet and reflective
+
+**Prompt cues**: sepia toned photograph; warm brown monochrome; aged antique print look
 
 ---
 
@@ -407,6 +445,8 @@ Specific color grading styles and their visual character.
 - Realistic rendering — the blue is obviously stylized
 - Subtle/understated treatment — the blue is strong
 
+**Prompt cues**: cyanotype print; deep Prussian blue and white; blueprint-like monochrome
+
 ---
 
 ### Selenium Tone
@@ -425,6 +465,8 @@ Specific color grading styles and their visual character.
 - Warm tones — selenium is cool
 - Obvious stylization — the effect is subtle, not dramatic
 - Casual/snapshot aesthetic — too refined
+
+**Prompt cues**: selenium toned black and white; cool blue-black shadows; rich deep neutral tones
 
 ---
 
@@ -448,6 +490,8 @@ Specific color grading styles and their visual character.
 
 **Example combination**: Duotone (black + electric blue) + high contrast portrait + hard light → graphic, modern, bold, face rendered in deep black shadows and vivid blue highlights
 
+**Prompt cues**: duotone image; two-color print; shadows in one ink, highlights in another; bold graphic color
+
 ---
 
 ### High Saturation
@@ -467,6 +511,8 @@ Specific color grading styles and their visual character.
 - Subtle/quiet mood — too loud
 - Natural/realistic rendering — over-saturation is obviously processed
 - Skin tone accuracy — pushing saturation makes skin look unnatural
+
+**Prompt cues**: highly saturated colors; vivid intense hues; color at full strength
 
 ---
 
@@ -490,6 +536,8 @@ Specific color grading styles and their visual character.
 
 **Example combination**: Pastel palette + soft diffused light + fashion subject + minimal background + slight overexposure → airy, dreamy, soft pink and lavender tones, blown white highlights, editorial calm
 
+**Prompt cues**: soft pastel palette; pale light colors; airy bright image with no deep blacks
+
 ---
 
 ### Split Toning
@@ -508,6 +556,8 @@ Specific color grading styles and their visual character.
 - Heavy overall saturation — fights the subtlety
 - Neon/rainbow palettes — too many colors competing
 - Monochrome — split toning needs a color-capable image
+
+**Prompt cues**: split toning; warm tinted highlights; cool tinted shadows
 
 ---
 

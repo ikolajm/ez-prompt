@@ -28,6 +28,8 @@ The fundamental spectrum from matte to mirror. How light interacts with a surfac
 
 **Example combination**: Matte ceramic + matte linen + soft diffused light + desaturated palette → quiet, tactile, understated, every surface absorbs light evenly
 
+**Prompt cues**: matte finish; no shine or reflections; soft even surface color
+
 ---
 
 ### Glossy / Polished
@@ -50,6 +52,8 @@ The fundamental spectrum from matte to mirror. How light interacts with a surfac
 
 **Example combination**: Glossy black lacquer surface + hard key light + product on top + dark background → sharp specular highlight streaking across the surface, product reflected, luxury and precision
 
+**Prompt cues**: glossy polished finish; bright specular highlights; clear reflections on the surface
+
 ---
 
 ### Satin / Semi-Gloss
@@ -68,6 +72,8 @@ The fundamental spectrum from matte to mirror. How light interacts with a surfac
 - Maximum reflectivity — satin is softer than full gloss
 - Completely matte — satin has some sheen
 - Gritty/rough textures — satin is smooth
+
+**Prompt cues**: satin finish; soft broad sheen; no mirror reflections
 
 ---
 
@@ -112,6 +118,8 @@ The fundamental spectrum from matte to mirror. How light interacts with a surfac
 
 **Example combination**: Backlit translucent leaves + macro + warm light + shallow depth of field → leaves glowing green-gold from within, veins visible as dark networks, soft bokeh behind, ethereal
 
+**Prompt cues**: translucent frosted surface; soft inner glow; light diffusing through
+
 ---
 
 ### Transparent / Glass
@@ -131,6 +139,8 @@ The fundamental spectrum from matte to mirror. How light interacts with a surfac
 - Matte/diffused aesthetics — glass is all about sharp light interaction
 - Subjects that need to be clearly visible — glass distorts what's behind it
 
+**Prompt cues**: transparent glass-like surface; refracted distortion of what lies behind; caustic light patterns
+
 ---
 
 ### Iridescent / Holographic
@@ -143,6 +153,8 @@ The fundamental spectrum from matte to mirror. How light interacts with a surfac
 
 **Conflicts with**: Muted/earthy palettes, matte textures, vintage aesthetics, warm color grading.
 
+**Prompt cues**: iridescent finish; rainbow color shifts across the surface; prismatic reflections
+
 ---
 
 ### Pearlescent
@@ -154,6 +166,8 @@ The fundamental spectrum from matte to mirror. How light interacts with a surfac
 **Pairs well with**: Soft lighting, beauty photography, luxury branding, pastel palettes, wedding aesthetics, silk.
 
 **Conflicts with**: Harsh contrast, gritty textures, industrial aesthetics, bold saturated color.
+
+**Prompt cues**: pearlescent finish; soft luminous sheen; pale shifting pastel tones
 
 ---
 
@@ -336,6 +350,8 @@ Each type reads completely differently. Always specify which — "leather textur
 - Natural/organic mood — chrome is entirely synthetic
 - Flat lighting — chrome needs something interesting to reflect
 
+**Prompt cues**: mirror chrome finish; surface showing only reflections; sharp warped reflections of the surroundings
+
 ---
 
 ### Plastic / Acrylic
@@ -401,26 +417,6 @@ Each type reads completely differently. Always specify which — "leather textur
 
 ---
 
-### Neon / LED Glow
-
-**What it is**: Self-luminous surfaces — neon tubes, LED strips, backlit signs, screen glow. Not a texture in the traditional sense, but a surface quality that changes everything around it.
-
-**Visual effect**: The surface emits light rather than reflecting it. Creates color wash on nearby surfaces. Defines zones of color in the scene. The glow bleeds outward, especially in fog, rain, or on reflective surfaces. Reads as urban, nightlife, futuristic, or cyberpunk.
-
-**Pairs well with**:
-- Nighttime/low light — neon is most effective in darkness
-- Wet surfaces — reflections multiply the color
-- Fog/haze — volumetric glow around the source
-- Cyberpunk/sci-fi aesthetic — neon is the genre's material
-- Portraiture — neon as colored key light on the face
-
-**Conflicts with**:
-- Natural/organic environments — neon is urban and synthetic
-- Daytime — neon is invisible in bright ambient light
-- Warm/natural skin tones — the color cast changes everything
-
----
-
 ### Brushed Metal
 
 **What it is**: Metal finished with fine parallel abrasion lines, creating directional reflection rather than mirror reflection. Common on appliances, watches, industrial design.
@@ -430,6 +426,8 @@ Each type reads completely differently. Always specify which — "leather textur
 **Pairs well with**: Industrial design, product photography, minimalist aesthetic, cool color temperatures, modern architecture.
 
 **Conflicts with**: Organic/natural aesthetics, warm rustic looks, highly polished mirror surfaces.
+
+**Prompt cues**: brushed metal finish; fine directional grain lines; soft streaked highlights
 
 ---
 

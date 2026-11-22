@@ -26,6 +26,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 **Example combination**: Cel animation style + painted watercolor background + flat-colored character + warm palette + soft lighting → Disney-esque quality, character pops against detailed painted environment, organic and alive
 
+**Prompt cues**: hand-drawn cel animation still; clean inked outlines with flat colors; painted watercolor background
+
 ---
 
 ### Anime / Manga
@@ -50,6 +52,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 - Muted/desaturated palettes — anime tends vivid (though exceptions exist in seinen)
 
 **Example combination**: Anime style + dramatic lighting + wind-blown hair + speed lines + vivid color → dynamic, emotionally intense, sharp highlights on hair, large eyes catching light, cinematic action energy
+
+**Prompt cues**: anime style; large expressive eyes; hair in sharp color blocks with highlights; clean cel shading
 
 ---
 
@@ -197,6 +201,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 - Stable/static imagery — the constant shifting is inherent
 - Traditional animation principles (squash/stretch) — rotoscope follows real physics
 
+**Prompt cues**: rotoscoped animation; illustrated outlines traced over realistic motion; flat colors over lifelike proportions
+
 ---
 
 ### Pixel Art
@@ -220,6 +226,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 - Modern CG polish — the opposite aesthetic
 
 **Example combination**: Pixel art + 16-color palette + isometric perspective + dithered shadows + game environment → retro 16-bit aesthetic, every pixel placed, constrained palette, charming and nostalgic
+
+**Prompt cues**: pixel art; visible square pixel grid; limited color palette; dithered shading
 
 ---
 
@@ -267,6 +275,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 **Example combination**: Rubber hose style + 1930s character + pie-cut eyes + bouncing to music + black and white + film grain → Fleischer Studios energy, everything dancing, surreal backgrounds, vintage cartoon charm
 
+**Prompt cues**: 1930s rubber hose cartoon; bendy noodle-like limbs; pie-cut eyes; black and white with film scratches
+
 ---
 
 ### UPA / Limited Animation
@@ -291,6 +301,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 **Example combination**: UPA style + angular character + flat bold colors + abstract mid-century background + limited detail → Saul Bass energy, geometric figures, strong negative space, 1950s graphic design as animation
 
+**Prompt cues**: 1950s limited animation style; flat geometric shapes; bold flat color fields; abstract minimal backgrounds
+
 ---
 
 ### Anime Sub-Styles
@@ -305,6 +317,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 **Conflicts with**: Gritty/dark styles, military, industrial, muted palettes.
 
+**Prompt cues**: shoujo manga style; huge sparkling eyes; flowing hair; pastel colors with floating sparkles
+
 ---
 
 #### Seinen
@@ -316,6 +330,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 **Pairs well with**: Cyberpunk, gothic, dark academia, film noir, chiaroscuro, dramatic lighting.
 
 **Conflicts with**: Cute/pastel aesthetics, shoujo sparkles, bright cheerful palettes.
+
+**Prompt cues**: seinen manga style; realistic proportions; heavy crosshatched shading; gritty detailed linework; dark moody palette
 
 ---
 
@@ -404,6 +420,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 **Example combination**: Paper cutout + construction paper texture + flat characters with jointed limbs + layered backgrounds → South Park simplicity, handmade charm, geometric shapes, deliberately limited
 
+**Prompt cues**: paper cutout animation; flat construction paper pieces; visible joints at the limbs; layered flat planes with drop shadows
+
 ---
 
 ### Silhouette Animation
@@ -424,6 +442,8 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 - Color on characters — they're black by definition
 - Detailed character rendering — interior detail invisible
 - Shoujo anime — needs visible faces and eyes for emotion
+
+**Prompt cues**: silhouette animation; pure black cut-paper shapes; richly colored backdrop
 
 ---
 

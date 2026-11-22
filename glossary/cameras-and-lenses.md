@@ -29,6 +29,8 @@ The size of the film (or sensor) changes the fundamental character of the image:
 
 **Example combination**: 35mm film + 28mm wide angle + Kodak Tri-X 400 + available light → high-contrast black and white street photography, visible grain, deep shadows, documentary realism
 
+**Prompt cues**: 35mm film photograph; natural perspective; visible fine grain
+
 ---
 
 ### Medium Format
@@ -54,6 +56,8 @@ The size of the film (or sensor) changes the fundamental character of the image:
 
 **Example combination**: Hasselblad 500C + 80mm f/2.8 + Kodak Portra 160 + soft window light → rich, warm portrait with square crop, smooth skin tones, gentle highlight rolloff, fine grain, fashion editorial quality
 
+**Prompt cues**: medium format photograph; smooth tonal gradations; very fine grain; smooth highlight rolloff
+
 ---
 
 ### Large Format
@@ -77,6 +81,8 @@ The size of the film (or sensor) changes the fundamental character of the image:
 
 **Example combination**: 4x5 large format + 210mm lens + Fuji Velvia 50 + golden hour side light → hyper-detailed landscape with saturated but natural color, no visible grain, extreme depth of field via tilt, luminous quality
 
+**Prompt cues**: large format photograph; extreme fine detail throughout; grainless continuous tones
+
 ---
 
 ### Instant / Polaroid
@@ -97,6 +103,8 @@ The size of the film (or sensor) changes the fundamental character of the image:
 - Dark/moody tones — the warm cast and low contrast fight heavy shadows
 
 **Example combination**: Polaroid SX-70 + soft afternoon light + slightly overexposed + white border → intimate, warm, nostalgic snapshot with muted pastels and dreamy softness
+
+**Prompt cues**: instant film photo; thick white border; soft focus with muted warm colors; milky blown highlights
 
 ---
 
@@ -119,6 +127,8 @@ The size of the film (or sensor) changes the fundamental character of the image:
 
 **Example combination**: Disposable camera + direct flash + nighttime party + motion blur → blown-out faces against dark background, hard shadows, oversaturated skin tones, 90s nostalgia energy
 
+**Prompt cues**: disposable camera snapshot; harsh direct flash with hard shadows; oversaturated colors and soft focus; dark vignetted corners
+
 ---
 
 ### Smartphone / Computational
@@ -138,6 +148,8 @@ The size of the film (or sensor) changes the fundamental character of the image:
 - Cinematic or editorial quality — the flat HDR look is the opposite of cinematic dynamic range
 
 **Example combination**: iPhone + HDR + direct front flash + selfie angle → flat, sharp, social media snapshot with even exposure, deep focus, slight wide-angle distortion on close faces
+
+**Prompt cues**: smartphone photo; ultra-sharp from front to back; flat even HDR light; saturated punchy colors
 
 ---
 
@@ -163,6 +175,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Subtle compositions — the lens imposes itself on every image
 
 **Example combination**: 14mm ultra-wide + low angle + interior architecture + natural light from windows → dramatic room perspective, converging lines, exaggerated depth, light spilling across expansive space
+
+**Prompt cues**: ultra-wide-angle shot; exaggerated perspective; near objects huge, far objects tiny; lines curving at the frame edges
 
 ---
 
@@ -271,6 +285,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: 300mm + f/4 + heat haze + crowded street → flattened perspective, people stacked in layers, shimmering atmospheric distortion, voyeuristic distance
 
+**Prompt cues**: telephoto shot; extreme perspective compression; background flattened like a wall; very shallow depth of field
+
 ---
 
 ### Super Telephoto (400mm+)
@@ -314,6 +330,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: Daguerreotype + formal portrait + dark background + silver-plate surface + visible plate edges → ghostly, precious, mirror-like tones, 1850s formal intensity
 
+**Prompt cues**: daguerreotype; mirror-like silver plate; silver-grey monochrome tones; tarnished plate edges
+
 ---
 
 ### Wet Plate Collodion
@@ -337,6 +355,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: Wet plate collodion + intense portrait + blue-sensitive rendering + visible pour lines at edges + chemical artifacts → haunting, sharp center with organic edge decay, Civil War-era intensity
 
+**Prompt cues**: wet plate collodion photograph; visible pour lines and chemical streaks; dark uneven plate edges; sharp center falling off softly
+
 ---
 
 ### Tintype
@@ -355,6 +375,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - High contrast / bright whites — the iron base suppresses them
 - Precision/sharpness — rougher than daguerreotype
 - Modern polish — too antique and rough
+
+**Prompt cues**: tintype photograph; dark compressed tones on a metal plate; low contrast; scratched metal surface
 
 ---
 
@@ -378,6 +400,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Crisp modern photography — everything is soft
 
 **Example combination**: Pinhole camera + long exposure + architectural interior + infinite depth of field + natural vignetting → soft, ethereal, everything equally in focus, dreamy lo-fi
+
+**Prompt cues**: pinhole camera photograph; soft focus everywhere, nothing sharp; heavy natural vignette; long-exposure motion blur
 
 ---
 
@@ -419,6 +443,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: Fisheye + low angle + skatepark + harsh daylight → curved concrete forms, skater looming overhead, extreme spatial distortion, action sports energy
 
+**Prompt cues**: fisheye lens shot; spherical distortion; center bulging toward the viewer; straight lines bent into curves
+
 ---
 
 ### Macro
@@ -441,6 +467,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: 100mm macro + f/4 + ring flash + water droplets on leaf → extreme detail, droplets sharp against soft green bokeh, light refracting through water, each vein of the leaf visible
 
+**Prompt cues**: macro photograph; tiny details at huge scale; razor-thin focus; everything else dissolved in blur
+
 ---
 
 ### Tilt-Shift
@@ -462,6 +490,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Low light/moody scenes — the miniature effect needs clear visibility to read
 
 **Example combination**: Tilt-shift + overhead cityscape + midday sun + saturated color → city looks like a detailed architectural model, thin band of focus across buildings, everything above and below softly blurred
+
+**Prompt cues**: tilt-shift photograph; thin band of sharp focus; top and bottom blurred; real scene looking like a toy model
 
 ---
 
@@ -487,6 +517,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: Anamorphic lens + neon-lit rainy street + horizontal blue flares + oval bokeh + 2.39:1 aspect ratio → cinematic width, blue streaks across frame from every light source, unmistakably filmic
 
+**Prompt cues**: anamorphic widescreen shot; horizontal blue lens flare streaks; oval bokeh; cinematic wide frame
+
 ---
 
 ### Lensbaby / Selective Focus
@@ -505,6 +537,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Landscape sharpness — most of the frame is blurred
 - Architectural precision — too soft and uncontrolled
 - Documentary — too stylized
+
+**Prompt cues**: selective focus; one small sharp spot; swirling blur all around
 
 ---
 
@@ -531,6 +565,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: Infrared + Kodak Aerochrome + forest landscape + summer + clear sky → magenta trees, deep black sky, surreal false-color, dreamlike and alien
 
+**Prompt cues**: infrared photograph; foliage glowing white; near-black sky; dreamlike false color
+
 ---
 
 ### Solarization (Sabattier Effect)
@@ -549,6 +585,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Naturalism — solarization is obviously manipulated
 - Subtle tonal gradation — the reversal flattens mid-tones
 - Color accuracy — the process distorts everything
+
+**Prompt cues**: solarized photograph; partial tone reversal; glowing bright outlines around edges; surreal metallic tones
 
 ---
 
@@ -569,6 +607,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Documentary/precision — too manipulated
 - Controlled studio work — unpredictable effect
 
+**Prompt cues**: prism photography; rainbow light refractions; kaleidoscopic duplicated fragments; prismatic flares at the frame edges
+
 ---
 
 ### Freelensing
@@ -586,6 +626,8 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Repeatability — every shot is different
 - Sharpness/precision — inherently soft and unpredictable
 - Clean modern aesthetic — too chaotic
+
+**Prompt cues**: freelensing; tilted razor-thin focus plane; warm light leaks; soft ethereal haze
 
 ---
 
@@ -609,6 +651,8 @@ Aperture (f-stop) controls how much light enters the lens and directly determine
 - Sharp background detail — physically impossible
 
 **Example combination**: f/1.4 + 85mm + backlit golden hour + single subject → razor-thin focus on eyes, warm golden bokeh circles from backlighting, everything else dissolved
+
+**Prompt cues**: shallow depth of field; thin slice of sharp focus; foreground and background dissolved into blur; large soft bokeh circles
 
 ---
 
@@ -639,6 +683,8 @@ Aperture (f-stop) controls how much light enters the lens and directly determine
 **Conflicts with**:
 - Subject isolation — everything is sharp, nothing is separated
 - Low light — small aperture needs more light or longer exposure
+
+**Prompt cues**: deep depth of field; sharp from foreground to background; crisp detail everywhere
 
 ---
 
@@ -680,6 +726,8 @@ Aperture (f-stop) controls how much light enters the lens and directly determine
 - Ultra-wide lenses — deep depth of field minimizes blur
 
 **Example combination**: f/1.4 + 85mm + city lights at night behind subject → face sharp, background transforms into a field of large, soft, warm circles of light
+
+**Prompt cues**: creamy bokeh; soft round highlight circles; smooth blurred background
 
 ---
 

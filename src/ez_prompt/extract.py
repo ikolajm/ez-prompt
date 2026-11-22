@@ -64,7 +64,6 @@ SECTIONS = {
     ("film-stocks-and-analog.md", "Analog Artifacts"): "image-texture",
     ("textures-and-materials.md", "Surface Quality"): "finish",
     ("weather-and-atmosphere.md", "Time of Day"): "time",
-    ("weather-and-atmosphere.md", "Clear Conditions"): "time",
     ("weather-and-atmosphere.md", "Precipitation"): "atmosphere",
     ("weather-and-atmosphere.md", "Atmospheric Effects"): "atmosphere",
     ("weather-and-atmosphere.md", "Mood → Visual Mapping"): "mood",
@@ -101,34 +100,7 @@ PLACES = {
 # A term folded into another, whose cues cover it: (page, heading) -> (page, heading).
 # The survivor lists it under "covers".
 MERGED = {
-    ("weather-and-atmosphere.md", "Golden Hour (last hour before sunset)"): (
-        "lighting.md",
-        "Golden Hour",
-    ),
-    ("weather-and-atmosphere.md", "Blue Hour (20-40 min after sunset)"): (
-        "lighting.md",
-        "Blue Hour",
-    ),
-    ("lighting.md", "Blue Hour / Deep Shade (~8,000-10,000K+)"): ("lighting.md", "Blue Hour"),
-    ("weather-and-atmosphere.md", "Overcast / Cloudy"): (
-        "lighting.md",
-        "Overcast / Diffused Daylight",
-    ),
-    ("lighting.md", "Overcast / Shade (~6,500-7,500K)"): (
-        "lighting.md",
-        "Overcast / Diffused Daylight",
-    ),
-    ("weather-and-atmosphere.md", "Midday (11am-1pm)"): ("lighting.md", "Hard Midday Sun"),
-    ("weather-and-atmosphere.md", "Clear Sky / Direct Sun"): ("lighting.md", "Hard Midday Sun"),
     ("weather-and-atmosphere.md", "Deep Night / 3am"): ("weather-and-atmosphere.md", "Night"),
-    ("film-stocks-and-analog.md", "Cross Processing"): (
-        "color-grading-and-tone.md",
-        "Cross-Processed Look",
-    ),
-    ("textures-and-materials.md", "Neon / LED Glow"): (
-        "lighting.md",
-        "Neon / Colored Gel Lighting",
-    ),
     ("cameras-and-lenses.md", "Medium Telephoto (105-200mm)"): (
         "cameras-and-lenses.md",
         "Telephoto (200-400mm)",
@@ -254,7 +226,7 @@ BRANDS = re.compile(
     r"\b(?:kodak|fuji(?:film)?|ilford|agfa|cinestill|polaroid|portra|ektar|ektachrome"
     r"|kodachrome|velvia|provia|superia|tri-x|t-max|hp5|fp4|fomapan|lensbaby|hasselblad"
     r"|leica|canon|nikon|sony|iphone|octane|unreal|cinema 4d|c4d|v-ray|blender|pixar"
-    r"|ghibli|laika|aardman|henson|muppets?)\b",
+    r"|ghibli|laika|aardman|henson|muppets?|technicolor)\b",
     re.IGNORECASE,
 )
 

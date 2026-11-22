@@ -271,6 +271,8 @@ The software that computes the final image. Each engine has a distinct visual si
 
 **Example combination**: Cel-shaded + bold primary colors + black outlines + dynamic pose → comic book/anime aesthetic, flat color bands, hard shadow edges, graphic energy
 
+**Prompt cues**: cel-shaded 3D render; flat color with hard-edged shadows; bold black outlines
+
 ---
 
 ### Low Poly
@@ -315,6 +317,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - Photorealism — wireframe is an abstraction
 - Solid/heavy visual weight — wireframe is transparent and skeletal
 
+**Prompt cues**: 3D wireframe render; visible polygon mesh lines; transparent see-through geometry
+
 ---
 
 ### Isometric
@@ -337,6 +341,8 @@ The software that computes the final image. Each engine has a distinct visual si
 
 **Example combination**: Isometric + miniature room interior + warm lighting + detailed objects → dollhouse-like cutaway, every object readable, no perspective distortion, charming miniature world
 
+**Prompt cues**: isometric view; no vanishing points; parallel lines staying parallel; elevated diagonal angle
+
 ---
 
 ### Voxel
@@ -356,6 +362,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - Smooth/organic forms — voxels are cubic by definition
 - Photorealism — too abstract
 - Fine detail — the minimum unit is one cube
+
+**Prompt cues**: voxel art; built entirely from small uniform cubes; blocky stepped surfaces
 
 ---
 
@@ -483,6 +491,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - Abstract art — cutaway is technical and literal
 - Organic/natural subjects (usually) — better for manufactured things
 
+**Prompt cues**: cross-section cutaway view; one side sliced open; interior structure exposed
+
 ---
 
 ### Exploded View
@@ -502,6 +512,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - Assembled/complete objects — exploded views disassemble
 - Organic subjects — hard to "explode" a plant or animal
 - Atmospheric rendering — the clinical quality fights mood
+
+**Prompt cues**: exploded view; components floating apart, aligned; every part visible at once
 
 ---
 
@@ -544,6 +556,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - Natural/organic — glitch is digital-native
 - Minimalism — glitch adds chaos
 
+**Prompt cues**: glitch art; RGB channel splitting; corrupted pixel smears and displaced blocks; datamoshed distortion
+
 ---
 
 ### Retro 3D / PS1 Aesthetic
@@ -568,6 +582,8 @@ The software that computes the final image. Each engine has a distinct visual si
 
 **Example combination**: PS1 aesthetic + empty school hallway + warping textures + vertex jitter + fog + low resolution → unsettling retro horror, textures swimming, geometry unstable, liminal and nostalgic
 
+**Prompt cues**: 1990s video game 3D graphics; low-resolution pixelated textures; jagged low-poly geometry; distance fog
+
 ---
 
 ### ASCII / Text-Based Rendering
@@ -588,6 +604,8 @@ The software that computes the final image. Each engine has a distinct visual si
 - Color (usually) — ASCII is typically monochrome
 - Smooth gradients — the character grid is always visible
 - Organic softness — the grid is rigid and mechanical
+
+**Prompt cues**: ASCII art; image built from typed text characters; monospaced character grid
 
 ---
 

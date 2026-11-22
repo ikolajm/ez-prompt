@@ -425,6 +425,8 @@ Physical characteristics of film photography that arise from the medium itself �
 - Smooth skin/beauty — grain adds texture to everything including skin
 - Vector/flat illustration styles — grain is photographic, not graphic
 
+**Prompt cues**: visible film grain; organic analog texture; uneven grain in flat areas
+
 ---
 
 ### Light Leaks
@@ -443,6 +445,8 @@ Physical characteristics of film photography that arise from the medium itself �
 - Controlled/precise imagery — light leaks are chaos
 - Cool color palettes — the leaks are typically warm
 - Professional/commercial — reads as accidental (unless deliberately stylized)
+
+**Prompt cues**: light leaks; warm amber and red streaks across the frame; washed-out fogged edges
 
 ---
 
@@ -466,6 +470,8 @@ Physical characteristics of film photography that arise from the medium itself �
 
 **Example combination**: Lens flare + backlit golden hour + vintage lens + portrait → warm haze washing across the frame, circular ghosts, reduced contrast, dreamy romantic quality
 
+**Prompt cues**: lens flare; light streaks and ghost shapes; hazy glow lowering contrast
+
 ---
 
 ### Halation
@@ -486,6 +492,8 @@ Physical characteristics of film photography that arise from the medium itself �
 - Daytime/even lighting — needs bright point sources against darkness
 - Sharp detail in highlight areas — halation obscures it
 
+**Prompt cues**: halation; red-orange glow around bright lights; highlights bleeding into their surroundings
+
 ---
 
 ### Vignetting
@@ -505,6 +513,8 @@ Physical characteristics of film photography that arise from the medium itself �
 - Panoramic/wide compositions where the edges matter
 - Modern/clean aesthetic — vignetting reads as vintage
 
+**Prompt cues**: dark vignette; darkened edges and corners; brighter center
+
 ---
 
 ### Chromatic Aberration
@@ -523,6 +533,8 @@ Physical characteristics of film photography that arise from the medium itself �
 - Clean/precise rendering — CA is a flaw
 - Modern lens quality — good modern lenses minimize CA
 - Heavy amounts — a little adds character, a lot is distracting
+
+**Prompt cues**: chromatic aberration; red and blue color fringing on high-contrast edges
 
 ---
 
@@ -544,6 +556,8 @@ Physical characteristics of film photography that arise from the medium itself �
 - Static/still subjects — no movement to blur
 - Short shutter speeds — insufficient time for blur to register
 
+**Prompt cues**: motion blur; streaks and smears along the direction of movement
+
 ---
 
 ### Double Exposure
@@ -563,24 +577,7 @@ Physical characteristics of film photography that arise from the medium itself �
 - Clean composition — double exposure is inherently busy
 - Precise control — the blend is partially unpredictable
 
----
-
-### Cross Processing
-
-**What it is**: Deliberately developing film in the wrong chemistry — typically slide film (E-6) in C-41 negative chemistry, or negative film in E-6 reversal chemistry. The chemical mismatch produces shifted, unnatural colors.
-
-**Visual effect**: E-6 in C-41 (the common version): boosted contrast, shifted hues, increased saturation with unpredictable color casts — greens go yellow, blues go cyan, skin tones shift toward magenta or yellow. The specific shift depends on the film stock. The look is punchy, contrasty, and deliberately wrong. Peaked in 1990s fashion photography (Nick Knight, Anton Corbijn).
-
-**Pairs well with**:
-- Fashion editorial — the shifted colors are deliberately stylized
-- 1990s aesthetic — cross processing defines 90s fashion photography
-- Experimental/art — the unpredictability is creative
-- High saturation scenes — the processing amplifies vivid color
-
-**Conflicts with**:
-- Natural/accurate color — cross processing is the opposite
-- Predictable results — each stock + chemistry combo produces different shifts
-- Subtle/muted palettes — cross processing is loud
+**Prompt cues**: double exposure; two overlapping images blended together; ghostly translucent layers
 
 ---
 
@@ -593,6 +590,8 @@ Physical characteristics of film photography that arise from the medium itself �
 **Pairs well with**: Nostalgic/vintage aesthetics, dreamlike imagery, lo-fi, Lomography, psychedelic/surreal subjects.
 
 **Conflicts with**: Color accuracy, commercial work, clean modern aesthetics, predictable results.
+
+**Prompt cues**: expired film look; unpredictable magenta and green color casts; milky fogged shadows; heavy grain and low contrast
 
 ---
 
