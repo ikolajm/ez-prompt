@@ -4,7 +4,7 @@ import type { Dimension, Term } from './glossary.ts'
 export type Sheet = Record<string, Term[]>
 
 // Every other key holds one term, and a new pick replaces it.
-const STACKING = new Set(['lighting'])
+const STACKING = new Set(['light', 'composition', 'image-texture'])
 
 export function keyOf(dimension: Dimension): string {
   return dimension.id.replace(/-/g, ' ')
@@ -40,8 +40,11 @@ export function asSpec(subject: string, sheetLines: Line[]): string {
   return rows.join('\n')
 }
 
+// A term's cues are what the image models read; a term without cues falls back to its name.
 export function asPrompt(subject: string, sheetLines: Line[]): string {
-  const parts = sheetLines.flatMap(({ terms }) => terms.map((t) => t.name))
+  const parts = sheetLines.flatMap(({ terms }) =>
+    terms.flatMap((t) => (t.cues.length > 0 ? t.cues : [t.name])),
+  )
   if (subject.trim()) parts.unshift(subject.trim())
   return parts.join(', ')
 }

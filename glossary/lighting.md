@@ -28,6 +28,8 @@ Light from the sun, sky, and environment — uncontrolled, time-dependent, and e
 
 **Example combination**: Golden hour + backlit subject + 85mm f/1.8 + lens flare → warm rim light around hair, face in soft open shade, golden bokeh circles from sun, flare streaking across frame
 
+**Prompt cues**: golden hour light; low warm sun; long soft shadows; warm golden glow on every surface
+
 ---
 
 ### Blue Hour
@@ -160,6 +162,8 @@ Named configurations that produce specific, repeatable results. These are the vo
 - Flat/even illumination — the opposite approach
 
 **Example combination**: Rembrandt lighting + 135mm f/2 + dark background + no fill → one side of face glowing, triangle of light on shadowed cheek, rest falling into rich darkness, chiaroscuro intensity
+
+**Prompt cues**: Rembrandt lighting; one strong light from the side; small triangle of light on the shadowed cheek; deep shadow on the far side
 
 ---
 

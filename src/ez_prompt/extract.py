@@ -1,4 +1,4 @@
-"""Read the glossary's craft pages into one glossary.json the app loads.
+"""Read the glossary's pages into one glossary.json the app loads.
 
     python -m ez_prompt.extract <glossary-dir> <out.json>
 
@@ -13,21 +13,210 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
-# Scope: page -> dimension id
-PAGES = {
-    "cameras-and-lenses.md": "camera",
-    "angles-and-composition.md": "angle",
-    "lighting.md": "lighting",
-    "film-stocks-and-analog.md": "film-stock",
-    "color-grading-and-tone.md": "color-grade",
-    "textures-and-materials.md": "texture",
-    "weather-and-atmosphere.md": "weather",
+# Keys, in the sheet's order, which is also the flat prompt's order:
+# key -> (part, label). The parts are Medium and CTLT's camera, tone, light, texture.
+KEYS = {
+    "medium": ("medium", "Medium"),
+    "format": ("camera", "Format"),
+    "lens": ("camera", "Lens"),
+    "focus": ("camera", "Focus"),
+    "shot-size": ("camera", "Shot Size"),
+    "angle": ("camera", "Angle"),
+    "composition": ("camera", "Composition"),
+    "scene": ("camera", "Scene Format"),
+    "color": ("tone", "Color"),
+    "film-look": ("tone", "Film Look"),
+    "mood": ("tone", "Mood"),
+    "light": ("light", "Light"),
+    "exposure": ("light", "Exposure"),
+    "time": ("light", "Time of Day"),
+    "atmosphere": ("light", "Atmosphere"),
+    "image-texture": ("texture", "Image Texture"),
+    "finish": ("texture", "Finish"),
 }
 
-# A section that is its own dimension rather than part of its page's
-SECTION_DIMENSIONS = {
-    ("weather-and-atmosphere.md", "Mood → Visual Mapping"): ("mood", "Mood"),
+# Pages in scope: page -> the key its sections take when SECTIONS names none.
+# A page with no default must have every section in SECTIONS or HELD_SECTIONS.
+PAGES: dict[str, str | None] = {
+    "3d-rendering.md": "medium",
+    "animation-styles.md": "medium",
+    "illustration-styles.md": "medium",
+    "cameras-and-lenses.md": None,
+    "angles-and-composition.md": None,
+    "lighting.md": "light",
+    "film-stocks-and-analog.md": "film-look",
+    "color-grading-and-tone.md": "color",
+    "textures-and-materials.md": None,
+    "weather-and-atmosphere.md": None,
 }
+
+# (page, section) -> key
+SECTIONS = {
+    ("cameras-and-lenses.md", "Film Formats"): "format",
+    ("cameras-and-lenses.md", "Historical & Alternative Processes"): "format",
+    ("cameras-and-lenses.md", "Focal Length"): "lens",
+    ("cameras-and-lenses.md", "Lens Types"): "lens",
+    ("cameras-and-lenses.md", "Aperture"): "focus",
+    ("angles-and-composition.md", "Camera Angles"): "angle",
+    ("angles-and-composition.md", "Shot Size / Framing"): "shot-size",
+    ("angles-and-composition.md", "Composition Principles"): "composition",
+    ("lighting.md", "Contrast and Exposure Styles"): "exposure",
+    ("film-stocks-and-analog.md", "Analog Artifacts"): "image-texture",
+    ("textures-and-materials.md", "Surface Quality"): "finish",
+    ("weather-and-atmosphere.md", "Time of Day"): "time",
+    ("weather-and-atmosphere.md", "Clear Conditions"): "time",
+    ("weather-and-atmosphere.md", "Precipitation"): "atmosphere",
+    ("weather-and-atmosphere.md", "Atmospheric Effects"): "atmosphere",
+    ("weather-and-atmosphere.md", "Mood → Visual Mapping"): "mood",
+}
+
+# Sections kept out whole: (page, section) -> reason
+HELD_SECTIONS = {
+    ("textures-and-materials.md", "Organic Textures"): "a material, which needs a subject",
+    ("textures-and-materials.md", "Synthetic / Manufactured Textures"): (
+        "a material, which needs a subject"
+    ),
+    ("textures-and-materials.md", "Paper & Foil"): "a material, which needs a subject",
+}
+
+# A term placed outside its section's key: (page, heading) -> (key, section)
+PLACES = {
+    ("3d-rendering.md", "Isometric"): ("angle", "Camera Angles"),
+    ("3d-rendering.md", "Diorama / Miniature Scene"): ("scene", "Scene Format"),
+    ("3d-rendering.md", "Cross-Section / Cutaway"): ("scene", "Scene Format"),
+    ("3d-rendering.md", "Exploded View"): ("scene", "Scene Format"),
+    ("cameras-and-lenses.md", "Infrared Photography"): ("format", "Film Formats"),
+    ("cameras-and-lenses.md", "Prism / Crystal Photography"): ("lens", "Lens Types"),
+    ("cameras-and-lenses.md", "Freelensing"): ("lens", "Lens Types"),
+    ("cameras-and-lenses.md", "Solarization (Sabattier Effect)"): ("color", "Tonal Treatments"),
+    ("lighting.md", "Golden Hour"): ("time", "Time of Day"),
+    ("lighting.md", "Blue Hour"): ("time", "Time of Day"),
+    ("lighting.md", "Hard Midday Sun"): ("time", "Time of Day"),
+    ("lighting.md", "Overcast / Diffused Daylight"): ("time", "Time of Day"),
+    ("textures-and-materials.md", "Chrome / Mirror Finish"): ("finish", "Surface Quality"),
+    ("textures-and-materials.md", "Brushed Metal"): ("finish", "Surface Quality"),
+    ("textures-and-materials.md", "Rust / Patina / Decay"): ("finish", "Surface Quality"),
+}
+
+# A term folded into another, whose cues cover it: (page, heading) -> (page, heading).
+# The survivor lists it under "covers".
+MERGED = {
+    ("weather-and-atmosphere.md", "Golden Hour (last hour before sunset)"): (
+        "lighting.md",
+        "Golden Hour",
+    ),
+    ("weather-and-atmosphere.md", "Blue Hour (20-40 min after sunset)"): (
+        "lighting.md",
+        "Blue Hour",
+    ),
+    ("lighting.md", "Blue Hour / Deep Shade (~8,000-10,000K+)"): ("lighting.md", "Blue Hour"),
+    ("weather-and-atmosphere.md", "Overcast / Cloudy"): (
+        "lighting.md",
+        "Overcast / Diffused Daylight",
+    ),
+    ("lighting.md", "Overcast / Shade (~6,500-7,500K)"): (
+        "lighting.md",
+        "Overcast / Diffused Daylight",
+    ),
+    ("weather-and-atmosphere.md", "Midday (11am-1pm)"): ("lighting.md", "Hard Midday Sun"),
+    ("weather-and-atmosphere.md", "Clear Sky / Direct Sun"): ("lighting.md", "Hard Midday Sun"),
+    ("weather-and-atmosphere.md", "Deep Night / 3am"): ("weather-and-atmosphere.md", "Night"),
+    ("film-stocks-and-analog.md", "Cross Processing"): (
+        "color-grading-and-tone.md",
+        "Cross-Processed Look",
+    ),
+    ("textures-and-materials.md", "Neon / LED Glow"): (
+        "lighting.md",
+        "Neon / Colored Gel Lighting",
+    ),
+    ("cameras-and-lenses.md", "Medium Telephoto (105-200mm)"): (
+        "cameras-and-lenses.md",
+        "Telephoto (200-400mm)",
+    ),
+    ("cameras-and-lenses.md", "Super Telephoto (400mm+)"): (
+        "cameras-and-lenses.md",
+        "Telephoto (200-400mm)",
+    ),
+    ("cameras-and-lenses.md", "Small Aperture (f/16 - f/22)"): (
+        "cameras-and-lenses.md",
+        "Stopped Down (f/8 - f/11)",
+    ),
+    ("lighting.md", "Loop Lighting"): ("lighting.md", "Rembrandt Lighting"),
+    ("lighting.md", "Clamshell Lighting"): ("lighting.md", "Butterfly / Paramount Lighting"),
+    ("lighting.md", "Diffused Light"): ("lighting.md", "Soft Light"),
+    ("lighting.md", "Softbox"): ("lighting.md", "Soft Light"),
+    ("lighting.md", "Tent / Wraparound Lighting"): ("lighting.md", "Soft Light"),
+    ("lighting.md", "Book Lighting"): ("lighting.md", "Soft Light"),
+    ("animation-styles.md", "Flash / Web Animation"): (
+        "illustration-styles.md",
+        "Vector / Flat Illustration",
+    ),
+    ("illustration-styles.md", "Concept Art"): ("illustration-styles.md", "Digital Painting"),
+}
+
+# Terms kept out of glossary.json, with the reason: (page, heading) -> reason
+HELD = {
+    **{
+        ("3d-rendering.md", name): "names a tool, untested"
+        for name in [
+            "Octane Render",
+            "Blender Cycles",
+            "Blender Eevee",
+            "Unreal Engine",
+            "Cinema 4D",
+            "V-Ray",
+        ]
+    },
+    **{
+        ("3d-rendering.md", name): "names a process, untested"
+        for name in [
+            "Ray Tracing",
+            "Path Tracing",
+            "Physically Based Rendering (PBR)",
+            "Subsurface Scattering (SSS)",
+            "Volumetric Rendering",
+            "Ambient Occlusion",
+            "Global Illumination",
+            "Caustics",
+        ]
+    },
+    **{
+        ("animation-styles.md", name): "named franchise style"
+        for name in [
+            "Studio Ghibli",
+            "Pixar / Modern CG Animation",
+            "Spider-Verse / Hybrid",
+            "Anime-Influenced Western",
+        ]
+    },
+    ("animation-styles.md", "Mecha"): "a subject, not a look",
+    ("animation-styles.md", "Motion Graphics"): "shows only in motion",
+    ("illustration-styles.md", "Children's Book Illustration"): "a purpose; its look is characters",
+    ("illustration-styles.md", "Botanical / Scientific Illustration"): "a subject: specimens",
+    ("3d-rendering.md", "Holographic Render"): "a subject: a projected object",
+    ("angles-and-composition.md", "Over the Shoulder (OTS)"): "needs two subjects",
+    ("angles-and-composition.md", "Rule of Odds"): "a count of subjects",
+    ("lighting.md", "Broad Lighting"): "depends on a face and its turn to camera",
+    ("lighting.md", "Short Lighting"): "depends on a face and its turn to camera",
+    ("cameras-and-lenses.md", "Normal (40-60mm)"): "nothing visible",
+    ("cameras-and-lenses.md", "Moderate (f/2.8 - f/5.6)"): "nothing visible",
+    ("cameras-and-lenses.md", "Prime Lens"): "nothing visible",
+    ("lighting.md", "Daylight (~5,500K)"): "nothing visible",
+    ("lighting.md", "Motivated Lighting"): "nothing visible",
+    ("weather-and-atmosphere.md", "Early Morning (7-9am)"): "a clock time; dawn covers the look",
+    ("weather-and-atmosphere.md", "Afternoon (2-4pm)"): "a clock time; midday covers the look",
+}
+
+
+@dataclass
+class Scope:
+    pages: dict[str, str | None] = field(default_factory=lambda: dict(PAGES))
+    sections: dict[tuple[str, str], str] = field(default_factory=lambda: dict(SECTIONS))
+    held_sections: dict[tuple[str, str], str] = field(default_factory=lambda: dict(HELD_SECTIONS))
+    places: dict[tuple[str, str], tuple[str, str]] = field(default_factory=lambda: dict(PLACES))
+    merged: dict[tuple[str, str], tuple[str, str]] = field(default_factory=lambda: dict(MERGED))
+    held: dict[tuple[str, str], str] = field(default_factory=lambda: dict(HELD))
+
 
 SKIPPED_SECTIONS = {"References"}
 
@@ -42,18 +231,32 @@ FIELDS = {
     "Pairs with": "pairs",
     "Conflicts with": "conflicts",
     "Example combination": "example",
+    "Prompt cues": "cues",
 }
 EXTRAS = {
     "Associated cameras",
     "Landmark uses",
     "Landmark use",
+    "Landmark techniques",
     "Common aspect ratios",
     "Color temperature",
     "Aspect ratio",
     "Aperture blade count",
+    "Production specifics",
+    "Production specifics (Laika)",
 }
 # A group lends these to each of its bullet terms; any other field on a group is refused.
 GROUP_FIELDS = {"pairs", "conflicts"}
+
+# Cues go to the model as written, so a brand or a long phrase is refused.
+CUE_MAX_WORDS = 8
+BRANDS = re.compile(
+    r"\b(?:kodak|fuji(?:film)?|ilford|agfa|cinestill|polaroid|portra|ektar|ektachrome"
+    r"|kodachrome|velvia|provia|superia|tri-x|t-max|hp5|fp4|fomapan|lensbaby|hasselblad"
+    r"|leica|canon|nikon|sony|iphone|octane|unreal|cinema 4d|c4d|v-ray|blender|pixar"
+    r"|ghibli|laika|aardman|henson|muppets?)\b",
+    re.IGNORECASE,
+)
 
 FIELD_LINE = re.compile(r"^\*\*(?P<label>[^*]+)\*\*:\s*(?P<rest>.*)$")
 BULLET_TERM = re.compile(r"^- \*\*(?P<name>[^*]+)\*\*\s*[—–-]\s*(?P<effect>.+)$")
@@ -68,6 +271,8 @@ class Entry:
     name: str
     section: str
     line: int
+    parent: str | None = None
+    has_children: bool = False
     fields: dict[str, list[str]] = field(default_factory=dict)
     extras: dict[str, list[str]] = field(default_factory=dict)
     bullets: list[tuple[str, str]] = field(default_factory=list)
@@ -84,6 +289,7 @@ def parse_page(text: str) -> tuple[str, list[Entry]]:
     section = ""
     entries: list[Entry] = []
     entry: Entry | None = None
+    heading: Entry | None = None
     target: list[str] | None = None
 
     for number, raw in enumerate(text.splitlines(), start=1):
@@ -92,12 +298,22 @@ def parse_page(text: str) -> tuple[str, list[Entry]]:
             title = line[2:].strip()
         elif line.startswith("## "):
             section = line[3:].strip()
-            entry = target = None
+            entry = heading = target = None
         elif line.startswith("### "):
-            entry = target = None
+            entry = heading = target = None
             if section not in SKIPPED_SECTIONS:
-                entry = Entry(line[4:].strip(), section, number)
+                entry = heading = Entry(line[4:].strip(), section, number)
                 entries.append(entry)
+        elif line.startswith("#### "):
+            target = None
+            if section in SKIPPED_SECTIONS:
+                entry = None
+                continue
+            if heading is None:
+                raise Refused(f"line {number}: sub-term outside an entry, under '{section}'")
+            heading.has_children = True
+            entry = Entry(line[5:].strip(), section, number, parent=heading.name)
+            entries.append(entry)
         elif line == "---":
             target = None
         elif entry is None and section not in SKIPPED_SECTIONS and FIELD_LINE.match(line):
@@ -131,8 +347,23 @@ def joined(lines: list[str] | None) -> str | None:
     return " ".join(lines) if lines else None
 
 
+def cues(entry: Entry) -> list[str]:
+    lines = entry.fields.get("cues")
+    if lines is None:
+        return []
+    found = [cue.strip() for cue in " ".join(lines).split(";")]
+    for cue in found:
+        if not cue:
+            raise Refused(f"line {entry.line}: {entry.name}: empty cue")
+        if len(cue.split()) > CUE_MAX_WORDS:
+            raise Refused(f"line {entry.line}: {entry.name}: cue over {CUE_MAX_WORDS} words")
+        if brand := BRANDS.search(cue):
+            raise Refused(f"line {entry.line}: {entry.name}: cue names a brand, '{brand[0]}'")
+    return found
+
+
 def to_group(entry: Entry) -> tuple[dict[str, object], list[dict[str, object]]]:
-    """A heading over bulleted terms: each bullet is a term, the prose its note."""
+    """A heading over bulleted or sub-headed terms; its prose is the note."""
     stray = set(entry.fields) - GROUP_FIELDS
     if stray or entry.extras:
         raise Refused(f"line {entry.line}: {entry.name}: group has its own fields")
@@ -155,6 +386,8 @@ def to_group(entry: Entry) -> tuple[dict[str, object], list[dict[str, object]]]:
             "pairs": entry.fields.get("pairs", []),
             "conflicts": entry.fields.get("conflicts", []),
             "example": None,
+            "cues": [],
+            "covers": [],
             "extras": {},
         }
         for name, effect in entry.bullets
@@ -171,52 +404,118 @@ def to_term(entry: Entry) -> dict[str, object]:
         "id": slug(entry.name),
         "name": entry.name,
         "section": entry.section,
-        "group": None,
+        "group": slug(entry.parent) if entry.parent else None,
         "what": joined(entry.fields.get("what")),
         "effect": joined(entry.fields.get("effect")),
         "pairs": entry.fields.get("pairs", []),
         "conflicts": entry.fields.get("conflicts", []),
         "example": joined(entry.fields.get("example")),
+        "cues": cues(entry),
+        "covers": [],
         "extras": {label: " ".join(lines) for label, lines in entry.extras.items()},
     }
 
 
-def extract(glossary: Path, pages: dict[str, str] = PAGES) -> dict[str, object]:
-    dimensions: dict[str, dict[str, list[dict[str, object]] | str]] = {}
-    refusals: list[str] = []
+Items = list[dict[str, object]]
 
-    for page, dimension_id in pages.items():
+
+def extract(glossary: Path, scope: Scope | None = None) -> dict[str, object]:
+    scope = scope or Scope()
+    keys: dict[str, dict[str, object]] = {}
+    refusals: list[str] = []
+    seen: set[tuple[str, str]] = set()
+    seen_sections: set[tuple[str, str]] = set()
+    built: dict[tuple[str, str], dict[str, object]] = {}
+
+    def add(key: str, page: str, groups: Items, new: Items) -> None:
+        if key not in KEYS:
+            refusals.append(f"{page}: unknown key '{key}'")
+            return
+        part, label = KEYS[key]
+        target = keys.setdefault(
+            key,
+            {"id": key, "label": label, "part": part, "source": page, "groups": [], "terms": []},
+        )
+        target_groups, terms = target["groups"], target["terms"]
+        assert isinstance(target_groups, list) and isinstance(terms, list)
+        target_groups.extend(groups)
+        for term in new:
+            if any(t["id"] == term["id"] for t in terms):
+                refusals.append(f"{page}: {term['name']}: id '{term['id']}' taken")
+            else:
+                terms.append(term)
+
+    # Placed terms join a key after its own pages have built it.
+    placed_terms: list[tuple[str, str, Items, Items]] = []
+
+    for page, default in scope.pages.items():
         try:
             title, entries = parse_page((glossary / page).read_text(encoding="utf-8"))
         except Refused as refusal:
             refusals.append(f"{page}: {refusal}")
             continue
         for entry in entries:
-            target_id, label = SECTION_DIMENSIONS.get((page, entry.section), (dimension_id, title))
-            dimension = dimensions.setdefault(
-                target_id,
-                {"id": target_id, "label": label, "source": page, "groups": [], "terms": []},
-            )
-            groups, terms = dimension["groups"], dimension["terms"]
-            assert isinstance(groups, list) and isinstance(terms, list)
+            name_key, section_key = (page, entry.name), (page, entry.section)
+            seen.add(name_key)
+            seen_sections.add(section_key)
+            if name_key in scope.held or name_key in scope.merged:
+                continue
+            if name_key in scope.places:
+                key, section = scope.places[name_key]
+            elif section_key in scope.held_sections:
+                continue
+            elif section_key in scope.sections:
+                key, section = scope.sections[section_key], entry.section
+            elif default is not None:
+                key, section = default, entry.section
+            else:
+                refusals.append(f"{page}: {entry.name}: section '{entry.section}' has no key")
+                continue
+            if key == "medium":
+                section = title
             try:
-                if entry.bullets:
+                if entry.bullets or entry.has_children:
                     group, new = to_group(entry)
-                    groups.append(group)
+                    groups: Items = [group]
                 else:
-                    new = [to_term(entry)]
+                    new, groups = [to_term(entry)], []
             except Refused as refusal:
                 refusals.append(f"{page}: {refusal}")
                 continue
-            for term in new:
-                if any(t["id"] == term["id"] for t in terms):
-                    refusals.append(f"{page}: {term['name']}: id '{term['id']}' taken")
-                else:
-                    terms.append(term)
+            for item in [*groups, *new]:
+                item["section"] = section
+            if not groups:
+                built[name_key] = new[0]
+            if name_key in scope.places:
+                placed_terms.append((key, page, groups, new))
+            else:
+                add(key, page, groups, new)
+
+    for pending in placed_terms:
+        add(*pending)
+
+    for (page, name), survivor in scope.merged.items():
+        if page in scope.pages and (page, name) in seen:
+            target = built.get(survivor)
+            if target is None:
+                refusals.append(f"{page}: '{name}' merged into '{survivor[1]}', which is not built")
+            else:
+                covers = target["covers"]
+                assert isinstance(covers, list)
+                covers.append(name)
+
+    placed = set(scope.places) | set(scope.held) | set(scope.merged)
+    for page, name in sorted(placed - seen):
+        if page in scope.pages:
+            refusals.append(f"{page}: '{name}' is placed, held or merged but has no entry")
+    for page, section in sorted((set(scope.sections) | set(scope.held_sections)) - seen_sections):
+        if page in scope.pages:
+            refusals.append(f"{page}: section '{section}' is mapped but has no entry")
 
     if refusals:
         raise Refused("\n".join(refusals))
-    return {"dimensions": list(dimensions.values())}
+    order = {key: index for index, key in enumerate(KEYS)}
+    return {"dimensions": sorted(keys.values(), key=lambda d: order[str(d["id"])])}
 
 
 def main(argv: list[str]) -> int:

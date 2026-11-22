@@ -47,6 +47,8 @@ Camera angle controls the power dynamic between viewer and subject. Composition 
 
 **Example combination**: Low angle + wide angle + hero subject + dramatic sky behind → figure towering against clouds, converging lines from buildings, sense of power and scale
 
+**Prompt cues**: low angle shot looking up; subject looming large from below; camera near the ground
+
 ---
 
 ### High Angle (Looking Down)
@@ -204,6 +206,8 @@ How much of the subject fills the frame. Each size shifts the balance between su
 
 **Example combination**: ECU of eye + macro lens + ring light catchlight + saturated iris color → iris texture fills the frame, circular catchlight, individual lashes, abstract beauty
 
+**Prompt cues**: extreme close-up; a single detail fills the frame; edges cropped tight
+
 ---
 
 ### Close-Up (CU)
@@ -244,6 +248,8 @@ How much of the subject fills the frame. Each size shifts the balance between su
 - Extreme emotion — too much distance for raw intensity
 - Full body/fashion — can't see the outfit
 - Environmental storytelling — too tight for context
+
+**Prompt cues**: medium close-up; framed from the chest up
 
 ---
 

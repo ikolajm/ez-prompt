@@ -88,6 +88,8 @@ The fundamental spectrum from matte to mirror. How light interacts with a surfac
 - Bright/cluttered backgrounds — reflections pick up everything
 - Matte/organic palettes — metallic is inherently synthetic and shiny
 
+**Prompt cues**: metallic finish; bright specular highlights; reflections of the surroundings
+
 ---
 
 ### Translucent / Frosted
@@ -394,6 +396,8 @@ Each type reads completely differently. Always specify which — "leather textur
 - Clean/new aesthetics — decay is the opposite of pristine
 - Modern/tech — rust signals neglect in a tech context
 - Sterile/clinical environments — decay is organic and unpredictable
+
+**Prompt cues**: weathered rusted finish; flaking orange rust and green patina; pitted aged surfaces
 
 ---
 

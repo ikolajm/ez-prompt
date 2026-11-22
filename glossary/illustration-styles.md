@@ -75,6 +75,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 
 **Example combination**: Watercolor + botanical illustration + visible paper texture + soft wet-in-wet backgrounds + precise wet-on-dry details → luminous flowers, soft atmospheric wash behind, paper grain visible, delicate and handmade
 
+**Prompt cues**: watercolor painting; soft pigment blooms and wet bleeding edges; transparent layered washes; textured cold-press paper
+
 ---
 
 ### Oil Painting
@@ -101,6 +103,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 
 **Example combination**: Oil painting + impasto brushstrokes + portrait + warm light + dark background → rich tonal depth, visible paint texture catching light, classical luminosity, Old Master quality
 
+**Prompt cues**: oil painting; thick visible brushstrokes and impasto; rich blended color with depth; canvas weave showing through
+
 ---
 
 ### Ink Wash / Sumi-e
@@ -124,6 +128,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Western compositional rules — sumi-e follows different spatial logic
 
 **Example combination**: Sumi-e + mountain landscape + minimal brushstrokes + vast empty space + ink gradation → mountains emerging from mist, a few decisive strokes, most of the paper empty, contemplative silence
+
+**Prompt cues**: black ink wash painting; graded washes from pale grey to black; loose expressive brush strokes; large areas of bare paper
 
 ---
 
@@ -192,6 +198,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Bold/graphic impact — graphite is subtle
 - Clean/digital precision — pencil has inherent irregularity
 - Flat/uniform tone — graphite builds tone gradually
+
+**Prompt cues**: graphite pencil drawing; fine hatched shading in grey tones; soft smudged blending; textured drawing paper
 
 ---
 
@@ -282,6 +290,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 
 **Example combination**: Gouache + forest scene + matte flat color + warm palette + visible brushwork → velvety storybook quality, chalky but rich, handmade warmth
 
+**Prompt cues**: gouache painting; flat opaque matte color; crisp painted edges; visible brush texture
+
 ---
 
 ### Charcoal Drawing
@@ -304,6 +314,8 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Digital precision — maximally physical
 
 **Example combination**: Charcoal + portrait + chiaroscuro + smudged background + visible paper grain → deep velvety blacks, smoky blended tones, classical life-drawing intensity
+
+**Prompt cues**: charcoal drawing; deep velvety blacks and smudged greys; rough expressive strokes; grainy paper texture
 
 ---
 
