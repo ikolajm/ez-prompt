@@ -330,7 +330,7 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: Daguerreotype + formal portrait + dark background + silver-plate surface + visible plate edges → ghostly, precious, mirror-like tones, 1850s formal intensity
 
-**Prompt cues**: daguerreotype; mirror-like silver plate; silver-grey monochrome tones; tarnished plate edges
+**Prompt cues**: daguerreotype; mirror-like silver plate; black and white silver-grey tones; tarnished plate edges
 
 ---
 
@@ -355,7 +355,7 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 
 **Example combination**: Wet plate collodion + intense portrait + blue-sensitive rendering + visible pour lines at edges + chemical artifacts → haunting, sharp center with organic edge decay, Civil War-era intensity
 
-**Prompt cues**: wet plate collodion photograph; visible pour lines and chemical streaks; dark uneven plate edges; sharp center falling off softly
+**Prompt cues**: black and white wet plate collodion photograph; visible pour lines and chemical streaks; dark uneven plate edges; sharp center falling off softly
 
 ---
 
@@ -376,7 +376,7 @@ Focal length (measured in mm) controls field of view, perspective compression, a
 - Precision/sharpness — rougher than daguerreotype
 - Modern polish — too antique and rough
 
-**Prompt cues**: tintype photograph; dark compressed tones on a metal plate; low contrast; scratched metal surface
+**Prompt cues**: black and white tintype photograph; dark compressed tones on a metal plate; low contrast; scratched metal surface
 
 ---
 

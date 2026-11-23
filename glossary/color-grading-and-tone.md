@@ -141,19 +141,59 @@ How colors relate to each other within the frame. These are compositional decisi
 
 ---
 
-### Complementary Grade Combos (Beyond Teal & Orange)
+### Amber + Steel Blue
 
-Named complementary color grade pairings used in cinema:
+**What it is**: A named complementary color grade pairing used in cinema.
 
-- **Amber + Steel Blue** — warmer, less aggressive. Period dramas. The English Patient.
-- **Magenta + Green** — unsettling, surreal. Horror, sci-fi. Spring Breakers, Refn films.
-- **Gold + Deep Blue** — regal, epic. Fantasy, historical. Gladiator, Lord of the Rings.
-- **Teal + Pink/Magenta** — vaporwave-adjacent. Drive, Miami Vice.
-- **Yellow-Green + Purple** — toxic, alien. Alien franchise, Annihilation.
-- **Copper + Slate** — industrial, restrained. Sicario, Prisoners.
-- **Cream + Navy** — classic, clean, editorial. Fashion, lifestyle.
+**Visual effect**: Warmer, less aggressive. Period dramas. The English Patient.
 
-Each pairing creates a distinct emotional register. Specifying the combination in a prompt is more effective than just "cinematic color grade."
+---
+
+### Magenta + Green
+
+**What it is**: A named complementary color grade pairing used in cinema.
+
+**Visual effect**: Unsettling, surreal. Horror, sci-fi. Spring Breakers, Refn films.
+
+---
+
+### Gold + Deep Blue
+
+**What it is**: A named complementary color grade pairing used in cinema.
+
+**Visual effect**: Regal, epic. Fantasy, historical. Gladiator, Lord of the Rings.
+
+---
+
+### Teal + Pink/Magenta
+
+**What it is**: A named complementary color grade pairing used in cinema.
+
+**Visual effect**: Vaporwave-adjacent. Drive, Miami Vice.
+
+---
+
+### Yellow-Green + Purple
+
+**What it is**: A named complementary color grade pairing used in cinema.
+
+**Visual effect**: Toxic, alien. Alien franchise, Annihilation.
+
+---
+
+### Copper + Slate
+
+**What it is**: A named complementary color grade pairing used in cinema.
+
+**Visual effect**: Industrial, restrained. Sicario, Prisoners.
+
+---
+
+### Cream + Navy
+
+**What it is**: A named complementary color grade pairing used in cinema.
+
+**Visual effect**: Classic, clean, editorial. Fashion, lifestyle.
 
 ---
 

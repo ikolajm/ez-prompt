@@ -1,21 +1,18 @@
 import { ChevronDown, Minus, Plus } from 'lucide-react'
 import { type ReactNode, useState } from 'react'
 import { Checkbox } from './components/loom/checkbox.tsx'
-import type { Group, Term } from './glossary.ts'
+import type { Term } from './glossary.ts'
 
 export function GlossaryTable({
   terms,
-  groups,
   picked,
   onPick,
 }: {
   terms: Term[]
-  groups: Group[]
   picked: ReadonlySet<string>
   onPick: (term: Term) => void
 }) {
   const [open, setOpen] = useState<ReadonlySet<string>>(new Set())
-  const byId = new Map(groups.map((g) => [g.id, g]))
 
   function toggle(id: string) {
     setOpen((current) => {
@@ -43,7 +40,6 @@ export function GlossaryTable({
           <TermRows
             key={term.id}
             term={term}
-            group={term.group ? byId.get(term.group) : undefined}
             open={open.has(term.id)}
             onToggle={() => toggle(term.id)}
             picked={picked.has(term.id)}
@@ -57,14 +53,12 @@ export function GlossaryTable({
 
 function TermRows({
   term,
-  group,
   open,
   onToggle,
   picked,
   onPick,
 }: {
   term: Term
-  group: Group | undefined
   open: boolean
   onToggle: () => void
   picked: boolean
@@ -95,14 +89,14 @@ function TermRows({
       </tr>
       <tr id={detailId} className="glossary__detail" hidden={!open}>
         <td colSpan={3}>
-          <TermDetail term={term} group={group} />
+          <TermDetail term={term} />
         </td>
       </tr>
     </>
   )
 }
 
-function TermDetail({ term, group }: { term: Term; group: Group | undefined }) {
+function TermDetail({ term }: { term: Term }) {
   return (
     <div className="detail">
       <Field label="Effect" open>
@@ -133,11 +127,6 @@ function TermDetail({ term, group }: { term: Term; group: Group | undefined }) {
           <p>{text}</p>
         </Field>
       ))}
-      {group?.note && (
-        <Field label={group.name}>
-          <p>{group.note}</p>
-        </Field>
-      )}
     </div>
   )
 }
