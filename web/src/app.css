@@ -75,6 +75,12 @@
   padding-inline: var(--space-4);
 }
 
+.rail__logo {
+  display: block;
+  height: var(--space-8);
+  width: auto;
+}
+
 .rail ul {
   margin: 0;
   padding: 0;
@@ -185,7 +191,7 @@
 .sheet {
   position: sticky;
   top: 0;
-  max-height: 100dvh;
+  height: 100dvh;
   overflow-y: auto;
   padding: var(--screen-y-padding) var(--section-x-padding);
   border-left: var(--bw-1) solid var(--outline-subtle);
@@ -253,7 +259,7 @@
   .sheet {
     grid-column: 2;
     position: static;
-    max-height: none;
+    height: auto;
     border-left: 0;
     border-top: var(--bw-1) solid var(--outline-subtle);
   }
