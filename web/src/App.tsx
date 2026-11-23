@@ -4,6 +4,7 @@ import './app.css'
 import { Button } from './components/loom/button.tsx'
 import { byPart, type Glossary, headedParts, loadGlossary, partLabel, sections } from './glossary.ts'
 import { GlossaryTable } from './GlossaryTable.tsx'
+import { Logo } from './Logo.tsx'
 import { lines, type Sheet, toggle as toggleSheet } from './sheet.ts'
 import { SpecSheet } from './SpecSheet.tsx'
 
@@ -52,7 +53,9 @@ export default function App() {
         Skip to glossary
       </a>
       <nav className="rail" aria-label="Glossary">
-        <p className="rail__title text-title-sm">ez-prompt</p>
+        <p className="rail__title">
+          <Logo className="rail__logo" />
+        </p>
         {parts.map(([part, keys]) => (
           <div key={part} className="rail__part">
             {headed.has(part) && (
