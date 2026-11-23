@@ -9,6 +9,24 @@
   align-items: start;
 }
 
+/* Off screen until focused. Loom's .visually-hidden is not for focusable elements, and
+ * Loom ships no skip-link variant. Fixed, so the grid does not give it a cell. */
+.skip-link {
+  position: fixed;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: var(--z-tooltip);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-component);
+  background: var(--surface-inverse);
+  color: var(--on-surface-inverse);
+  transform: translateY(calc(-100% - var(--space-8)));
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
 .main {
   padding: var(--screen-y-padding) var(--screen-x-padding);
   max-width: var(--content-max-width);
@@ -71,14 +89,19 @@
   margin-top: var(--group-gap);
 }
 
-/* Caps need tracking and Loom ships no token for it, so the spacing is a literal. */
-.rail__part-label {
-  margin: 0 0 var(--component-compact-gap);
-  padding-inline: var(--space-4);
+/* Part headings, in the rail and the sheet. Caps need tracking and Loom ships no token
+ * for it, so the spacing is a literal. */
+.rail__part-label,
+.sheet__part-label {
   color: var(--on-surface-variant);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.rail__part-label {
+  margin: 0 0 var(--component-compact-gap);
+  padding-inline: var(--space-4);
 }
 
 /* One solid rail down each part's list. Every item sits flush against it, rounded on the
@@ -178,6 +201,16 @@
 
 .sheet__empty {
   color: var(--on-surface-variant);
+}
+
+.sheet__parts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+}
+
+.sheet__part-label {
+  margin: 0 0 var(--group-gap);
 }
 
 .sheet__lines {

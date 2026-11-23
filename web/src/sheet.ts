@@ -32,19 +32,15 @@ export function lines(sheet: Sheet, dimensions: Dimension[]): Line[] {
     .filter((line) => line.terms.length > 0)
 }
 
-export function asSpec(subject: string, sheetLines: Line[]): string {
-  const rows = sheetLines.map(
-    ({ dimension, terms }) => `${keyOf(dimension)}: ${terms.map((t) => t.name).join(', ')}`,
-  )
-  if (subject.trim()) rows.unshift(`subject: ${subject.trim()}`)
-  return rows.join('\n')
+export function asSpec(sheetLines: Line[]): string {
+  return sheetLines
+    .map(({ dimension, terms }) => `${keyOf(dimension)}: ${terms.map((t) => t.name).join(', ')}`)
+    .join('\n')
 }
 
 // A term's cues are what the image models read; a term without cues falls back to its name.
-export function asPrompt(subject: string, sheetLines: Line[]): string {
-  const parts = sheetLines.flatMap(({ terms }) =>
-    terms.flatMap((t) => (t.cues.length > 0 ? t.cues : [t.name])),
-  )
-  if (subject.trim()) parts.unshift(subject.trim())
-  return parts.join(', ')
+export function asPrompt(sheetLines: Line[]): string {
+  return sheetLines
+    .flatMap(({ terms }) => terms.flatMap((t) => (t.cues.length > 0 ? t.cues : [t.name])))
+    .join(', ')
 }

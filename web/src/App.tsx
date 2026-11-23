@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import './app.css'
 import { Button } from './components/loom/button.tsx'
-import { type Dimension, type Glossary, loadGlossary, sections } from './glossary.ts'
+import { byPart, type Glossary, headedParts, loadGlossary, partLabel, sections } from './glossary.ts'
 import { GlossaryTable } from './GlossaryTable.tsx'
 import { lines, type Sheet, toggle as toggleSheet } from './sheet.ts'
 import { SpecSheet } from './SpecSheet.tsx'
@@ -20,7 +20,6 @@ export default function App() {
   // Null until the first toggle: the dimension being shown starts open.
   const [expanded, setExpanded] = useState<ReadonlySet<string> | null>(null)
   const [sheet, setSheet] = useState<Sheet>({})
-  const [subject, setSubject] = useState('')
 
   useEffect(() => {
     loadGlossary().then(
@@ -44,26 +43,24 @@ export default function App() {
     setExpanded(next)
   }
 
-  const parts: [string, Dimension[]][] = []
-  for (const d of dimensions) {
-    const last = parts.at(-1)
-    if (last && last[0] === d.part) last[1].push(d)
-    else parts.push([d.part, [d]])
-  }
+  const parts = byPart(dimensions, (d) => d.part)
+  const headed = headedParts(dimensions)
 
   return (
     <div className="app">
+      <a className="skip-link text-label-md" href="#glossary">
+        Skip to glossary
+      </a>
       <nav className="rail" aria-label="Glossary">
         <p className="rail__title text-title-sm">ez-prompt</p>
         {parts.map(([part, keys]) => (
           <div key={part} className="rail__part">
-            {/* A part holding one key is that key, so it takes no heading of its own. */}
-            {keys.length > 1 && (
+            {headed.has(part) && (
               <p className="rail__part-label text-label-md" id={`part-${part}`}>
-                {part.charAt(0).toUpperCase() + part.slice(1)}
+                {partLabel(part)}
               </p>
             )}
-            <ul className="rail__list" aria-labelledby={keys.length > 1 ? `part-${part}` : undefined}>
+            <ul className="rail__list" aria-labelledby={headed.has(part) ? `part-${part}` : undefined}>
               {keys.map((d) => {
                 const current = d.id === dimension.id
                 const names = sections(d.terms).map(([name]) => name)
@@ -110,7 +107,7 @@ export default function App() {
           </div>
         ))}
       </nav>
-      <main className="main">
+      <main id="glossary" className="main" tabIndex={-1}>
         <header className="main__header">
           <p className="text-label-md text-on-surface-variant">{dimension.label}</p>
           <h1 className="text-title-lg">{section}</h1>
@@ -118,14 +115,12 @@ export default function App() {
         <GlossaryTable
           key={`${dimension.id}/${section}`}
           terms={terms}
-          groups={dimension.groups}
           picked={new Set((sheet[dimension.id] ?? []).map((t) => t.id))}
           onPick={(term) => setSheet(toggleSheet(sheet, dimension, term))}
         />
       </main>
       <SpecSheet
-        subject={subject}
-        onSubject={setSubject}
+        dimensions={dimensions}
         lines={lines(sheet, dimensions)}
         onRemove={(d, term) => setSheet(toggleSheet(sheet, d, term))}
       />
