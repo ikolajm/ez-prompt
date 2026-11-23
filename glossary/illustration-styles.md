@@ -133,7 +133,7 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 
 **Example combination**: Sumi-e + mountain landscape + minimal brushstrokes + vast empty space + ink gradation → mountains emerging from mist, a few decisive strokes, most of the paper empty, contemplative silence
 
-**Prompt cues**: black ink wash painting; graded washes from pale grey to black; loose expressive brush strokes; large areas of bare paper
+**Prompt cues**: black and white ink wash painting; graded washes from pale grey to black; loose expressive brush strokes; large areas of bare paper
 
 ---
 
@@ -207,7 +207,7 @@ Drawing, painting, and printmaking techniques — each producing a distinct visu
 - Clean/digital precision — pencil has inherent irregularity
 - Flat/uniform tone — graphite builds tone gradually
 
-**Prompt cues**: graphite pencil drawing; fine hatched shading in grey tones; soft smudged blending; textured drawing paper
+**Prompt cues**: black and white graphite pencil drawing; fine hatched shading in grey tones; soft smudged blending; textured drawing paper
 
 ---
 

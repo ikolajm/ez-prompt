@@ -25,6 +25,8 @@ Environmental conditions that affect every other visual dimension — light qual
 
 **Example combination**: Night rain + neon signs + wet street reflections + anamorphic lens flares + shallow DOF → every light source doubled in puddles, blue and pink streaks from neon, rain catching backlight, cinematic atmosphere
 
+**Prompt cues**: rain; wet reflective pavement; lights doubled in puddles; falling raindrops catching the light
+
 ---
 
 ### Snow
@@ -39,6 +41,8 @@ Environmental conditions that affect every other visual dimension — light qual
 
 **Example combination**: Falling snow + backlit by streetlight + warm tungsten window glow + figure in dark coat + shallow DOF → snowflakes glowing as bokeh in foreground, warm/cool contrast between interior and exterior, quiet and magical
 
+**Prompt cues**: falling snow; snow-covered ground; blue shadows on white snow; light bouncing up from the snow
+
 ---
 
 ### Mist / Light Rain / Drizzle
@@ -48,6 +52,8 @@ Environmental conditions that affect every other visual dimension — light qual
 **Visual effect**: Subtle atmospheric softening. Surfaces are damp (slight sheen) but not mirror-wet like heavy rain. Air has a faint haze. Colors are slightly muted. Reads as gentle, dreamy, British/Pacific Northwest, literary.
 
 **Pairs well with**: Overcast sky, muted palette, green landscapes (lush and wet), literary mood, Saul Leiter (shooting through wet glass), cottagecore (gentle spring rain).
+
+**Prompt cues**: drizzle; damp surfaces with a soft sheen; muted colors; softened background
 
 ---
 
@@ -71,6 +77,8 @@ Environmental conditions that affect every other visual dimension — light qual
 
 **Example combination**: Dense fog + single streetlight + figure approaching + rim-lit from behind → silhouette emerging from white void, volumetric light rays, depth completely obscured, noir mystery
 
+**Prompt cues**: dense fog; background fading to grey; halos around lights; distant shapes reduced to soft silhouettes
+
 ---
 
 ### Haze / Smog
@@ -83,6 +91,8 @@ Environmental conditions that affect every other visual dimension — light qual
 
 **Conflicts with**: Crisp clear air, high-contrast photography, cool/blue palette (haze is warm).
 
+**Prompt cues**: hazy air; low contrast in the distance; distant shapes softened but visible
+
 ---
 
 ### Dust / Sand
@@ -94,6 +104,8 @@ Environmental conditions that affect every other visual dimension — light qual
 **Pairs well with**: Western/desert aesthetics, golden hour (dust + warm light = golden atmosphere), practical lighting (headlights through dust), Mad Max/post-apocalyptic, military, construction/industrial, hard backlight (every particle catches light).
 
 **Conflicts with**: Clean/pristine, clinical, urban (unless construction context), cool palettes.
+
+**Prompt cues**: airborne dust; warm amber air; backlit dust particles glowing
 
 ---
 
@@ -113,6 +125,8 @@ Environmental conditions that affect every other visual dimension — light qual
 
 **Conflicts with**: Clean/clinical, bright/airy, outdoor/natural (unless campfire or wildfire).
 
+**Prompt cues**: drifting smoke; visible shafts of light through the smoke; curling wisps
+
 ---
 
 ### Steam / Vapor
@@ -122,6 +136,8 @@ Environmental conditions that affect every other visual dimension — light qual
 **Visual effect**: Soft, warm, rising. Lighter and more translucent than smoke. Catches backlight beautifully. Rising steam from hot food signals freshness and temperature. Street steam (NYC manholes) adds urban atmosphere. Reads as warm, fresh, urban, or industrial.
 
 **Pairs well with**: Food photography (steam = hot and fresh), hot beverage (rising steam from coffee), urban night (manhole steam + streetlight), backlight (steam glows), bathroom/sauna (intimate, warm).
+
+**Prompt cues**: rising steam; translucent white wisps; steam glowing in backlight
 
 ---
 

@@ -305,9 +305,7 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 ---
 
-### Anime Sub-Styles
-
-#### Shoujo
+### Shoujo
 
 **What it is**: "Girls' anime/manga." Sailor Moon, Cardcaptor Sakura, Fruits Basket. Focus on emotion, relationships, transformation.
 
@@ -321,7 +319,7 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 ---
 
-#### Seinen
+### Seinen
 
 **What it is**: "Young men's anime/manga." Berserk, Ghost in the Shell, Vinland Saga, Monster. Mature themes, complex narratives.
 
@@ -335,7 +333,7 @@ Animation traditions, techniques, and aesthetics — each with a distinct visual
 
 ---
 
-#### Mecha
+### Mecha
 
 **What it is**: Giant robot anime. Gundam, Evangelion, Code Geass, Gurren Lagann.
 

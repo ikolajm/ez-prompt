@@ -25,7 +25,6 @@ KEYS = {
     "composition": ("camera", "Composition"),
     "scene": ("camera", "Scene Format"),
     "color": ("tone", "Color"),
-    "film-look": ("tone", "Film Look"),
     "mood": ("tone", "Mood"),
     "light": ("light", "Light"),
     "exposure": ("light", "Exposure"),
@@ -44,7 +43,7 @@ PAGES: dict[str, str | None] = {
     "cameras-and-lenses.md": None,
     "angles-and-composition.md": None,
     "lighting.md": "light",
-    "film-stocks-and-analog.md": "film-look",
+    "film-stocks-and-analog.md": None,
     "color-grading-and-tone.md": "color",
     "textures-and-materials.md": None,
     "weather-and-atmosphere.md": None,
@@ -70,12 +69,17 @@ SECTIONS = {
 }
 
 # Sections kept out whole: (page, section) -> reason
+STOCK = "a color grade and grain under a brand; Color and Image Texture cover it"
 HELD_SECTIONS = {
     ("textures-and-materials.md", "Organic Textures"): "a material, which needs a subject",
     ("textures-and-materials.md", "Synthetic / Manufactured Textures"): (
         "a material, which needs a subject"
     ),
     ("textures-and-materials.md", "Paper & Foil"): "a material, which needs a subject",
+    ("film-stocks-and-analog.md", "Color Negative Film"): STOCK,
+    ("film-stocks-and-analog.md", "Slide / Reversal Film"): STOCK,
+    ("film-stocks-and-analog.md", "Black and White Film"): STOCK,
+    ("film-stocks-and-analog.md", "Specialty / Distinctive Film"): STOCK,
 }
 
 # A term placed outside its section's key: (page, heading) -> (key, section)
@@ -95,35 +99,6 @@ PLACES = {
     ("textures-and-materials.md", "Chrome / Mirror Finish"): ("finish", "Surface Quality"),
     ("textures-and-materials.md", "Brushed Metal"): ("finish", "Surface Quality"),
     ("textures-and-materials.md", "Rust / Patina / Decay"): ("finish", "Surface Quality"),
-}
-
-# A term folded into another, whose cues cover it: (page, heading) -> (page, heading).
-# The survivor lists it under "covers".
-MERGED = {
-    ("weather-and-atmosphere.md", "Deep Night / 3am"): ("weather-and-atmosphere.md", "Night"),
-    ("cameras-and-lenses.md", "Medium Telephoto (105-200mm)"): (
-        "cameras-and-lenses.md",
-        "Telephoto (200-400mm)",
-    ),
-    ("cameras-and-lenses.md", "Super Telephoto (400mm+)"): (
-        "cameras-and-lenses.md",
-        "Telephoto (200-400mm)",
-    ),
-    ("cameras-and-lenses.md", "Small Aperture (f/16 - f/22)"): (
-        "cameras-and-lenses.md",
-        "Stopped Down (f/8 - f/11)",
-    ),
-    ("lighting.md", "Loop Lighting"): ("lighting.md", "Rembrandt Lighting"),
-    ("lighting.md", "Clamshell Lighting"): ("lighting.md", "Butterfly / Paramount Lighting"),
-    ("lighting.md", "Diffused Light"): ("lighting.md", "Soft Light"),
-    ("lighting.md", "Softbox"): ("lighting.md", "Soft Light"),
-    ("lighting.md", "Tent / Wraparound Lighting"): ("lighting.md", "Soft Light"),
-    ("lighting.md", "Book Lighting"): ("lighting.md", "Soft Light"),
-    ("animation-styles.md", "Flash / Web Animation"): (
-        "illustration-styles.md",
-        "Vector / Flat Illustration",
-    ),
-    ("illustration-styles.md", "Concept Art"): ("illustration-styles.md", "Digital Painting"),
 }
 
 # Terms kept out of glossary.json, with the reason: (page, heading) -> reason
@@ -177,6 +152,18 @@ HELD = {
     ("lighting.md", "Motivated Lighting"): "nothing visible",
     ("weather-and-atmosphere.md", "Early Morning (7-9am)"): "a clock time; dawn covers the look",
     ("weather-and-atmosphere.md", "Afternoon (2-4pm)"): "a clock time; midday covers the look",
+    ("weather-and-atmosphere.md", "Deep Night / 3am"): "covered by Night",
+    ("cameras-and-lenses.md", "Medium Telephoto (105-200mm)"): "covered by Telephoto",
+    ("cameras-and-lenses.md", "Super Telephoto (400mm+)"): "covered by Telephoto",
+    ("cameras-and-lenses.md", "Small Aperture (f/16 - f/22)"): "covered by Stopped Down",
+    ("lighting.md", "Loop Lighting"): "covered by Rembrandt Lighting",
+    ("lighting.md", "Clamshell Lighting"): "covered by Butterfly / Paramount Lighting",
+    ("lighting.md", "Diffused Light"): "covered by Soft Light",
+    ("lighting.md", "Softbox"): "covered by Soft Light",
+    ("lighting.md", "Tent / Wraparound Lighting"): "covered by Soft Light",
+    ("lighting.md", "Book Lighting"): "covered by Soft Light",
+    ("animation-styles.md", "Flash / Web Animation"): "covered by Vector / Flat Illustration",
+    ("illustration-styles.md", "Concept Art"): "covered by Digital Painting",
 }
 
 
@@ -186,7 +173,6 @@ class Scope:
     sections: dict[tuple[str, str], str] = field(default_factory=lambda: dict(SECTIONS))
     held_sections: dict[tuple[str, str], str] = field(default_factory=lambda: dict(HELD_SECTIONS))
     places: dict[tuple[str, str], tuple[str, str]] = field(default_factory=lambda: dict(PLACES))
-    merged: dict[tuple[str, str], tuple[str, str]] = field(default_factory=lambda: dict(MERGED))
     held: dict[tuple[str, str], str] = field(default_factory=lambda: dict(HELD))
 
 
@@ -217,8 +203,6 @@ EXTRAS = {
     "Production specifics",
     "Production specifics (Laika)",
 }
-# A group lends these to each of its bullet terms; any other field on a group is refused.
-GROUP_FIELDS = {"pairs", "conflicts"}
 
 # Cues go to the model as written, so a brand or a long phrase is refused.
 CUE_MAX_WORDS = 8
@@ -231,7 +215,6 @@ BRANDS = re.compile(
 )
 
 FIELD_LINE = re.compile(r"^\*\*(?P<label>[^*]+)\*\*:\s*(?P<rest>.*)$")
-BULLET_TERM = re.compile(r"^- \*\*(?P<name>[^*]+)\*\*\s*[—–-]\s*(?P<effect>.+)$")
 
 
 class Refused(Exception):
@@ -243,11 +226,8 @@ class Entry:
     name: str
     section: str
     line: int
-    parent: str | None = None
-    has_children: bool = False
     fields: dict[str, list[str]] = field(default_factory=dict)
     extras: dict[str, list[str]] = field(default_factory=dict)
-    bullets: list[tuple[str, str]] = field(default_factory=list)
     prose: list[str] = field(default_factory=list)
 
 
@@ -261,7 +241,6 @@ def parse_page(text: str) -> tuple[str, list[Entry]]:
     section = ""
     entries: list[Entry] = []
     entry: Entry | None = None
-    heading: Entry | None = None
     target: list[str] | None = None
 
     for number, raw in enumerate(text.splitlines(), start=1):
@@ -270,22 +249,14 @@ def parse_page(text: str) -> tuple[str, list[Entry]]:
             title = line[2:].strip()
         elif line.startswith("## "):
             section = line[3:].strip()
-            entry = heading = target = None
+            entry = target = None
         elif line.startswith("### "):
-            entry = heading = target = None
+            entry = target = None
             if section not in SKIPPED_SECTIONS:
-                entry = heading = Entry(line[4:].strip(), section, number)
+                entry = Entry(line[4:].strip(), section, number)
                 entries.append(entry)
-        elif line.startswith("#### "):
-            target = None
-            if section in SKIPPED_SECTIONS:
-                entry = None
-                continue
-            if heading is None:
-                raise Refused(f"line {number}: sub-term outside an entry, under '{section}'")
-            heading.has_children = True
-            entry = Entry(line[5:].strip(), section, number, parent=heading.name)
-            entries.append(entry)
+        elif line.startswith("#"):
+            raise Refused(f"line {number}: a heading level the extract does not read")
         elif line == "---":
             target = None
         elif entry is None and section not in SKIPPED_SECTIONS and FIELD_LINE.match(line):
@@ -307,8 +278,6 @@ def parse_page(text: str) -> tuple[str, list[Entry]]:
                 target.append(rest)
         elif target is not None:
             target.append(line[2:].strip() if line.startswith("- ") else line.strip())
-        elif bullet := BULLET_TERM.match(line):
-            entry.bullets.append((bullet["name"].strip(), bullet["effect"].strip()))
         else:
             entry.prose.append(f"line {number}: {line.strip()}")
 
@@ -334,39 +303,6 @@ def cues(entry: Entry) -> list[str]:
     return found
 
 
-def to_group(entry: Entry) -> tuple[dict[str, object], list[dict[str, object]]]:
-    """A heading over bulleted or sub-headed terms; its prose is the note."""
-    stray = set(entry.fields) - GROUP_FIELDS
-    if stray or entry.extras:
-        raise Refused(f"line {entry.line}: {entry.name}: group has its own fields")
-    group_id = slug(entry.name)
-    note = " ".join(line.split(": ", 1)[1] for line in entry.prose) or None
-    group: dict[str, object] = {
-        "id": group_id,
-        "name": entry.name,
-        "section": entry.section,
-        "note": note,
-    }
-    terms: list[dict[str, object]] = [
-        {
-            "id": slug(name),
-            "name": name,
-            "section": entry.section,
-            "group": group_id,
-            "what": None,
-            "effect": effect,
-            "pairs": entry.fields.get("pairs", []),
-            "conflicts": entry.fields.get("conflicts", []),
-            "example": None,
-            "cues": [],
-            "covers": [],
-            "extras": {},
-        }
-        for name, effect in entry.bullets
-    ]
-    return group, terms
-
-
 def to_term(entry: Entry) -> dict[str, object]:
     if entry.prose:
         raise Refused(f"{entry.name}: text outside a field, {entry.prose[0]}")
@@ -376,19 +312,14 @@ def to_term(entry: Entry) -> dict[str, object]:
         "id": slug(entry.name),
         "name": entry.name,
         "section": entry.section,
-        "group": slug(entry.parent) if entry.parent else None,
         "what": joined(entry.fields.get("what")),
         "effect": joined(entry.fields.get("effect")),
         "pairs": entry.fields.get("pairs", []),
         "conflicts": entry.fields.get("conflicts", []),
         "example": joined(entry.fields.get("example")),
         "cues": cues(entry),
-        "covers": [],
         "extras": {label: " ".join(lines) for label, lines in entry.extras.items()},
     }
-
-
-Items = list[dict[str, object]]
 
 
 def extract(glossary: Path, scope: Scope | None = None) -> dict[str, object]:
@@ -397,28 +328,22 @@ def extract(glossary: Path, scope: Scope | None = None) -> dict[str, object]:
     refusals: list[str] = []
     seen: set[tuple[str, str]] = set()
     seen_sections: set[tuple[str, str]] = set()
-    built: dict[tuple[str, str], dict[str, object]] = {}
 
-    def add(key: str, page: str, groups: Items, new: Items) -> None:
+    def add(key: str, page: str, term: dict[str, object]) -> None:
         if key not in KEYS:
             refusals.append(f"{page}: unknown key '{key}'")
             return
         part, label = KEYS[key]
-        target = keys.setdefault(
-            key,
-            {"id": key, "label": label, "part": part, "source": page, "groups": [], "terms": []},
-        )
-        target_groups, terms = target["groups"], target["terms"]
-        assert isinstance(target_groups, list) and isinstance(terms, list)
-        target_groups.extend(groups)
-        for term in new:
-            if any(t["id"] == term["id"] for t in terms):
-                refusals.append(f"{page}: {term['name']}: id '{term['id']}' taken")
-            else:
-                terms.append(term)
+        dimension = keys.setdefault(key, {"id": key, "label": label, "part": part, "terms": []})
+        terms = dimension["terms"]
+        assert isinstance(terms, list)
+        if any(t["id"] == term["id"] for t in terms):
+            refusals.append(f"{page}: {term['name']}: id '{term['id']}' taken")
+        else:
+            terms.append(term)
 
     # Placed terms join a key after its own pages have built it.
-    placed_terms: list[tuple[str, str, Items, Items]] = []
+    placed_terms: list[tuple[str, str, dict[str, object]]] = []
 
     for page, default in scope.pages.items():
         try:
@@ -430,7 +355,7 @@ def extract(glossary: Path, scope: Scope | None = None) -> dict[str, object]:
             name_key, section_key = (page, entry.name), (page, entry.section)
             seen.add(name_key)
             seen_sections.add(section_key)
-            if name_key in scope.held or name_key in scope.merged:
+            if name_key in scope.held:
                 continue
             if name_key in scope.places:
                 key, section = scope.places[name_key]
@@ -446,40 +371,22 @@ def extract(glossary: Path, scope: Scope | None = None) -> dict[str, object]:
             if key == "medium":
                 section = title
             try:
-                if entry.bullets or entry.has_children:
-                    group, new = to_group(entry)
-                    groups: Items = [group]
-                else:
-                    new, groups = [to_term(entry)], []
+                term = to_term(entry)
             except Refused as refusal:
                 refusals.append(f"{page}: {refusal}")
                 continue
-            for item in [*groups, *new]:
-                item["section"] = section
-            if not groups:
-                built[name_key] = new[0]
+            term["section"] = section
             if name_key in scope.places:
-                placed_terms.append((key, page, groups, new))
+                placed_terms.append((key, page, term))
             else:
-                add(key, page, groups, new)
+                add(key, page, term)
 
     for pending in placed_terms:
         add(*pending)
 
-    for (page, name), survivor in scope.merged.items():
-        if page in scope.pages and (page, name) in seen:
-            target = built.get(survivor)
-            if target is None:
-                refusals.append(f"{page}: '{name}' merged into '{survivor[1]}', which is not built")
-            else:
-                covers = target["covers"]
-                assert isinstance(covers, list)
-                covers.append(name)
-
-    placed = set(scope.places) | set(scope.held) | set(scope.merged)
-    for page, name in sorted(placed - seen):
+    for page, name in sorted((set(scope.places) | set(scope.held)) - seen):
         if page in scope.pages:
-            refusals.append(f"{page}: '{name}' is placed, held or merged but has no entry")
+            refusals.append(f"{page}: '{name}' is placed or held but has no entry")
     for page, section in sorted((set(scope.sections) | set(scope.held_sections)) - seen_sections):
         if page in scope.pages:
             refusals.append(f"{page}: section '{section}' is mapped but has no entry")
